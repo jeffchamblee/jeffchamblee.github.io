@@ -70,7 +70,7 @@ var urlString;
 
 function loadDataIntoTable(domain) {
     console.log(domain);
-    urlString = "http://api.us.socrata.com/api/catalog/v1?domains=" + domain + "&only=datasets";
+    urlString = "http://api.us.socrata.com/api/catalog/v1?domains=" + domain + "&only=datasets&limit=1000";
     $('#catalog_table').dataTable({
         destroy: true,
         "ajax": {
