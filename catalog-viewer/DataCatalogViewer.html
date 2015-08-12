@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Catalog Viewer</title>
+<style type="text/css">
+div.main_content {width:1200px;
+                  margin:1% auto;
+                  border:solid 1px #969494;}
+
+</style>
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+  
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="js/jquery.js"></script>
+  
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+
+</head>
+<body>
+
+
+<div class="main_content">
+
+	<div> 
+  <span id="prompt" class="form-field">Select domain: </span>
+<select name="selectDomain" onchange='OnChange(this);' class="form-field">
+   <option>data.cms.gov</option>
+   <option>data.medicare.gov</option>
+   <option>data.healthcare.gov</option>
+   <option>healthmeasures.aspe.hhs.gov</option>
+   <option>openpaymentsdata.cms.gov</option>
+   <option>data.cdc.gov</option>
+   <option>chronicdata.cdc.gov</option>
+</select>
+	</div>
+
+<table id="catalog_table" class="display" data-page-length='25'>
+    <thead>
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Categories</th>
+    <th>Tags</th>
+    <th>Updated</th>
+    <th>Link</th>
+</tr>
+    </thead>
+    <tbody>
+    <!-- CONTENT IS DELIVERED BY JSON -->
+    </tbody>
+    <tfoot>
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Categories</th>
+    <th>Tags</th>
+    <th>Updated</th>
+    <th>Link</th>
+</tr>
+    </tfoot>
+</table>
+</div>
+<script>
+//var domain = "data.medicare.gov";
+//var domain = "data.healthcare.gov";
+var domain = "data.cms.gov";
+var urlString;
+
+function loadDataIntoTable(domain) {
+    console.log(domain);
+    urlString = "http://api.us.socrata.com/api/catalog/v1?domains=" + domain + "&only=datasets";
+    $('#catalog_table').dataTable({
+        "ajax": {
+            "processing" : true,
+            "url": urlString,
+            "dataSrc" : "results"
+        },
+        "columns": [
+            { "data" : "resource.name" },
+            { "data" : "resource.description" },
+            { "data" : "classification.categories" },
+            { "data" : "classification.tags" },
+            { "data" : "resource.updatedAt" },
+            { "data" : "link" }
+        ]
+    });
+}
+
+function OnChange(dropdown) {
+    var myindex  = dropdown.selectedIndex;
+    domain = dropdown.options[myindex].value;
+    loadDataIntoTable(domain);
+    return true;
+}
+</script>
+</body>
+</html>

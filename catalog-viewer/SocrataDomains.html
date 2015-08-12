@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Socrata Domains</title>
+<style type="text/css">
+div.main_content {width:600px;
+                  margin:1% auto;
+                  border:solid 1px #969494;}
+
+</style>
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+  
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="js/jquery.js"></script>
+  
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+
+</head>
+<body>
+
+<div class="main_content">
+
+	<div class="page-title">
+		<h1>Socrata Domains</h1>
+	</div>
+<table id="catalog_table" class="display" data-page-length='20'>
+    <thead>
+<tr>
+    <th>Domain</th>
+    <th>Count</th>
+</tr>
+    </thead>
+    <tbody>
+    <!-- CONTENT IS DELIVERED BY JSON -->
+    </tbody>
+    <tfoot>
+<tr>
+    <th>Domain</th>
+    <th>Count</th>
+</tr>
+    </tfoot>
+</table>
+</div>
+<script>
+
+$(document).ready(function() {
+    $('#catalog_table').dataTable( {
+        "ajax": {
+            "processing" : true,
+            "url": "http://api.us.socrata.com/api/catalog/v1/domains",
+            "dataSrc" : "results"
+        },
+        "columns": [
+            { "data" : "domain" },
+            { "data" : "count" },
+        ]       
+    } );
+} );
+
+</script>
+</body>
+</html>
