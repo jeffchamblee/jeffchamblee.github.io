@@ -12,10 +12,10 @@ div.main_content {width:1200px;
 <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
   
 <!-- jQuery -->
-<script type="text/javascript" charset="utf8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
   
 <!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.dataTables.js"></script>
 
 </head>
 <body>
@@ -72,6 +72,7 @@ function loadDataIntoTable(domain) {
     console.log(domain);
     urlString = "http://api.us.socrata.com/api/catalog/v1?domains=" + domain + "&only=datasets";
     $('#catalog_table').dataTable({
+        destroy: true,
         "ajax": {
             "processing" : true,
             "url": urlString,
