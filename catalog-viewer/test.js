@@ -1,60 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Data Catalog Viewer</title>
-<style type="text/css">
-div.main_content {width:1200px;
-                  margin:1% auto;
-                  border:solid 1px #969494;}
-
-</style>
-<!-- DataTables CSS -->
-<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
-  
-<!-- jQuery -->
-<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-  
-<!-- DataTables -->
-<script type="text/javascript" charset="utf-8" src="js/jquery.dataTables.js"></script>
-
-</head>
-<body>
-
-
-<div class="main_content">
-
-    <div> 
-        <span id="prompt" class="form-field">Select domain: </span>
-        <select id="domain" name="selectDomain" onchange='OnChange(this);' class="form-field">
-        <!-- CONTENT IS DELIVERED BY JSON -->
-        </select>
-    </div>
-
-    <table id="catalog_table" class="display" data-page-length='25'>
-    <thead>
-<tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Categories</th>
-    <th>Tags</th>
-    <th>Link</th>
-</tr>
-    </thead>
-    <tbody>
-    <!-- CONTENT IS DELIVERED BY JSON -->
-    </tbody>
-    <tfoot>
-<tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Categories</th>
-    <th>Tags</th>
-    <th>Link</th>
-</tr>
-    </tfoot>
-</table>
-</div>
-<script>
 var domain = "data.cms.gov";
 var urlString;
 
@@ -108,7 +51,3 @@ function OnChange(dropdown) {
 }
 
 loadDropdown($('select#domain').get(0), 'http://api.us.socrata.com/api/catalog/v1/domains', 'domain');
-
-</script>
-</body>
-</html>
