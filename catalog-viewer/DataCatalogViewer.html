@@ -26,6 +26,7 @@ div.main_content {width:1200px;
     <div> 
         <span id="prompt" class="form-field">Select domain: </span>
         <select id="domain" name="selectDomain" onchange='OnChange(this);' class="form-field">
+        <!-- CONTENT IS DELIVERED BY JSON -->
         </select>
     </div>
 
@@ -91,7 +92,11 @@ function loadDataIntoTable(domain) {
             { "data" : "resource.description" },
             { "data" : "classification.categories" },
             { "data" : "classification.tags" },
-            { "data" : "link" }
+            { "data" : "link", 
+			  "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+                $(nTd).html("<a href='" + oData.link + "'>"+oData.link+"</a>");
+              }
+			}
         ]
     });
 }
