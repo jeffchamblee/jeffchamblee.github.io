@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Catalog Search</title>
+<style type="text/css">
+div.main_content {width:1200px;
+                  margin:1% auto;
+                  border:solid 1px #969494;}
+
+</style>
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+  
+<!-- jQuery -->
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+  
+<!-- DataTables -->
+<script type="text/javascript" charset="utf-8" src="js/jquery.dataTables.js"></script>
+
+</head>
+<body>
+
+
+<div class="main_content">
+
+    <div> 
+        <span id="prompt" class="form-field">Search for: </span>
+        <input type="text" id="txtSearch" onkeypress="return searchKeyPress(event);" class="form-field"/>
+        <input type="button" id="btnSearch" Value="Search" onclick="search();" />
+    </div>
+
+    <table id="catalog_table" class="display" data-page-length='25'>
+    <thead>
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Categories</th>
+    <th>Tags</th>
+    <th>Link</th>
+</tr>
+    </thead>
+    <tbody>
+    <!-- CONTENT IS DELIVERED BY JSON -->
+    </tbody>
+    <tfoot>
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Categories</th>
+    <th>Tags</th>
+    <th>Link</th>
+</tr>
+    </tfoot>
+</table>
+</div>
+<script>
+var searchText;
+var urlString;
+
+function searchKeyPress(e) {
+    // look for window.event in case event isn't passed in
+    e = e || window.event;
+    if (e.keyCode === 13) {
+        document.getElementById('btnSearch').click();
+        return false;
+    }
+    return true;
+}
+
+function search() {
+    searchText = document.getElementById('txtSearch').value;
+    //console.log(searchText);
+    urlString = "http://api.us.socrata.com/api/catalog/v1?q=" + searchText + "&only=datasets&limit=1000";
+    $('#catalog_table').dataTable({
+        destroy: true,
+        "ajax": {
+            "processing" : true,
+            "url": urlString,
+            "dataSrc" : "results"
+        },
+        "columns": [
+            { "data" : "resource.name" },
+            { "data" : "resource.description" },
+            { "data" : "classification.categories" },
+            { "data" : "classification.tags" },
+            { "data" : "link",
+                    "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+                    $(nTd).html("<a href='" + oData.link + "'>" + oData.link + "</a>");
+                }
+                }
+        ]
+    });
+}
+
+</script>
+</body>
+</html>
