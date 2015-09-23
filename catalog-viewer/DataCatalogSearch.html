@@ -57,6 +57,7 @@ div.main_content {width:1200px;
 <script>
 var searchText;
 var urlString;
+hideTable();
 
 function searchKeyPress(e) {
     // look for window.event in case event isn't passed in
@@ -91,6 +92,17 @@ function search() {
                 }
         ]
     });
+    showTable();
+}
+
+function hideTable() {
+    var lTable = document.getElementById("catalog_table");
+    lTable.style.display =  "none";
+}
+
+function showTable() {
+    var lTable = document.getElementById("catalog_table");
+    lTable.style.display =  "table";
 }
 
 </script>

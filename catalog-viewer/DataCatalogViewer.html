@@ -105,9 +105,21 @@ function OnChange(dropdown) {
     var myindex  = dropdown.selectedIndex;
     domain = dropdown.options[myindex].value;
     loadDataIntoTable(domain);
+    showTable();
     return true;
 }
 
+function hideTable() {
+    var lTable = document.getElementById("catalog_table");
+    lTable.style.display =  "none";
+}
+
+function showTable() {
+    var lTable = document.getElementById("catalog_table");
+    lTable.style.display =  "table";
+}
+
+hideTable();
 loadDropdown($('select#domain').get(0), 'http://api.us.socrata.com/api/catalog/v1/domains', 'domain');
 
 </script>
