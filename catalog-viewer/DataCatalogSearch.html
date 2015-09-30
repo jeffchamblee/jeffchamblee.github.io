@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Data Catalog Search</title>
+<title>Search Data Catalogs</title>
 <style type="text/css">
 div.main_content {width:1200px;
                   margin:1% auto;
@@ -27,7 +27,22 @@ div.main_content {width:1200px;
     <div> 
         <span id="prompt" class="form-field">Search for: </span>
         <input type="text" id="txtSearch" onkeypress="return searchKeyPress(event);" class="form-field"/>
-        <input type="button" id="btnSearch" Value="Search" onclick="search();" />
+	
+        <span id="prompt" class="form-field">Domain: </span>
+        <select id="domain" name="selectDomain" onchange='onChangeDomain(this);' class="form-field">
+		  <option value="all">All Domains
+        <!-- CONTENT IS DELIVERED BY JSON -->
+        </select>
+
+        <span id="prompt" class="form-field">Resource Types: </span>
+        <select id="resourceType" name="selectResourceType" onchange='onChangeResourceType(this);' class="form-field">
+		  <option value="all">All Types
+		  <option value="datasets">Datasets
+		  <option value="files">Files
+		  <option value="external">External
+		  <option value="maps">Maps
+        </select>
+        <input type="button" id="btnSearch" Value="Search" onclick="onSearch();" />
     </div>
 
     <table id="catalog_table" class="display" data-page-length='25'>
@@ -54,8 +69,6 @@ div.main_content {width:1200px;
     </tfoot>
 </table>
 </div>
-<!-- dataCatalogSearch -->
 <script type="text/javascript" charset="utf-8" src="js/dataCatalogSearch.js"></script>
-
 </body>
 </html>
