@@ -62,6 +62,7 @@ function loadResultsIntoTable() {
         "columns": [
             { "data" : "resource.name" },
             { "data" : "resource.description" },
+            { "data" : "resource.type" },
             { "data" : "classification.categories" },
             { "data" : "classification.tags" },
             { "data" : "link",
