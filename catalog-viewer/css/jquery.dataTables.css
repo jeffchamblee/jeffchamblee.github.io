@@ -10,6 +10,11 @@ table.dataTable {
   /*
    * Header and footer styles
    */
+ tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+  }
   /*
    * Body styles
    */

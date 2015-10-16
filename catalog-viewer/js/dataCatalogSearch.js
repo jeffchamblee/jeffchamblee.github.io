@@ -72,9 +72,8 @@ function loadResultsIntoTable() {
                 }
         ]
     });
+    makeColumnsSearchable();
 }
-
-
 
 function showTable() {
     var lTable = document.getElementById("catalog_table");
@@ -102,6 +101,34 @@ function onSearch() {
     loadResultsIntoTable();
     showTable();
     return true;
+}
+
+function makeColumnsSearchable() {
+    // Setup - add a text input to each footer cell
+    $('#catalog_table tfoot th').each( function () {
+        var title = $('#catalog_table thead th').eq( $(this).index() ).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#catalog_table').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value) {
+                that.search(this.value).draw();
+            }
+        } );
+    } );
+    
+    //move footers to the top
+  var row = $('#catalog_table tfoot tr');
+  row.find('th').each(function(){
+    $(this).css('padding', 8);
+  });
+  $('#catalog_table thead').append(row);
 }
 
 //on startup, hide results table and load domain dropdown
