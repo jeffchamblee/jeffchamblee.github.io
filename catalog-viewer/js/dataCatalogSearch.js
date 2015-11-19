@@ -19,6 +19,9 @@ function loadDomainDropdown(dropdown, url, nameattr) {
 }
 
 function getUrlString() {
+    var searchString;
+    var domainString;
+    var resourceTypeString;
     var domain = document.getElementById("domain").value;
     var resourceType = document.getElementById("resourceType").value;
     var searchText = document.getElementById('txtSearch').value;
@@ -37,7 +40,7 @@ function getUrlString() {
     } else {
         resourceTypeString = "&only=" + resourceType;
     }
-    return "http://api.us.socrata.com/api/catalog/v1?limit=1000" + searchString + domainString + resourceTypeString;	
+    return "http://api.us.socrata.com/api/catalog/v1?limit=1000" + searchString + domainString + resourceTypeString;
 }
 
 function searchKeyPress(e) {
@@ -48,6 +51,34 @@ function searchKeyPress(e) {
         return false;
     }
     return true;
+}
+
+function makeColumnsSearchable() {
+    // Setup - add a text input to each footer cell
+    $('#catalog_table tfoot th').each(function () {
+        var title = $('#catalog_table thead th').eq($(this).index()).text();
+        $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+    });
+
+    // DataTable
+    var table = $('#catalog_table').DataTable();
+
+    // Apply the search
+    table.columns().every(function () {
+        var that = this;
+        $('input', this.footer()).on('keyup change', function () {
+            if (that.search() !== this.value) {
+                that.search(this.value).draw();
+            }
+        });
+    });
+
+    //move footers to the top
+    var row = $('#catalog_table tfoot tr');
+    row.find('th').each(function () {
+        $(this).css('padding', 8);
+    });
+    $('#catalog_table thead').append(row);
 }
 
 function loadResultsIntoTable() {
@@ -101,34 +132,6 @@ function onSearch() {
     loadResultsIntoTable();
     showTable();
     return true;
-}
-
-function makeColumnsSearchable() {
-    // Setup - add a text input to each footer cell
-    $('#catalog_table tfoot th').each( function () {
-        var title = $('#catalog_table thead th').eq( $(this).index() ).text();
-        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-    } );
- 
-    // DataTable
-    var table = $('#catalog_table').DataTable();
- 
-    // Apply the search
-    table.columns().every( function () {
-        var that = this;
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value) {
-                that.search(this.value).draw();
-            }
-        } );
-    } );
-    
-    //move footers to the top
-  var row = $('#catalog_table tfoot tr');
-  row.find('th').each(function(){
-    $(this).css('padding', 8);
-  });
-  $('#catalog_table thead').append(row);
 }
 
 //on startup, hide results table and load domain dropdown
