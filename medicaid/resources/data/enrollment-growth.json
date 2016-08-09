@@ -1,0 +1,245 @@
+[
+
+{
+
+    "enrollment_percent_non_expansion": "0.0478",
+    "enrollment_percent_total": "0.1363",
+    "year_month_label": "July 2014",
+    "date": "2014-07-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2025"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0514",
+    "enrollment_percent_total": "0.1486",
+    "year_month_label": "Aug 2014",
+    "date": "2014-08-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2209"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0613",
+    "enrollment_percent_total": "0.1593",
+    "year_month_label": "Sept 2014",
+    "date": "2014-09-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2316"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0677",
+    "enrollment_percent_total": "0.1676",
+    "year_month_label": "Oct 2014",
+    "date": "2014-10-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2415"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0695",
+    "enrollment_percent_total": "0.1753",
+    "year_month_label": "Nov 2014",
+    "date": "2014-11-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2545"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0734",
+    "enrollment_percent_total": "0.1857",
+    "year_month_label": "Dec 2014",
+    "date": "2014-12-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2701"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0783",
+    "enrollment_percent_total": "0.1929",
+    "year_month_label": "Jan 2015",
+    "date": "2015-01-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2614"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0801",
+    "enrollment_percent_total": "0.2028",
+    "year_month_label": "Feb 2015",
+    "enrollment_child": "29468113",
+    "date": "2015-02-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2699"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0859",
+    "enrollment_percent_total": "0.2119",
+    "year_month_label": "Mar 2015",
+    "enrollment_child": "29856485",
+    "date": "2015-03-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2808"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0883",
+    "enrollment_percent_total": "0.2132",
+    "year_month_label": "Apr 2015",
+    "enrollment_child": "29610738",
+    "date": "2015-04-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2815"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0945",
+    "enrollment_percent_total": "0.2218",
+    "year_month_label": "May 2015",
+    "enrollment_child": "29780419",
+    "date": "2015-05-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2915"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0981",
+    "enrollment_percent_total": "0.2266",
+    "year_month_label": "June 2015",
+    "enrollment_child": "29811502",
+    "date": "2015-06-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2969"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.0993",
+    "enrollment_percent_total": "0.2287",
+    "year_month_label": "July 2015",
+    "enrollment_child": "29842979",
+    "date": "2015-07-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.2998"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.1021",
+    "enrollment_percent_total": "0.2355",
+    "year_month_label": "Aug 2015",
+    "enrollment_child": "29897621",
+    "date": "2015-08-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.3087"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.1006",
+    "enrollment_percent_total": "0.2331",
+    "year_month_label": "Sept 2015",
+    "enrollment_child": "29901423",
+    "date": "2015-09-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.3059"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.1022",
+    "enrollment_percent_total": "0.2360",
+    "year_month_label": "Oct 2015",
+    "enrollment_child": "29899846",
+    "date": "2015-10-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.3091"
+},
+{
+
+    "enrollment_percent_non_expansion": "0.1010",
+    "enrollment_percent_total": "0.2529",
+    "year_month_label": "Nov 2015",
+    "enrollment_child": "29843609",
+    "date": "2015-11-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.3396"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.1026",
+    "enrollment_percent_total": "0.2573",
+    "year_month_label": "Dec 2015",
+    "enrollment_child": "29814437",
+    "date": "2015-12-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.3441"
+
+},
+{
+
+    "enrollment_percent_non_expansion": "0.1038",
+    "enrollment_percent_total": "0.2654",
+    "year_month_label": "Jan 2016",
+    "enrollment_child": "29904165",
+    "date": "2016-01-01T00:00:00",
+	"states_reporting": "49",
+	"states_reporting_child": "46",
+    "enrollment_percent_expansion": "0.3554"
+
+},
+
+{
+    "enrollment_percent_non_expansion": "0.1091",
+    "enrollment_percent_total": "0.2662",
+    "year_month_label": "Feb 2016",
+    "enrollment_child": "34922588",
+    "date": "2016-02-01T00:00:00",
+    "states_reporting": "49",
+	"states_reporting_child": "47",
+    "enrollment_percent_expansion": "0.3536"
+},
+{
+    "enrollment_percent_non_expansion": "0.1122",
+    "enrollment_percent_total": "0.2664",
+    "year_month_label": "Mar 2016",
+    "enrollment_child": "34929029",
+    "date": "2016-03-01T00:00:00",
+    "states_reporting": "49",
+	"states_reporting_child": "47",
+    "enrollment_percent_expansion": "0.3522"
+}
+
+]

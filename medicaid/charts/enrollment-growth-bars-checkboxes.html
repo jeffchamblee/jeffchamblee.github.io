@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script type="text/javascript" src="//www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="//www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart']}]}"></script>
+    <script type="text/javascript" src="/resources/js/enrollment-growth-bars-checkboxes.js"></script>
+	<style>
+		#enrollment_checkboxes {
+			text-anchor: start;
+			font-family: Arial;
+			font-size: 13;
+		}
+   </style>
+  </head>
+  <body>
+    <title>Enrollment Growth Bars Checkboxes</title>
+	<p style="width: 660px">
+	The chart below displays the percentage growth in total Medicaid and CHIP enrollment as compared to the period prior to the start of first Marketplace open enrollment period (July-Sept. 2013) for states that reported relevant data for both periods. The total number of states that reported relevant data for each period is included. The enrollment figures are point-in-time counts (as of the last day of the month) and include only enrollees who received comprehensive benefit packages.  Select the check boxes below to display the percentage growth in total Medicaid and CHIP enrollment for states that had implemented the Medicaid expansion, as well as state that had not (at that point in time). 
+	</p>
+    <div id="enrollment_growth"></div>
+	<br/>
+   <div id="enrollment_checkboxes">
+       <input type="checkbox" id="showExpansionCheck">Show States with Expansion in Effect<br>
+       <input type="checkbox" id="showNonExpansionCheck">Show Non-Expansion States<br>
+   </div>
+  </body>
+</html>
