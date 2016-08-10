@@ -93,7 +93,7 @@ var enrollmentStackedBar = {
         var options = {
             chartArea: {left: 100, top: 20, right: 200, bottom: 60},
             colors: ['#d17d28','#026666', 'black'],
-            vAxis: {viewWindowMode: 'explicit', viewWindow: {max: 48, min: 44}, format: '#'},
+            vAxis: {viewWindowMode: 'explicit', viewWindow: {max: 51, min: 45}, format: '#'},
             backgroundColor: 'transparent',
             width: 700,
             height: 200
