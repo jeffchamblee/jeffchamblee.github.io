@@ -28,9 +28,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <a href="#" class="w3-padding w3-text-teal">HOME</a> 
   <a href="#" class="w3-padding">ABOUT</a> 
-  <a href="#" class="w3-padding">OPEN DATA</a> 
-  <a href="#" class="w3-padding">WEB APPLICATION SECURITY</a>
-  <a href="#" class="w3-padding">DATA VISUALIZATION</a>
+  <a href="/catalog-viewer/SocrataDomains.html" class="w3-padding">OPEN DATA</a> 
+  <a href="/owasp-quiz/OWASPQuiz1.html" class="w3-padding">WEB APPLICATION SECURITY</a>
+  <a href="/medicaid/charts/index.html" class="w3-padding">DATA VISUALIZATION</a>
   <a href="#" class="w3-padding">CONTACT</a>
    
   <div class="w3-section w3-padding-top w3-large">
@@ -57,8 +57,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <span class="w3-margin-right">Filter:</span> 
       <button class="w3-btn">ALL</button>
       <button class="w3-btn w3-white" id="open-data"><i class="fa fa-diamond w3-margin-right"></i>Open Data</button>
-      <button class="w3-btn w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Web Application Security</button>
-      <button class="w3-btn w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Data Visualization</button>
+      <button class="w3-btn w3-white w3-hide-small" id="web-app-security"><i class="fa fa-photo w3-margin-right"></i>Web Application Security</button>
+      <button class="w3-btn w3-white w3-hide-small" id="data-viz"><i class="fa fa-map-pin w3-margin-right"></i>Data Visualization</button>
     </div>
   </header>
   
@@ -184,6 +184,17 @@ function w3_close() {
 $("#open-data").click(function(){
     window.location.href = "/catalog-viewer/SocrataDomains.html";
 }); 
+
+$("#web-app-security").click(function(){
+    window.location.href = "/owasp-quiz/OWASPQuiz1.html";
+}); 
+
+
+$("#data-viz").click(function(){
+    window.location.href = "/medicaid/charts/index.html";
+}); 
+
+
 </script>
 
 </body>
