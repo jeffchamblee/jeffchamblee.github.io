@@ -39,7 +39,7 @@ var enrollmentGrowth = {
         return dataTable;
     },
     display: function (dataTable) {
-        var chart = new google.visualization.LineChart(document.getElementById('enrollment_growth'));
+        var chart = new google.visualization.LineChart(document.getElementById('enrollment_child'));
         var columns = [];
         var series = [];
         var defaultSeries = [3];
