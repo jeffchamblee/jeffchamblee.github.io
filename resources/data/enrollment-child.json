@@ -2,18 +2,21 @@
     {
         "description" : "All states reporting",
         "states_reporting" : 48,
+        "total_enrollment" : "72000000",
         "adult_enrollment" : "37000000",
         "child_enrollment" : "35000000"
     },
     {
         "description" : "Expansion states",
         "states_reporting" : 30,
+        "total_enrollment" : "61000000",
         "adult_enrollment" : "29000000",
         "child_enrollment" : "22000000"
     },
     {
         "description" : "Non-expansion states",
         "states_reporting" : 18,
+        "total_enrollment" : "21000000",
         "adult_enrollment" : "8000000",
         "child_enrollment" : "13000000"
     }
