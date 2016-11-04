@@ -11,14 +11,6 @@ var enrollmentChild = {
                     throw "Need at least 3 rows of enrollment data";
                 }
                 //console.log(JSON.stringify(jsonData));
-                enrollmentChild.showAll = jsonData;
-
-                enrollmentChild.showExp = jsonData.slice(0, 2);
-                //console.log(JSON.stringify(enrollmentChild.showExp));
-
-                enrollmentChild.showNexp = jsonData.slice(0, 1).concat(jsonData.slice(2,3));
-                //console.log(JSON.stringify(enrollmentChild.showNexp));
-
                 enrollmentChild.showTotal = jsonData.slice(0, 1);
                 //console.log(JSON.stringify(enrollmentChild.showTotal));
 
@@ -44,7 +36,7 @@ var enrollmentChild = {
         var count = jsonData.length;
         for (index = 0; index < count; index++) {
             record = jsonData[index];
-            dataTable.addRow([record.description, parseInt(record.states_reporting) + ' states', Number(record.child_enrollment), Number(record.adult_enrollment), 0, Number(record.total_enrollment)]);
+            dataTable.addRow([record.description, '(' + parseInt(record.states_reporting) + ' states)', Number(record.child_enrollment), Number(record.adult_enrollment), 0, Number(record.total_enrollment)]);
         }
         return dataTable;
     },
@@ -83,34 +75,6 @@ var enrollmentChild = {
         initCheckboxHandlers();
     }
 };
-
-function initCheckboxHandlers() {
-    var showExpansionCheck = document.getElementById("showExpansionCheck");
-    showExpansionCheck.onclick = function () {
-        selectAndDisplay();
-    };
-    var showNonExpansionCheck = document.getElementById("showNonExpansionCheck");
-    showNonExpansionCheck.onclick = function () {
-        selectAndDisplay();
-    };
-    function selectAndDisplay() {
-        var dataset = null;
-        if (showExpansionCheck.checked) {
-            if (showNonExpansionCheck.checked) {
-                dataset = enrollmentChild.showAll;
-            } else {
-                dataset = enrollmentChild.showExp;
-            }
-        } else {
-            if (showNonExpansionCheck.checked) {
-                dataset = enrollmentChild.showNexp;
-            } else {
-                dataset = enrollmentChild.showTotal;
-            }
-        }
-        enrollmentChild.display(enrollmentChild.createDataTable(dataset));
-    }
-}
 
 google.load('visualization', 'current', {packages: ['corechart']});
 enrollmentChild.getData();
