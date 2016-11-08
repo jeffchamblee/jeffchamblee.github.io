@@ -64,21 +64,21 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
+    <div class="w3-third w3-container w3-margin-bottom" id="open-data-div">
       <div class="w3-container w3-white">
         <p><b>Open Data</b></p>
         <p>View and search over 200 Socrata open data websites.</p>
       </div>
             <img src="/images/Socrata Domains.jpg" alt="Open Data" style="width:100%" class="w3-hover-opacity">
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
+    <div class="w3-third w3-container w3-margin-bottom" id="web-app-security-div">
       <div class="w3-container w3-white">
         <p><b>Web Application Security</b></p>
         <p>Test your knowledge of web application security.</p>
       </div>
       <img src="/images/OWASP Quiz 1.jpg" alt="Web Application Security" style="width:100%" class="w3-hover-opacity">
     </div>
-    <div class="w3-third w3-container">
+    <div class="w3-third w3-container" id="data-viz-div">
       <div class="w3-container w3-white">
         <p><b>Data Visualizations</b></p>
         <p>Browse a collection of data visualizations.</p>
@@ -181,6 +181,7 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 
+//buttons
 $("#open-data").click(function(){
     window.location.href = "/catalog-viewer/SocrataDomains.html";
 }); 
@@ -192,6 +193,18 @@ $("#web-app-security").click(function(){
 
 $("#data-viz").click(function(){
     window.location.href = "/medicaid/charts/index.html";
+}); 
+
+//divs/images
+$("#open-data-div").click(function(){
+    window.location.href = "/catalog-viewer/SocrataDomains.html";
+}); 
+
+$("#web-app-security-div").click(function(){
+    window.location.href = "/catalog-viewer/SocrataDomains.html";
+}); 
+$("#data-viz-div").click(function(){
+    window.location.href = "/catalog-viewer/SocrataDomains.html";
 }); 
 
 
