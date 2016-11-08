@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Health Care Quality Indicators: Pennsylvania</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Theme -->
+        <link href="/resources/css/dx.common.css" rel="stylesheet" />
+
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="/state_profile_v2/DevExtreme/js/jquery-1.11.3.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+		<!--
+        <script src="/state_profile_v2/DevExtreme/js/jquery-2.1.4.min.js"></script>
+		-->
+	    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!--<![endif]-->
+        <script src="/resources/js/dx.globalize.min.js"></script>
+        <script src="/resources/js/dx.chartjs.js"></script>
+        <script src="/resources/js/linear-gauge.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				var stateRecord1 = {
+					quality_measure: "Percentage of Women Who Had a Mammogram to Screen for Breast Cancer",
+					rate: 63.7,
+					percentile_25th: 46.2,
+					median: 52.5,
+					percentile_75th: 59.2
+				};
+
+				var stateRecord2 = {
+					quality_measure: "Percentage of Women Screened for Cervical Cancer",
+					rate: 35.2,
+					percentile_25th: 50.9,
+					median: 57.7,
+					percentile_75th: 66.2
+				};
+
+				var stateRecord3 = {
+					quality_measure: "Percentage with Diabetes (Type 1 or Type 2) Who Had a Hemoglobin A1c (HbA1c) Test",
+					rate: 62.1,
+					percentile_25th: 32.2,
+					median: 55.5,
+					percentile_75th: 78.2
+				};
+				var stateRecordList = [stateRecord1, stateRecord2, stateRecord3];
+				//var stateRecordList = [stateRecord3];
+				var index;
+				for (index = 0; index < stateRecordList.length; index += 1) {
+					gauge.draw("#gauge" + index, stateRecordList[index], "Pennsylvania");
+				}
+			});
+		</script>
+        
+    </head>
+    <body class="dx-viewport" id="dx-viewport">
+        <style>
+#gauge-container {
+    text-align: center;
+    width: 100%;
+}
+
+.long-title {
+    text-align: left;
+}
+
+.gauge {
+    height: 120px;
+	width: 500px;
+}
+
+</style>
+        <div class="header"></div>
+        <div class="line"></div>
+        <div class="title min-font">
+            <h1>Health Care Quality Indicators: Pennsylvania</h1>
+        </div>
+        <div class="content containerPlaceholder">
+            <div class="pane dx-theme-desktop">
+                    <div id="full">
+					<div id="gauge-container">
+                    <div class="long-title"><h3>Percentage of Women Who Had a Mammogram to Screen for Breast Cancer</h3></div>
+					<div class="gauge" id="gauge0"></div>
+                    <div class="long-title"><h3>Percentage of Women Screened for Cervical Cancer</h3></div>
+					<div class="gauge" id="gauge1"></div>
+                    <div class="long-title"><h3>Percentage with Diabetes (Type 1 or Type 2) Who Had a Hemoglobin A1c (HbA1c) Test</h3></div>
+					<div class="gauge" id="gauge2"></div>
+					<div class="gauge" id="gauge3"></div>
+					</div>
+					</div>
+                    <div class="credits"></div>
+            </div>
+        </div>
+    </body>
+</html>
