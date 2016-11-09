@@ -47,7 +47,6 @@ var enrollmentStackedBar = {
             //title : 'Total Monthly Medicaid and CHIP Enrollment',
             //legend: 'top',
             chartArea: {left: 100, top: 20, right: 200, bottom: 140},
-            colors: ['#046791','#026666', 'black'],
             seriesType: 'bars',
             vAxis: {maxValue: 75000000},
             series: {2: {visibleInLegend: false}},
