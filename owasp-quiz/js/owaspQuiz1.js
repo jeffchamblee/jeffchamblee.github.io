@@ -1,7 +1,7 @@
 
 
 var quizApp = quizApp || {}
-var SOCRATA_DATA_SET_URL = "https://opendata.socrata.com/resource/m2du-uiwt.json";
+var SOCRATA_DATA_SET_URL = "https://opendata.socrata.com/resource/hud6-az2j.json";
 var SOCRATA_QUERY_SELECT = "?$select=question, option_1, option_2, option_3, option_4, answer";
 var SUBTITLE = '70 total questions';
 
