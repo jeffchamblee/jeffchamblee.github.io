@@ -46,7 +46,7 @@ var enrollmentChild = {
             isStacked: true,
             seriesType: 'bars',
             chartArea: {left: 80, top: 40, right: 200, bottom: 60},
-            colors: ['#17415F', '#ca4d22', '#026666', '#d17d28', '#066792', '#555555'],
+            colors: ['#17415F', '#026666', '#ca4d22', '#d17d28', '#066792', '#555555'],
             annotations: {textStyle: {color: 'black'}, domain: {stem: {length: -40, color: 'none'}}, datum: {stem: {length: 5, color: 'none'}}},
             series: {2: {visibleInLegend: false}},
             width: 700,
@@ -72,7 +72,6 @@ var enrollmentChild = {
         //console.log(JSON.stringify(columns));
         view.setColumns(columns);
         chart.draw(view, options);
-        initCheckboxHandlers();
     }
 };
 
