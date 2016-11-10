@@ -1,4 +1,5 @@
-var domain = "data.cms.gov";
+"use strict";
+
 var urlString;
 
 function loadDomainDropdown(dropdown, url, nameattr) {
@@ -60,11 +61,10 @@ function makeColumnsSearchable() {
         $(this).html('<input type="text" placeholder="Search ' + title + '" />');
     });
 
-    // DataTable
-    var table = $('#catalog_table').DataTable();
+    var dataTable = $('#catalog_table').DataTable();
 
     // Apply the search
-    table.columns().every(function () {
+    dataTable.columns().every(function () {
         var that = this;
         $('input', this.footer()).on('keyup change', function () {
             if (that.search() !== this.value) {
@@ -98,22 +98,28 @@ function loadResultsIntoTable() {
             { "data" : "classification.tags" },
             { "data" : "link",
                     "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+            {"data": "resource.name"},
+            {"data": "resource.description"},
+            {"data": "resource.type"},
+            {"data": "classification.categories"},
+            {"data": "classification.tags"},
+            {"data": "link",
                     $(nTd).html("<a href='" + oData.link + "'>" + oData.link + "</a>");
-                }
-                }
+            }
+            }
         ]
     });
-    makeColumnsSearchable();
+    //makeColumnsSearchable();
 }
 
 function showTable() {
     var lTable = document.getElementById("catalog_table");
-    lTable.style.display =  "table";
+    lTable.style.display = "table";
 }
 
 function hideTable() {
     var lTable = document.getElementById("catalog_table");
-    lTable.style.display =  "none";
+    lTable.style.display = "none";
 }
 
 function onChangeDomain() {
