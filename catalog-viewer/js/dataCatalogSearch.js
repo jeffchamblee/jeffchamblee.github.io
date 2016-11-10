@@ -67,9 +67,12 @@ function makeColumnsSearchable() {
     dataTable.columns().every(function () {
         var that = this;
         $('input', this.footer()).on('keyup change', function () {
+            /*
+            //makes page search fail
             if (that.search() !== this.value) {
                 that.search(this.value).draw();
             }
+            */
         });
     });
 
@@ -83,27 +86,22 @@ function makeColumnsSearchable() {
 
 function loadResultsIntoTable() {
     urlString = getUrlString();
+    //console.log(urlString);
     $('#catalog_table').dataTable({
         destroy: true,
         "ajax": {
-            "processing" : true,
+            "processing": true,
             "url": urlString,
-            "dataSrc" : "results"
+            "dataSrc": "results"
         },
         "columns": [
-            { "data" : "resource.name" },
-            { "data" : "resource.description" },
-            { "data" : "resource.type" },
-            { "data" : "classification.categories" },
-            { "data" : "classification.tags" },
-            { "data" : "link",
-                    "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
             {"data": "resource.name"},
             {"data": "resource.description"},
             {"data": "resource.type"},
             {"data": "classification.categories"},
             {"data": "classification.tags"},
             {"data": "link",
+                    "fnCreatedCell": function (nTd, sData, oData) {
                     $(nTd).html("<a href='" + oData.link + "'>" + oData.link + "</a>");
             }
             }
