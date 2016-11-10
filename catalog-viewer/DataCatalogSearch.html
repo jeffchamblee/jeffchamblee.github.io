@@ -35,16 +35,16 @@ div.main_content {width:1200px;
 
     <div> 
         <span id="prompt" class="form-field">Search for: </span>
-        <input type="text" id="txtSearch" onkeypress="return searchKeyPress(event);" class="form-field"/>
+        <input type="text" id="txtSearch" onkeypress="return dataCatalogSearch.searchKeyPress(event);" class="form-field"/>
 	
         <span id="prompt" class="form-field">Domain: </span>
-        <select id="domain" name="selectDomain" onchange='onChangeDomain(this);' class="form-field">
+        <select id="domain" name="selectDomain" onchange='dataCatalogSearch.onChangeDomain(this);' class="form-field">
 		  <option value="all">All Domains
         <!-- CONTENT IS DELIVERED BY JSON -->
         </select>
 
         <span id="prompt" class="form-field">Resource Types: </span>
-        <select id="resourceType" name="selectResourceType" onchange='onChangeResourceType(this);' class="form-field">
+        <select id="resourceType" name="selectResourceType" onchange='dataCatalogSearch.onChangeResourceType(this);' class="form-field">
 		  <option value="all">All Types
 		  <option value="calendars">Calendars
 		  <option value="charts">Charts
@@ -57,7 +57,7 @@ div.main_content {width:1200px;
 		  <option value="maps">Maps
 		  <option value="pulses">Pulses
         </select>
-        <input type="button" id="btnSearch" Value="Search" onclick="onSearch();" />
+        <input type="button" id="btnSearch" Value="Search" onclick="dataCatalogSearch.onSearch();" />
     </div>
 
     <table id="catalog_table" class="display" data-page-length='25'>
