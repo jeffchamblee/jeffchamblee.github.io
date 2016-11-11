@@ -2,8 +2,8 @@
 
 var columnSearch = {
     makeColumnsSearchable: function () {
-        // Setup - add a text input to each footer cell
-        $('#catalog_table tfoot th').each(function () {
+        // Setup - add a text input to the first footer cell
+        $('#catalog_table tfoot th:first').each(function () {
             var title = $('#catalog_table thead th').eq($(this).index()).text();
             $(this).html('<input type="text" class="colSearch" placeholder="Search ' + title + '" />');
         });
@@ -46,7 +46,6 @@ var socrataDomainFinder = {
         ]       
     } );
     columnSearch.makeColumnsSearchable();
-
     }
 }
 
