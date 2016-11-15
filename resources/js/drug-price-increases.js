@@ -11,7 +11,7 @@ var drugPriceIncrease = {
         this.endDate = dateFormatter.format(dateRangeSelector.getEndDate());
         console.log("Start Date: " + this.startDate);
         console.log("End Date: " + this.endDate);
-		var midnight = "T00:00:00.000"
+        var midnight = "T00:00:00.000"
         var startUrl = this.getQueryUrl(this.startDate + midnight);
         var endUrl = this.getQueryUrl(this.endDate + midnight);
         //$("#status1").html("Reading drug prices for ");
@@ -101,26 +101,30 @@ var drugPriceIncrease = {
         var percent = resultList.length / this.endPriceList.length * 100.0;
         console.log("Records matched: " + resultList.length + " (" + percent.toFixed(2) + " percent)");
         $("#status3").html("Records matched: " + resultList.length + " (" + percent.toFixed(2) + " percent)");
-        //sort by percent increase
-        resultList.sort(function (a, b) { return b.pct_increase - a.pct_increase;});
-        var index;
-        var record;
-        for (index = 0; index < resultList.length; index++) {
-            record = resultList[index];
-            $("#drug_price_increase_table").append(
-            "<tr class=\"price_increase\">" + "\n\t\t" +
-            "<td>" + (record.description) + "</td>" + "\n\t\t" +
-            "<td>" + (record.ndc) + "</td>" + "\n\t\t" +
-            "<td>" + (record.pricing_unit) + "</td>" + "\n\t\t" +
-            "<td class=\"right_align\">" + (record.begin_price) + "</td>" + "\n\t\t" +
-            "<td class=\"right_align\">" + (record.end_price) + "</td>" + "\n\t\t" +
-            "<td class=\"right_align\">" + (record.increase.toFixed(2)) + "</td>" + "\n\t\t" +
-            "<td class=\"right_align\">" + (record.pct_increase.toPrecision(4)) + "</td>" + "\n\t\t" +
-            "</tr>" + "\n"
-            );
+        if (resultList.length > 0) {
+            $("#drug_price_increase_table").show();
+            //sort by percent increase
+            resultList.sort(function (a, b) { return b.pct_increase - a.pct_increase;});
+            var index;
+            var record;
+            for (index = 0; index < resultList.length; index++) {
+                record = resultList[index];
+                $("#drug_price_increase_table").append(
+                "<tr class=\"price_increase\">" + "\n\t\t" +
+                "<td>" + (record.description) + "</td>" + "\n\t\t" +
+                "<td>" + (record.ndc) + "</td>" + "\n\t\t" +
+                "<td>" + (record.pricing_unit) + "</td>" + "\n\t\t" +
+                "<td class=\"right_align\">" + (record.begin_price) + "</td>" + "\n\t\t" +
+                "<td class=\"right_align\">" + (record.end_price) + "</td>" + "\n\t\t" +
+                "<td class=\"right_align\">" + (record.increase.toFixed(2)) + "</td>" + "\n\t\t" +
+                "<td class=\"right_align\">" + (record.pct_increase.toPrecision(4)) + "</td>" + "\n\t\t" +
+                "</tr>" + "\n"
+                );
+            }
         }
-
     }
 };
+
+$("#drug_price_increase_table").hide();
 
 //drugPriceIncrease.main();
