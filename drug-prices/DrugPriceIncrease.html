@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Drug Price Increases</title>
+<style type="text/css">
+div.main_content {width:1200px;
+                  margin:1% auto;
+                  border:solid 1px #969494;}
+
+</style>
+<!-- JavaScript -->
+<script src="//cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/alertify.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/default.min.css"/>
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/semantic.min.css"/>
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
+
+
+</head>
+<body>
+<div id="nav">
+<ul>
+  <li><a class="navbar" href="../index.html">Home</a></li>
+</ul>
+</div>
+<div class="main_content">
+
+	<div class="page-title">
+		<h1>Drugs with the Highest Price Increases</h1>
+		<p>Source: <a href="https://www.medicaid.gov/medicaid/prescription-drugs/pharmacy-pricing/index.html">National Average Drug Acquisition Cost</a></p>
+		<p id="status1"></p>
+		<p id="status2"></p>
+		<p id="status3"></p>
+		<label for="from">From</label>
+        <input type="text" id="datepicker_start" name="from">
+        <label for="to">to</label>
+        <input type="text" id="datepicker_end" name="to">
+		<button onclick="drugPriceIncrease.main()">Find Drugs with Highest Price Increases</button>
+	</div>
+<table id="drug_price_increase_table" class="display" data-page-length='20'>
+    <thead>
+<tr>
+    <th>Description</th>
+    <th>NDC</th>
+    <th>Unit</th>
+    <th>Start Price</th>
+    <th>End Price</th>
+    <th>Dollar Increase</th>
+    <th>Percent Increase</th>
+</tr>
+    </thead>
+    <tbody>
+    <!-- CONTENT IS DELIVERED BY JSON -->
+    </tbody>
+    <tfoot>
+<tr>
+    <th>Description</th>
+    <th>NDC</th>
+    <th>Unit</th>
+    <th>Start Price</th>
+    <th>End Price</th>
+    <th>Dollar Increase</th>
+    <th>Percent Increase</th>
+</tr>
+    </tfoot>
+</table>
+</div>
+<!-- JQuery DatePicker -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="/resources/js/jquery.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="/resources/js/date-range-selector.js"></script>
+<link rel="stylesheet" type="text/css" href="/resources/css/navbar.css">
+<link rel="stylesheet" type="text/css" href="/resources/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf-8" src="/resources/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf-8" src="/resources/js/drug-price-increases.js"></script>
+</body>
+</html>

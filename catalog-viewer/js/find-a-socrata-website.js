@@ -38,12 +38,12 @@ var socrataDomainFinder = {
         },
         "columns": [
             { "data" : "domain",
-                    "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+                    "fnCreatedCell": function (nTd, sData, oData) {
                     $(nTd).html("<a href='//" + oData.domain + "'>" + oData.domain + "</a>");
                 }
             },
             { "data" : "count" },
-        ]       
+        ]
     } );
     columnSearch.makeColumnsSearchable();
     }
