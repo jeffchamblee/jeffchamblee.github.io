@@ -2,7 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Drug Price Increases</title>
+
+<meta name="DCTERMS.title" content="Drug Price Increases"/>
+<meta name="description" content="Find drugs with highest price increases over any time period. Drug prices are based on Medicaid NADAC survey of the purchase prices of all covered outpatient drugs by retail community pharmacies."/>
+<meta name="DCTERMS.description" content="Find drugs with highest price increases over any time period. Drug prices are based on Medicaid NADAC survey of the purchase prices of all covered outpatient drugs by retail community pharmacies."/>
+<meta name="keywords" content="drug price increases, NADAC, National Average Drug Acquisition Cost, medicaid"/>
+<meta name="DCTERMS.subject" content="drug price increases, NADAC, National Average Drug Acquisition Cost, medicaid"/>
+<meta name="DCTERMS.language" content="en-us" />
+
 <style type="text/css">
 div.main_content {width:1200px;
                   margin:1% auto;
@@ -37,10 +46,10 @@ div.main_content {width:1200px;
 		<p id="status1"></p>
 		<p id="status2"></p>
 		<p id="status3"></p>
-		<label for="from">From</label>
-        <input type="text" id="datepicker_start" name="from">
-        <label for="to">to</label>
-        <input type="text" id="datepicker_end" name="to">
+		<label for="datepicker_start">From</label>
+        <input type="text" id="datepicker_start" name="datepicker_start">
+        <label for="datepicker_end">to</label>
+        <input type="text" id="datepicker_end" name="datepicker_end">
 		<button onclick="drugPriceIncrease.main()">Find Drugs with Highest Price Increases</button>
 	</div>
 <table id="drug_price_increase_table" class="display" data-page-length='20'>
@@ -72,8 +81,6 @@ div.main_content {width:1200px;
 </table>
 </div>
 <!-- JQuery DatePicker -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

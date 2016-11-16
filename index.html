@@ -2,6 +2,14 @@
 <html>
 <head>
 <title>Jeff Chamblee</title>
+
+<meta name="DCTERMS.title" content="Jeff Chamblee"/>
+<meta name="description" content="Jeff Chamblee's gallery of drug price and open data."/>
+<meta name="DCTERMS.description" content="Jeff Chamblee's gallery of drug price and open data."/>
+<meta name="keywords" content="Jeff Chamblee, drug price increases, open data"/>
+<meta name="DCTERMS.subject" content="Jeff Chamblee, drug price increases, open data"/>
+<meta name="DCTERMS.language" content="en-us" />
+
 <link type="image/ico" href="/images/favicon.ico" rel="icon">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -33,6 +41,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="/catalog-viewer/DataCatalogSearch.html" class="w3-padding">OPEN DATA: FIND A DATASET</a> 
   <a href="/owasp-quiz/OWASPQuiz1.html" class="w3-padding">WEB APPLICATION SECURITY</a>
   <a href="/medicaid/charts/index.html" class="w3-padding">DATA VISUALIZATION</a>
+  <a href="/drug-prices/DrugPriceIncrease.html" class="w3-padding">DRUG PRICES</a>
   <!--
   <a href="#" class="w3-padding">CONTACT</a>
   -->
@@ -63,6 +72,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <button class="w3-btn w3-white" id="open-data-2"><i class="fa fa-diamond w3-margin-right"></i>Find a Dataset</button>
       <button class="w3-btn w3-white w3-hide-small" id="web-app-security"><i class="fa fa-photo w3-margin-right"></i>Web Application Security</button>
       <button class="w3-btn w3-white w3-hide-small" id="data-viz"><i class="fa fa-map-pin w3-margin-right"></i>Data Visualization</button>
+      <button class="w3-btn w3-white w3-hide-small" id="drug-price"><i class="fa fa-map-pin w3-margin-right"></i>Drug Prices</button>
     </div>
   </header>
   
@@ -100,6 +110,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </div>
       <img src="/images/Enrollment1.jpg" alt="Data Visualizations" style="width:100%" class="w3-hover-opacity">
     </div>
+    <div class="w3-third w3-container" id="drug-price-div">
+      <div class="w3-container w3-white">
+        <p><b>Drugs with Highest Price Increases</b></p>
+        <p>Find out which drugs had the highest price increases over any time period.</p>
+      </div>
+      <img src="/images/drug-price.png" alt="Data Visualizations" style="width:100%" class="w3-hover-opacity">
+    </div>
   </div>
 
   <!-- Pagination -->
@@ -115,8 +132,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 -->
  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <a name="about"></a>
-    <h4><b>About Me</b></h4>
+    <h4 id="about"><b>About Me</b></h4>
     <p>My name is Jeff Chamblee and I have extensive software development experience and exposure to a diverse range of organizations, projects, teams, and technology.  I am interested in agile and rapid development, data quality, data visualization and exploration.</p>
 
 <p>My specialties include: Designing and delivering valuable software solutions, managing and building effective teams, agile best practices, test-driven-development, improving software development process, technical documentation, and effective communication.</p>
@@ -193,6 +209,10 @@ $("#data-viz").click(function(){
     window.location.href = "/medicaid/charts/index.html";
 }); 
 
+$("#drug-price").click(function(){
+    window.location.href = "/medicaid/charts/index.html";
+}); 
+
 //divs/images
 $("#open-data-div").click(function(){
     window.location.href = "/catalog-viewer/SocrataDomains.html";
@@ -207,6 +227,9 @@ $("#web-app-security-div").click(function(){
 }); 
 $("#data-viz-div").click(function(){
     window.location.href = "/medicaid/charts/index.html";
+}); 
+$("#drug-price-div").click(function(){
+    window.location.href = "/drug-prices/DrugPriceIncrease.html";
 }); 
 
 
