@@ -1,19 +1,20 @@
 "use strict";
 
 var dateRangeSelector = {
-    startDate: "12/30/2015",
     from: $("#datepicker_start").datepicker({
 		//dateFormat:"yyyy-mm-dd",
         defaultDate: "-1M",
         minDate: "11/28/2013",
         maxDate: "-1d",
         changeMonth: true,
+        changeYear: true,
         numberOfMonths: 2
     }),
     to: $("#datepicker_end").datepicker({
         minDate: "12/05/2013",
         maxDate: "+2D",
         changeMonth: true,
+        changeYear: true,
         numberOfMonths: 2
     }),
     init: function () {

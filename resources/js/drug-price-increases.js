@@ -61,7 +61,7 @@ var drugPriceIncrease = {
     getJsonData: function (url) {
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.open("GET", url, false);
-        xmlHttp.setRequestHeader("X-App-Token", "VWC4E6UydFEcimXx7vZnja4z7");
+        xmlHttp.setRequestHeader("X-App-Token", "nQvhzxnwOVgLKyFGvRsMfruH4");
         xmlHttp.send();
         return jQuery.parseJSON(xmlHttp.responseText);
     },
@@ -86,7 +86,11 @@ var drugPriceIncrease = {
                         end_price: this.endPriceList[index1].nadac_per_unit,
                         begin_price: this.startPriceList[index2].nadac_per_unit,
                         increase: increase,
-                        pct_increase: pctIncrease
+                        pct_increase: pctIncrease, 
+						pharmacy_type_indicator: this.endPriceList[index1].pharmacy_type_indicator, 
+						otc: this.endPriceList[index1].otc, 
+						explanation_code: this.endPriceList[index1].explanation_code, 
+						classification_for_rate_setting: this.endPriceList[index1].classification_for_rate_setting
                     };
                     list.push(record);
                     break;
@@ -117,7 +121,11 @@ var drugPriceIncrease = {
                 "<td class=\"right_align\">" + (record.begin_price) + "</td>" + "\n\t\t" +
                 "<td class=\"right_align\">" + (record.end_price) + "</td>" + "\n\t\t" +
                 "<td class=\"right_align\">" + (record.increase.toFixed(2)) + "</td>" + "\n\t\t" +
-                "<td class=\"right_align\">" + (record.pct_increase.toPrecision(4)) + "</td>" + "\n\t\t" +
+                "<td class=\"right_align\">" + (record.pct_increase.toPrecision(5)) + "</td>" + "\n\t\t" +
+                "<td>" + (record.pharmacy_type_indicator) + "</td>" + "\n\t\t" +
+                "<td>" + (record.otc) + "</td>" + "\n\t\t" +
+                "<td>" + (record.explanation_code) + "</td>" + "\n\t\t" +
+                "<td>" + (record.classification_for_rate_setting) + "</td>" + "\n\t\t" +
                 "</tr>" + "\n"
                 );
             }
