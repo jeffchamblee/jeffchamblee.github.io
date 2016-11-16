@@ -68,11 +68,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <h1><b>Jeff Chamblee</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <button class="w3-btn">ALL</button>
-      <button class="w3-btn w3-white" id="open-data-1"><i class="fa fa-diamond w3-margin-right"></i>Find a Website</button>
+      <button class="w3-btn w3-white" id="open-data-1"><i class="fa fa-binoculars w3-margin-right"></i>Find a Website</button>
       <button class="w3-btn w3-white" id="open-data-2"><i class="fa fa-diamond w3-margin-right"></i>Find a Dataset</button>
-      <button class="w3-btn w3-white w3-hide-small" id="web-app-security"><i class="fa fa-photo w3-margin-right"></i>Web Application Security</button>
-      <button class="w3-btn w3-white w3-hide-small" id="data-viz"><i class="fa fa-map-pin w3-margin-right"></i>Data Visualization</button>
-      <button class="w3-btn w3-white w3-hide-small" id="drug-price"><i class="fa fa-map-pin w3-margin-right"></i>Drug Prices</button>
+      <button class="w3-btn w3-white w3-hide-small" id="web-app-security"><i class="fa fa-bank w3-margin-right"></i>Web Application Security</button>
+      <button class="w3-btn w3-white w3-hide-small" id="data-viz"><i class="fa fa-bar-chart w3-margin-right"></i>Data Visualization</button>
+      <button class="w3-btn w3-white w3-hide-small" id="drug-price"><i class="fa fa-line-chart w3-margin-right"></i>Drug Prices</button>
     </div>
   </header>
   
@@ -196,32 +196,26 @@ function w3_close() {
 $("#open-data-1").click(function(){
     window.location.href = "/catalog-viewer/SocrataDomains.html";
 }); 
-
 $("#open-data-2").click(function(){
     window.location.href = "/catalog-viewer/DataCatalogSearch.html";
 }); 
-
 $("#web-app-security").click(function(){
     window.location.href = "/owasp-quiz/OWASPQuiz1.html";
 }); 
-
 $("#data-viz").click(function(){
     window.location.href = "/medicaid/charts/index.html";
 }); 
-
 $("#drug-price").click(function(){
-    window.location.href = "/medicaid/charts/index.html";
+    window.location.href = "/drug-prices/DrugPriceIncrease.html";
 }); 
 
 //divs/images
 $("#open-data-div").click(function(){
     window.location.href = "/catalog-viewer/SocrataDomains.html";
 }); 
-
 $("#find-dataset-div").click(function(){
     window.location.href = "/catalog-viewer/DataCatalogSearch.html";
 }); 
-
 $("#web-app-security-div").click(function(){
     window.location.href = "/owasp-quiz/OWASPQuiz1.html";
 }); 
