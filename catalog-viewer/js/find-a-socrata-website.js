@@ -38,7 +38,7 @@ var socrataDomainFinder = {
         },
         "columns": [
             { "data" : "domain",
-                    "fnCreatedCell": function (nTd, sData, oData) {
+                "fnCreatedCell": function (nTd, sData, oData) {
                     $(nTd).html("<a href='//" + oData.domain + "'>" + oData.domain + "</a>");
                 }
             },
