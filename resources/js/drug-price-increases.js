@@ -7,8 +7,8 @@ var drugPriceIncrease = {
     },
     main: function () {
         $(".price_increase").remove();
-        this.startDate = dateFormatter.format(dateRangeSelector.getStartDate());
-        this.endDate = dateFormatter.format(dateRangeSelector.getEndDate());
+        this.startDate = dateFormatter.format(dateAdjuster.getWednesday(dateRangeSelector.getStartDate()));
+        this.endDate = dateFormatter.format(dateAdjuster.getWednesday(dateRangeSelector.getEndDate()));
         console.log("Start Date: " + this.startDate);
         console.log("End Date: " + this.endDate);
         var midnight = "T00:00:00.000"

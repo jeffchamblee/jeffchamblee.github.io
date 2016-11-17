@@ -54,3 +54,12 @@ var dateFormatter = {
 	},
 };
 
+var dateAdjuster = {
+    // change date to Wednesday of the specified week
+	getWednesday: function (date) {
+	    var newDate = date;
+        var diff = 3 - date.getDay();
+        newDate.setDate(date.getDate() + diff);
+        return newDate;
+	},
+};
