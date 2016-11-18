@@ -6,12 +6,13 @@ var drugPriceIncrease = {
         return this.datasetUrl + "?as_of_date=" + date;
     },
     main: function () {
-        $(".price_increase").remove();
+        //$(".price_increase").remove();
+        $("#status1").html("Please wait...");
+        //$("#status1").html("Reading drug prices for " + this.startDate);
         this.startDate = dateFormatter.formatYYYY(dateRangeSelector.getStartDate());
         this.endDate = dateFormatter.formatYYYY(dateRangeSelector.getEndDate());
         console.log("Start Date: " + this.startDate);
         console.log("End Date: " + this.endDate);
-        //$("#status1").html("Reading drug prices for ");
         //$.notify("Alert!", {type:"info"});
         alertify.message('Reading drug prices for ' + this.startDate + " and " + this.endDate);
         this.getDataForTwoPointsInTime();
@@ -24,10 +25,10 @@ var drugPriceIncrease = {
         $.when(
             parent.startPriceList = this.getAllBatches(startUrl),
             console.log("For " + this.startDate + ": " + parent.startPriceList.length.toLocaleString() + " records found"),
-			alertify.message("For " + this.startDate + ": " + parent.startPriceList.length.toLocaleString() + " records found"),
+            alertify.message("For " + this.startDate + ": " + parent.startPriceList.length.toLocaleString() + " records found"),
             parent.endPriceList = this.getAllBatches(endUrl),
             console.log("For " + this.endDate + ": " + parent.endPriceList.length.toLocaleString() + " records found"),
-			alertify.message("For " + this.endDate + ": " + parent.endPriceList.length.toLocaleString() + " records found")
+            alertify.message("For " + this.endDate + ": " + parent.endPriceList.length.toLocaleString() + " records found")
         ).then(function () {
             var resultList = parent.matchListsOnNdc();
             parent.display(resultList);
@@ -99,33 +100,30 @@ var drugPriceIncrease = {
     },
     display: function (resultList) {
         var percent = resultList.length / this.endPriceList.length * 100.0;
-		alertify.message("Records matched: " + resultList.length.toLocaleString() + " (" + percent.toFixed(2) + " percent)");
+        alertify.message("Records matched: " + resultList.length.toLocaleString() + " (" + percent.toFixed(2) + " percent)");
         console.log("Records matched: " + resultList.length.toLocaleString() + " (" + percent.toFixed(2) + " percent)");
-        $("#status3").html("Records matched: " + resultList.length.toLocaleString() + " (" + percent.toFixed(2) + " percent)");
+        $("#status1").html("Records matched: " + resultList.length.toLocaleString() + " (" + percent.toFixed(2) + " percent)");
         if (resultList.length > 0) {
             $("#drug_price_increase_table").show();
             //sort by percent increase
             resultList.sort(function (a, b) { return b.pct_increase - a.pct_increase;});
-            var index;
-            var record;
-            for (index = 0; index < resultList.length; index++) {
-                record = resultList[index];
-                $("#drug_price_increase_table").append(
-                    "<tr class=\"price_increase\">" + "\n\t\t" +
-                    "<td>" + (record.description) + "</td>" + "\n\t\t" +
-                    "<td>" + (record.ndc) + "</td>" + "\n\t\t" +
-                    "<td>" + (record.pricing_unit) + "</td>" + "\n\t\t" +
-                    "<td class=\"right_align\">" + (record.begin_price) + "</td>" + "\n\t\t" +
-                    "<td class=\"right_align\">" + (record.end_price) + "</td>" + "\n\t\t" +
-                    "<td class=\"right_align\">" + (record.increase.toFixed(2)) + "</td>" + "\n\t\t" +
-                    "<td class=\"right_align\">" + (record.pct_increase.toPrecision(5)) + "</td>" + "\n\t\t" +
-                    "<td>" + (record.pharmacy_type_indicator) + "</td>" + "\n\t\t" +
-                    "<td>" + (record.otc) + "</td>" + "\n\t\t" +
-                    "<td>" + (record.explanation_code) + "</td>" + "\n\t\t" +
-                    "<td>" + (record.classification_for_rate_setting) + "</td>" + "\n\t\t" +
-                    "</tr>" + "\n"
-                );
-            }
+            $('#drug_price_increase_table').dataTable({
+                data: resultList,
+                "order": [[6, "desc"]],
+                columns: [
+                    {data: 'description'},
+                    {data: 'ndc'},
+                    {data: 'pricing_unit'},
+                    {data: 'begin_price'},
+                    {data: 'end_price'},
+                    {data: 'increase', render: $.fn.dataTable.render.number(',', '.', 2, '')},
+                    {data: 'pct_increase', render: $.fn.dataTable.render.number(',', '.', 2, '')},
+                    {data: 'pharmacy_type_indicator'},
+                    {data: 'otc'},
+                    {data: 'explanation_code'},
+                    {data: 'classification_for_rate_setting'}
+                ]
+            });
         }
     }
 };
