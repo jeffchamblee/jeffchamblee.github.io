@@ -56,7 +56,7 @@ var drugPriceIncrease = {
             //console.log(SOCRATA_URL);
             currentBatch = this.getJsonData(SOCRATA_URL);
             allRecords = allRecords.concat(currentBatch);
-            if (currentBatch.length < BATCH_SIZE || index > 8000) {
+            if (currentBatch.length < BATCH_SIZE) {
                 break;
             }
             index += BATCH_SIZE;
