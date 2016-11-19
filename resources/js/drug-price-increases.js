@@ -17,6 +17,10 @@ var drugPriceIncrease = {
         console.log("End Date: " + this.endDate);
         //$.notify("Alert!", {type:"info"});
         alertify.message('Reading drug prices for ' + this.startDate + " and " + this.endDate);
+		//force redraw of DOM so wait message appears in Chrome
+		//setTimeout(this.getDataForTwoPointsInTime(), 1000);
+		//$('#status-container').hide().show(0);
+		//$(window).trigger('resize');
         this.getDataForTwoPointsInTime();
     },
     getDataForTwoPointsInTime: function () {
@@ -116,9 +120,9 @@ var drugPriceIncrease = {
                     {data: 'description'},
                     {data: 'ndc'},
                     {data: 'pricing_unit'},
-                    {data: 'begin_price'},
-                    {data: 'end_price'},
-                    {data: 'increase', render: $.fn.dataTable.render.number(',', '.', 2, '')},
+                    {data: 'begin_price',  render: $.fn.dataTable.render.number( ',', '.', 2, '$' )},
+                    {data: 'end_price',  render: $.fn.dataTable.render.number( ',', '.', 2, '$' )},
+                    {data: 'increase', render: $.fn.dataTable.render.number(',', '.', 2, '$')},
                     {data: 'pct_increase', render: $.fn.dataTable.render.number(',', '.', 2, '')},
                     {data: 'pharmacy_type_indicator'},
                     {data: 'otc'},
