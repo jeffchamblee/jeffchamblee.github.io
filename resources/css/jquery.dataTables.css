@@ -1,4 +1,4 @@
-/*
+/* 
  * Table styles
  */
 table.dataTable {
@@ -10,11 +10,6 @@ table.dataTable {
   /*
    * Header and footer styles
    */
- tfoot input {
-        width: 100%;
-        padding: 3px;
-        box-sizing: border-box;
-  }
   /*
    * Body styles
    */
@@ -27,41 +22,43 @@ table.dataTable {
 table.display {border:solid 1px #333;}
 table.display th {border:0;}
 table.display td {border-left:dotted 1px black;
-               border-right:0;
-               border-top:0;
-               border-bottom:0;}
+			   border-right:0;
+			   border-top:0;
+			   border-bottom:0;}
 table.display  td:first-child {border-left:0;}
-.releaseType_col {width:20%;}
+.releasetype_col {width:20%;}
 .number_col {width:20%;}
 .year_col {width:15%;}
-#demo {padding: 15px;
-       border:1px solid #999;
-       width:100%;
-       margin:0 auto;}
-       
+.datatablediv {
+   padding: 25px;
+   border:1px solid #999;
+   width:95%;
+   margin:0 auto;
+}
+
 .filtercontainer {background-color: #659a9a;
-                  min-height: 75px;
-                  padding:10px;
-                  margin: 0 auto 30px;
-                  overflow: hidden;}
-                  
+				  min-height: 75px;
+				  padding:10px;
+				  margin: 0 auto 30px;
+				  overflow: hidden;}
+				  
 .left_filter, .right_filter {background: #fff;
-                            display:inline-block;
-                            padding:15px;
-                            width:42.25%;
-                            height: 60px;
-                            overflow:inherit;}
+						    display:inline-block;
+							padding:15px;
+							width:42.25%;
+							height: 60px;
+							overflow:inherit;}
 .left_filter {float: left;
-              margin:0 10px 10px 0;}
+			  margin:0 10px 10px 0;}
 
 .right_filter {float: right;
-               margin:0 0 10px;}
-               
+			   margin:0 0 10px;}
+			   
 .right_filter p {margin:0;}
-               
+			   
 .filtercontainer label {font:bold 13px arial, sans-serif;
-                          color:#333;}
-.filtercontainer p.releaseType {padding:1px;margin:0;}
+						  color:#333;}
+.filtercontainer p.releasetype {padding:1px;margin:0;}
 .filtercontainer .right_filter input {display:block;}
 .dataTables_info {
     clear: both;
@@ -71,12 +68,19 @@ table.display  td:first-child {border-left:0;}
     padding-top: 0.755em;
     position: absolute;
     top: -30px;}
-table.display th {background-color: #a6cee3;
-                  color: #ffffff;
-                  cursor: pointer;
-                  font-weight: bold;
-                  text-align: left;
-                  vertical-align: middle;}
+	
+table.display th {
+	background-color: #003333;
+	color: #ffffff;
+	cursor: pointer;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: middle;
+}
+table.blue-headers th {
+	background-color: #2196f3;
+}
+
 /*customized code end*/
 
 table.dataTable thead th,
@@ -115,19 +119,19 @@ table.dataTable thead .sorting_desc_disabled {
   background-position: center right;
 }
 table.dataTable thead .sorting {
-  background-image: url("../images/sort_both.png");
+  background-image: url("../images/dynamic-lists/sort_both.png");
 }
 table.dataTable thead .sorting_asc {
-  background-image: url("../images/sort_asc.png");
+  background-image: url("../images/dynamic-lists/sort_asc.png");
 }
 table.dataTable thead .sorting_desc {
-  background-image: url("../images/sort_desc.png");
+  background-image: url("../images/dynamic-lists/sort_desc.png");
 }
 table.dataTable thead .sorting_asc_disabled {
-  background-image: url("../images/sort_asc_disabled.png");
+  background-image: url("../images/dynamic-lists/sort_asc_disabled.png");
 }
 table.dataTable thead .sorting_desc_disabled {
-  background-image: url("../images/sort_desc_disabled.png");
+  background-image: url("../images/dynamic-lists/sort_desc_disabled.png");
 }
 table.dataTable tbody tr {
   background-color: #ffffff;
@@ -472,21 +476,4 @@ table.dataTable td {
   .dataTables_wrapper .dataTables_filter {
     margin-top: 0.5em;
   }
-}
-
-.page-title h1 {
-    color: #043345;
-    font-family: Arial, Times, serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 4px;
-    margin-bottom: 20px;
-}
-
-.form-field{
-    color: #043345;
-    font-family: Arial, Times, serif;
-    font-weight: bold;
-    margin-top: 4px;
-    margin-bottom: 40px;
 }

@@ -1,0 +1,21 @@
+div.main_content {
+    margin: 15px;
+/*
+    border:solid 1px #969494;
+    width:1200px;
+*/
+}
+#drug_price_increase_table.dataTable {
+    margin-top: 50px;
+}
+
+#foobar {
+    position: absolute;
+    clip: rect(0px,1000px,400px,0px);
+}
+
+#pills-image { 
+  object-fit: cover;
+  width: 1000px;
+  height: 400px;
+}

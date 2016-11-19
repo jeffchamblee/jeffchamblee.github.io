@@ -5,12 +5,14 @@ var drugPriceIncrease = {
     getQueryUrl: function (date) {
         return this.datasetUrl + "?as_of_date=" + date;
     },
+    init: function () {
+        $("#drug_price_increase_table").hide();
+    },
     main: function () {
-        //$(".price_increase").remove();
-        $("#status1").html("Please wait...");
-        //$("#status1").html("Reading drug prices for " + this.startDate);
         this.startDate = dateFormatter.formatYYYY(dateRangeSelector.getStartDate());
         this.endDate = dateFormatter.formatYYYY(dateRangeSelector.getEndDate());
+        //$("#status1").html("Please wait...");
+        document.getElementById("status1").textContent = "Reading drug prices for " + this.startDate + " and " + this.endDate + ". Please wait...";
         console.log("Start Date: " + this.startDate);
         console.log("End Date: " + this.endDate);
         //$.notify("Alert!", {type:"info"});
@@ -24,11 +26,11 @@ var drugPriceIncrease = {
         var parent = this;
         $.when(
             parent.startPriceList = this.getAllBatches(startUrl),
-            console.log("For " + this.startDate + ": " + parent.startPriceList.length.toLocaleString() + " records found"),
-            alertify.message("For " + this.startDate + ": " + parent.startPriceList.length.toLocaleString() + " records found"),
+            console.log(parent.startPriceList.length.toLocaleString() + " records found for " + this.startDate),
+            alertify.message(parent.startPriceList.length.toLocaleString() + " records found for " + this.startDate),
             parent.endPriceList = this.getAllBatches(endUrl),
-            console.log("For " + this.endDate + ": " + parent.endPriceList.length.toLocaleString() + " records found"),
-            alertify.message("For " + this.endDate + ": " + parent.endPriceList.length.toLocaleString() + " records found")
+            console.log(parent.endPriceList.length.toLocaleString() + " records found for " + this.endDate),
+            alertify.message(parent.endPriceList.length.toLocaleString() + " records found for " + this.endDate)
         ).then(function () {
             var resultList = parent.matchListsOnNdc();
             parent.display(resultList);
@@ -128,4 +130,4 @@ var drugPriceIncrease = {
     }
 };
 
-$("#drug_price_increase_table").hide();
+drugPriceIncrease.init();

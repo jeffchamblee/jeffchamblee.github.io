@@ -23,7 +23,6 @@ var dateAdjuster = {
 
 var dateRangeSelector = {
     from: $("#datepicker_start").datepicker({
-        //dateFormat:"yyyy-mm-dd",
         defaultDate: "-1M",
         minDate: "11/28/2013",
         maxDate: "-1d",

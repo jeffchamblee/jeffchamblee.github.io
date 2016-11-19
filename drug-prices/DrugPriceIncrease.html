@@ -24,41 +24,43 @@
 <!-- Bootstrap theme -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
 
-<style type="text/css">
-/*
-div.main_content {
-    width:1200px;
-    margin:1% auto;
-    border:solid 1px #969494;
-}
-*/
-#drug_price_increase_table.dataTable {
-    margin-top: 50px;
-}
-</style>
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div id="nav">
-<ul>
-  <li><a class="navbar" href="../index.html">Home</a></li>
+
+<ul class="w3-navbar w3-white w3-large">
+  <li><a href="./index.html" class="w3-blue"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+  <li><a href="#sources"><i class="fa fa-book w3-margin-right"></i>Sources</a></li>
 </ul>
-</div>
+
 <div class="main_content">
 
 	<div class="page-title">
-		<h1>Drugs with the Highest Price Increases</h1>
-		<p>Source: <a href="https://www.medicaid.gov/medicaid/prescription-drugs/pharmacy-pricing/index.html">National Average Drug Acquisition Cost</a></p>
-		<label for="datepicker_start">From</label>
-        <input type="text" id="datepicker_start" name="datepicker_start">
-        <label for="datepicker_end">to</label>
-        <input type="text" id="datepicker_end" name="datepicker_end">
-		<button onclick="drugPriceIncrease.main()">Find Drugs with Highest Price Increases</button>
+		<header class="w3-display-container w3-content" style="max-width:800px;">
+  <img class="w3-image" src="/resources/images/photos/pills.jpg" alt="" style="min-width:600px" width="1500" height="400" id="pills-image">
+  <div class="w3-display-left w3-padding w3-col l7 m8">
+    <div class="w3-container w3-blue">
+      <h2>NADAC Survey of Drug Prices</h2>
+    </div>
+    <div class="w3-container w3-white w3-padding-16">
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label for="datepicker_start"><i class="fa fa-calendar-o"></i> From</label>
+            <input class="w3-input w3-border" placeholder="DD MM YYYY" required="" type="text" id="datepicker_start" name="datepicker_start">
+          </div>
+          <div class="w3-half">
+            <label for="datepicker_end"><i class="fa fa-calendar-o"></i> To</label>
+            <input class="w3-input w3-border" placeholder="DD MM YYYY" required="" type="text" id="datepicker_end" name="datepicker_end">
+          </div>
+        </div>
+		<button onclick="drugPriceIncrease.main()" class="w3-btn w3-blue w3-padding-medium">Find Drugs with Highest Price Increases</button>
+    </div>
+  </div>
+</header>
 		<p id="status1"></p>
 	</div>
 	<div></div>
-<table id="drug_price_increase_table" class="display" data-page-length='100'>
+<table id="drug_price_increase_table" class="display blue-headers" data-page-length='100'>
     <thead>
 <tr>
     <th>Description</th>
@@ -94,14 +96,23 @@ div.main_content {
     </tfoot>
 </table>
 </div>
+<div id="sources">
+<h3>Sources</h3>
+<ul>
+  <li><a href="https://www.medicaid.gov/medicaid/prescription-drugs/pharmacy-pricing/index.html">National Average Drug Acquisition Cost - Medicaid.gov</a></li>
+  <li><a href="https://data.medicaid.gov/">National Average Drug Acquisition Cost - Data.Medicaid.gov</a></li>
+</ul>
+</div>
+
 
 <!-- JQuery DatePicker -->
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="/resources/js/date-range-selector.js"></script>
-<link rel="stylesheet" type="text/css" href="/resources/css/navbar.css">
 <link rel="stylesheet" type="text/css" href="/resources/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="/resources/css/w3c.css"/>
+<link rel="stylesheet" type="text/css" href="/resources/css/drug-prices.css"/>
 <script type="text/javascript" charset="utf-8" src="/resources/js/jquery.dataTables.js"></script>
 <script type="text/javascript" charset="utf-8" src="/resources/js/drug-price-increases.js"></script>
 </body>
