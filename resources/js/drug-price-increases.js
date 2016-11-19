@@ -13,35 +13,35 @@ var drugPriceIncrease = {
         this.endDate = dateFormatter.formatYYYY(dateRangeSelector.getEndDate());
         //$("#status1").html("Please wait...");
         document.getElementById("status1").textContent = "Reading drug prices for " + this.startDate + " and " + this.endDate + ". Please wait...";
-        console.log("Start Date: " + this.startDate);
-        console.log("End Date: " + this.endDate);
         //$.notify("Alert!", {type:"info"});
         alertify.message('Reading drug prices for ' + this.startDate + " and " + this.endDate);
-		//force redraw of DOM so wait message appears in Chrome
-		//setTimeout(this.getDataForTwoPointsInTime(), 1000);
-		//$('#status-container').hide().show(0);
-		//$(window).trigger('resize');
-        this.getDataForTwoPointsInTime();
+        console.log("Start Date: " + this.startDate);
+        console.log("End Date: " + this.endDate);
+        //setTimeout allows redraw of DOM so "Please wait" message appears in Chrome
+        const parent = this;
+        setTimeout(function () {parent.getDataForTwoPointsInTime();}, 1000);
+        //this.getDataForTwoPointsInTime();
     },
     getDataForTwoPointsInTime: function () {
-        var midnight = "T00:00:00.000";
+        const midnight = "T00:00:00.000";
         var startUrl = this.getQueryUrl(this.startDate + midnight);
         var endUrl = this.getQueryUrl(this.endDate + midnight);
-        var parent = this;
+        const parent = this;
         $.when(
-            parent.startPriceList = this.getAllBatches(startUrl),
+            parent.startPriceList = this.getAllBatches(startUrl, "&$select=ndc,nadac_per_unit"),
             console.log(parent.startPriceList.length.toLocaleString() + " records found for " + this.startDate),
             alertify.message(parent.startPriceList.length.toLocaleString() + " records found for " + this.startDate),
-            parent.endPriceList = this.getAllBatches(endUrl),
+            parent.endPriceList = this.getAllBatches(endUrl, "&$select=ndc,ndc_description,nadac_per_unit, pricing_unit,pharmacy_type_indicator,otc,explanation_code,classification_for_rate_setting"),
             console.log(parent.endPriceList.length.toLocaleString() + " records found for " + this.endDate),
             alertify.message(parent.endPriceList.length.toLocaleString() + " records found for " + this.endDate)
-        ).then(function () {
+            //setTimeout allows redraw of DOM so "Please wait" message appears in Chrome
+        ).then(setTimeout(function () {
             var resultList = parent.matchListsOnNdc();
             parent.display(resultList);
-        });
+        }, 1000));
     },
-    getAllBatches: function (url) {
-        var BATCH_SIZE = 1000;
+    getAllBatches: function (url, selectClause) {
+        const BATCH_SIZE = 1000;
         //var SOCRATA_QUERY_SELECT = "?$select=data_set_name, organization_name, main_phone_number, street_address, city, state_or_territory, zip_code, display";
         //var SOCRATA_QUERY_WHERE = "&$where=display=%27YES%27";
         var SOCRATA_OFFSET;
@@ -52,11 +52,11 @@ var drugPriceIncrease = {
         while (true) {
             SOCRATA_OFFSET = "&$offset=" + index;
             //SOCRATA_URL = SOCRATA_DATA_SET_URL + SOCRATA_QUERY_SELECT + SOCRATA_QUERY_WHERE + SOCRATA_QUERY_ORDER + SOCRATA_OFFSET;
-            SOCRATA_URL = url + SOCRATA_OFFSET;
+            SOCRATA_URL = url + "&$order=:id" + SOCRATA_OFFSET + selectClause;
             //console.log(SOCRATA_URL);
             currentBatch = this.getJsonData(SOCRATA_URL);
             allRecords = allRecords.concat(currentBatch);
-            if (currentBatch.length < BATCH_SIZE) {
+            if (currentBatch.length < BATCH_SIZE || index > 8000) {
                 break;
             }
             index += BATCH_SIZE;
@@ -64,7 +64,7 @@ var drugPriceIncrease = {
         return allRecords;
     },
     getJsonData: function (url) {
-        var xmlHttp = new XMLHttpRequest();
+        const xmlHttp = new XMLHttpRequest();
         xmlHttp.open("GET", url, false);
         xmlHttp.setRequestHeader("X-App-Token", "nQvhzxnwOVgLKyFGvRsMfruH4");
         xmlHttp.send();
@@ -105,23 +105,24 @@ var drugPriceIncrease = {
         return list;
     },
     display: function (resultList) {
-        var percent = resultList.length / this.endPriceList.length * 100.0;
-        alertify.message("Records matched: " + resultList.length.toLocaleString() + " (" + percent.toFixed(2) + " percent)");
-        console.log("Records matched: " + resultList.length.toLocaleString() + " (" + percent.toFixed(2) + " percent)");
-        $("#status1").html("Records matched: " + resultList.length.toLocaleString() + " (" + percent.toFixed(2) + " percent)");
+        const percent = resultList.length / this.endPriceList.length * 100.0;
+        alertify.message(resultList.length.toLocaleString() + " records matched (" + percent.toFixed(2) + " percent)");
+        console.log(resultList.length.toLocaleString() + " records matched (" + percent.toFixed(2) + " percent)");
+        $("#status1").html(resultList.length.toLocaleString() + " records matched (" + percent.toFixed(2) + " percent)");
         if (resultList.length > 0) {
             $("#drug_price_increase_table").show();
             //sort by percent increase
-            resultList.sort(function (a, b) { return b.pct_increase - a.pct_increase;});
+            //resultList.sort(function (a, b) { return b.pct_increase - a.pct_increase;});
             $('#drug_price_increase_table').dataTable({
                 data: resultList,
                 "order": [[6, "desc"]],
+                destroy: true,
                 columns: [
                     {data: 'description'},
                     {data: 'ndc'},
                     {data: 'pricing_unit'},
-                    {data: 'begin_price',  render: $.fn.dataTable.render.number( ',', '.', 2, '$' )},
-                    {data: 'end_price',  render: $.fn.dataTable.render.number( ',', '.', 2, '$' )},
+                    {data: 'begin_price', render: $.fn.dataTable.render.number(',', '.', 2, '$')},
+                    {data: 'end_price', render: $.fn.dataTable.render.number(',', '.', 2, '$')},
                     {data: 'increase', render: $.fn.dataTable.render.number(',', '.', 2, '$')},
                     {data: 'pct_increase', render: $.fn.dataTable.render.number(',', '.', 2, '')},
                     {data: 'pharmacy_type_indicator'},

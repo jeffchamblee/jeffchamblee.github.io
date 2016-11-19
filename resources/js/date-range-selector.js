@@ -24,18 +24,17 @@ var dateAdjuster = {
 var dateRangeSelector = {
     from: $("#datepicker_start").datepicker({
         defaultDate: "-1M",
-        minDate: "11/28/2013",
+        //minDate: "11/28/2013",
+        minDate: "12/08/2013",
         maxDate: "-1d",
         changeMonth: true,
-        changeYear: true,
-        numberOfMonths: 2
+        changeYear: true
     }),
     to: $("#datepicker_end").datepicker({
         minDate: "12/05/2013",
         maxDate: "+2D",
         changeMonth: true,
-        changeYear: true,
-        numberOfMonths: 2
+        changeYear: true
     }),
     init: function () {
         $("#datepicker_start").val("12/30/2015");
