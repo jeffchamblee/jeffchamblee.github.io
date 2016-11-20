@@ -1,4 +1,31 @@
 "use strict";
+var columnSearch = {
+    makeColumnsSearchable: function (drugPriceTable) {
+        // Setup - add a text input to the footer cells
+        $('#drug_price_increase_table tfoot th:first').each(function () {
+            var title = $('#drug_price_increase_table thead th').eq($(this).index()).text();
+            $(this).html('<input type="text" class="colSearch" placeholder="Search ' + title + '" />');
+        });
+
+        // Apply the search
+        var dataTable = $('#drug_price_increase_table').DataTable();
+        dataTable.columns().every(function () {
+            var that = this;
+            $('.colSearch', this.footer()).on('keyup change', function () {
+                if (that.search() !== this.value) {
+                    that.search(this.value).draw();
+                }
+            });
+        });
+
+        //move footers to the top
+        var row = $('#drug_price_increase_table tfoot tr');
+        row.find('th').each(function () {
+            $(this).css('padding', 8);
+        });
+        $('#drug_price_increase_table thead').append(row);
+    }
+};
 
 var drugPriceIncrease = {
     datasetUrl: "https://data.medicaid.gov/resource/tau9-gfwr.json",
@@ -112,9 +139,6 @@ var drugPriceIncrease = {
         console.log(resultList.length.toLocaleString() + " records matched (" + percent.toFixed(2) + " percent)");
         $("#status1").html(resultList.length.toLocaleString() + " records matched (" + percent.toFixed(2) + " percent)");
         if (resultList.length > 0) {
-            $("#drug_price_increase_table").show();
-            //sort by percent increase
-            //resultList.sort(function (a, b) { return b.pct_increase - a.pct_increase;});
             $('#drug_price_increase_table').dataTable({
                 data: resultList,
                 "order": [[6, "desc"]],
@@ -133,6 +157,8 @@ var drugPriceIncrease = {
                     {data: 'classification_for_rate_setting'}
                 ]
             });
+            columnSearch.makeColumnsSearchable();
+            $("#drug_price_increase_table").show();
         }
         $("#loading-animation").hide();
     }
