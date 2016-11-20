@@ -28,101 +28,105 @@
 </head>
 <body>
 
-<ul class="w3-navbar w3-white w3-large">
-  <li><a href="../index.html" class="w3-blue"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
-  <li><a href="#notes"><i class="fa fa-comment w3-margin-right"></i>Notes</a></li>
-  <li><a href="#sources"><i class="fa fa-book w3-margin-right"></i>Sources</a></li>
-</ul>
+	<ul class="w3-navbar w3-white w3-large">
+	  <li><a href="../index.html" class="w3-blue"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+	  <li><a href="#notes"><i class="fa fa-comment w3-margin-right"></i>Notes</a></li>
+	  <li><a href="#sources"><i class="fa fa-book w3-margin-right"></i>Sources</a></li>
+	</ul>
 
-<div class="main_content">
-
-	<div class="page-title">
-		<header class="w3-display-container w3-content" style="max-width:800px;">
-  <img class="w3-image" src="/resources/images/photos/pills.jpg" alt="" style="min-width:600px" width="1500" height="400" id="pills-image">
-  <div class="w3-display-left w3-padding w3-col l7 m8">
-    <div class="w3-container w3-blue">
-      <h2>NADAC Survey of Drug Prices</h2>
-    </div>
-    <div class="w3-container w3-white w3-padding-16">
-        <div class="w3-row-padding" style="margin:0 -16px;">
-          <div class="w3-half w3-margin-bottom">
-            <label for="datepicker_start"><i class="fa fa-calendar-o"></i> From</label>
-            <input class="w3-input w3-border" placeholder="DD MM YYYY" required="" type="text" id="datepicker_start" name="datepicker_start">
-          </div>
-          <div class="w3-half">
-            <label for="datepicker_end"><i class="fa fa-calendar-o"></i> To</label>
-            <input class="w3-input w3-border" placeholder="DD MM YYYY" required="" type="text" id="datepicker_end" name="datepicker_end">
-          </div>
-        </div>
-		<button onclick="drugPriceIncrease.main()" class="w3-btn w3-blue w3-padding-medium">Find Drugs with Highest Price Increases</button>
-    </div>
-  </div>
-</header>
+	<div class="main_content">
+		<div class="page-title">
+			<header class="w3-display-container w3-content" style="max-width:800px;">
+	  <img class="w3-image" src="/resources/images/photos/pills.jpg" alt="" style="min-width:600px" width="1500" height="400" id="pills-image">
+	  <div class="w3-display-left w3-padding w3-col l7 m8">
+		<div class="w3-container w3-blue">
+		  <h2>NADAC Survey of Drug Prices</h2>
+		</div>
+		<div class="w3-container w3-white w3-padding-16">
+			<div class="w3-row-padding" style="margin:0 -16px;">
+			  <div class="w3-half w3-margin-bottom">
+				<label for="datepicker_start"><i class="fa fa-calendar-o"></i> From</label>
+				<input class="w3-input w3-border" placeholder="DD MM YYYY" required="" type="text" id="datepicker_start" name="datepicker_start">
+			  </div>
+			  <div class="w3-half">
+				<label for="datepicker_end"><i class="fa fa-calendar-o"></i> To</label>
+				<input class="w3-input w3-border" placeholder="DD MM YYYY" required="" type="text" id="datepicker_end" name="datepicker_end">
+			  </div>
+			</div>
+			<button onclick="drugPriceIncrease.main()" class="w3-btn w3-blue w3-padding-medium">Find Drugs with Highest Price Increases</button>
+		</div>
+	  </div>
+	</header>
     <div id="status-container">
 		<p id="status1"></p>
 	</div>
+
+	<div>
+	<div id="loading-animation">
+	</div>
+
 	</div>
 	<div>
 	</div>
-<table id="drug_price_increase_table" class="display blue-headers" data-page-length='100'>
-    <thead>
-<tr>
-    <th>Description</th>
-    <th>NDC</th>
-    <th>Unit</th>
-    <th>Start Price</th>
-    <th>End Price</th>
-    <th>Dollar Increase</th>
-    <th>Percent Increase</th>
-    <th>Pharmacy Type</th>
-    <th>OTC</th>
-    <th>Explanation Code</th>
-    <th>Classification</th>
-</tr>
-    </thead>
-    <tbody>
-    <!-- CONTENT IS DELIVERED BY JSON -->
-    </tbody>
-    <tfoot>
-<tr>
-    <th>Description</th>
-    <th>NDC</th>
-    <th>Unit</th>
-    <th>Start Price</th>
-    <th>End Price</th>
-    <th>Dollar Increase</th>
-    <th>Percent Increase</th>
-    <th>Pharmacy Type</th>
-    <th>OTC</th>
-    <th>Explanation Code</th>
-    <th>Classification</th>
-</tr>
-    </tfoot>
-</table>
-<div id="notes">
-<h3>Notes</h3>
-<p>NADAC data is published weekly on Wednesdays. Therefore dates you select are changed to the closest Wednesday.</p>
-</div>
+	<table id="drug_price_increase_table" class="display blue-headers" data-page-length='100'>
+		<thead>
+	<tr>
+		<th>Description</th>
+		<th>NDC</th>
+		<th>Unit</th>
+		<th>Start Price</th>
+		<th>End Price</th>
+		<th>Dollar Increase</th>
+		<th>Percent Increase</th>
+		<th>Pharmacy Type</th>
+		<th>OTC</th>
+		<th>Explanation Code</th>
+		<th>Classification</th>
+	</tr>
+		</thead>
+		<tbody>
+		<!-- CONTENT IS DELIVERED BY JSON -->
+		</tbody>
+		<tfoot>
+	<tr>
+		<th>Description</th>
+		<th>NDC</th>
+		<th>Unit</th>
+		<th>Start Price</th>
+		<th>End Price</th>
+		<th>Dollar Increase</th>
+		<th>Percent Increase</th>
+		<th>Pharmacy Type</th>
+		<th>OTC</th>
+		<th>Explanation Code</th>
+		<th>Classification</th>
+	</tr>
+		</tfoot>
+	</table>
+	<div id="notes">
+	<h3>Notes</h3>
+	<p>NADAC data is published weekly on Wednesdays. Therefore dates you select are changed to the closest Wednesday.</p>
+	</div>
 
-<div id="sources">
-<h3>Sources</h3>
-<ol>
-  <li><a href="https://www.medicaid.gov/medicaid/prescription-drugs/survey-of-retail-prices/index.html">Survey of Retail Prices for Prescription Drugs - Medicaid.gov</a></li>
-  <li><a href="https://data.medicaid.gov/">National Average Drug Acquisition Cost - Data.Medicaid.gov</a></li>
-<ol>
-</div>
-</div>
+	<div id="sources">
+	<h3>Sources</h3>
+	<ol>
+	  <li><a href="https://www.medicaid.gov/medicaid/prescription-drugs/survey-of-retail-prices/index.html">Survey of Retail Prices for Prescription Drugs - Medicaid.gov</a></li>
+	  <li><a href="https://data.medicaid.gov/">National Average Drug Acquisition Cost - Data.Medicaid.gov</a></li>
+	<ol>
+	</div>
+	</div>
 
 
-<!-- JQuery DatePicker -->
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script type="text/javascript" src="/resources/js/date-range-selector.js"></script>
-<link rel="stylesheet" type="text/css" href="/resources/css/jquery.dataTables.css">
-<link rel="stylesheet" type="text/css" href="/resources/css/w3c.css"/>
-<link rel="stylesheet" type="text/css" href="/resources/css/drug-prices.css"/>
-<script type="text/javascript" charset="utf-8" src="/resources/js/jquery.dataTables.js"></script>
-<script type="text/javascript" charset="utf-8" src="/resources/js/drug-price-increases.js"></script>
+	<!-- JQuery DatePicker -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="/resources/js/date-range-selector.js"></script>
+	<link rel="stylesheet" type="text/css" href="/resources/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/w3c.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/css/drug-prices.css"/>
+	<script type="text/javascript" charset="utf-8" src="/resources/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/resources/js/drug-price-increases.js"></script>
 </body>
 </html>

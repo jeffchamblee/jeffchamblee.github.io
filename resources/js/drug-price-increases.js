@@ -7,12 +7,14 @@ var drugPriceIncrease = {
     },
     init: function () {
         $("#drug_price_increase_table").hide();
+        $("#loading-animation").hide();
     },
     main: function () {
+        $("#loading-animation").show();
         this.startDate = dateFormatter.formatYYYY(dateRangeSelector.getStartDate());
         this.endDate = dateFormatter.formatYYYY(dateRangeSelector.getEndDate());
         //$("#status1").html("Please wait...");
-        document.getElementById("status1").textContent = "Reading drug prices for " + this.startDate + " and " + this.endDate + ". Please wait...";
+        //document.getElementById("status1").textContent = "Reading drug prices for " + this.startDate + " and " + this.endDate + ". Please wait...";
         //$.notify("Alert!", {type:"info"});
         alertify.message('Reading drug prices for ' + this.startDate + " and " + this.endDate);
         console.log("Start Date: " + this.startDate);
@@ -132,6 +134,7 @@ var drugPriceIncrease = {
                 ]
             });
         }
+        $("#loading-animation").hide();
     }
 };
 

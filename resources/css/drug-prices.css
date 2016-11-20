@@ -1,21 +1,58 @@
 div.main_content {
     margin: 15px;
-/*
-    border:solid 1px #969494;
-    width:1200px;
-*/
 }
 #drug_price_increase_table.dataTable {
     margin-top: 50px;
 }
 
-#foobar {
-    position: absolute;
-    clip: rect(0px,1000px,400px,0px);
-}
-
 #pills-image { 
   object-fit: cover;
   width: 1000px;
-  height: 400px;
+  height: 320px;
 }
+
+/* loading animation */
+#loading-animation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+/* end of loading animation */
