@@ -1,6 +1,7 @@
 "use strict";
+
 var columnSearch = {
-    makeColumnsSearchable: function (drugPriceTable) {
+    makeColumnsSearchable: function () {
         // Setup - add a text input to the footer cells
         $('#drug_price_increase_table tfoot th:first').each(function () {
             var title = $('#drug_price_increase_table thead th').eq($(this).index()).text();
@@ -70,6 +71,7 @@ var drugPriceIncrease = {
         }, 1000));
     },
     getAllBatches: function (url, selectClause) {
+        var startTime = Date.now();
         const BATCH_SIZE = 1000;
         //var SOCRATA_QUERY_SELECT = "?$select=data_set_name, organization_name, main_phone_number, street_address, city, state_or_territory, zip_code, display";
         //var SOCRATA_QUERY_WHERE = "&$where=display=%27YES%27";
@@ -90,6 +92,8 @@ var drugPriceIncrease = {
             }
             index += BATCH_SIZE;
         }
+        var elapsedTime = Date.now() - startTime;
+        console.log("getAllBatches elapsed time: " + elapsedTime);
         return allRecords;
     },
     getJsonData: function (url) {
@@ -99,41 +103,63 @@ var drugPriceIncrease = {
         xmlHttp.send();
         return jQuery.parseJSON(xmlHttp.responseText);
     },
+    // create a list of NDCs to be used as an index into startPriceList
+    createIndex: function () {
+        var startTime = Date.now();
+        var startIndex = [];
+        var index1;
+        for (index1 = 0; index1 < this.startPriceList.length; index1++) {
+            startIndex.push(this.startPriceList[index1].ndc);
+        }
+        var elapsedTime = Date.now() - startTime;
+        console.log("createIndex elapsed time: " + elapsedTime);
+        return startIndex;
+    },
     //match lists based on NDC
     matchListsOnNdc: function () {
+        var startTime = Date.now();
         var record;
+        var startRecord;
+        var startRecordIndex;
+        var endRecord;
         var list = [];
         var index1;
-        var index2;
         var increase;
         var pctIncrease;
+        var ndc;
+        var startIndex = this.createIndex();
         for (index1 = 0; index1 < this.endPriceList.length; index1++) {
-            for (index2 = 0; index2 < this.startPriceList.length; index2++) {
-                if (this.startPriceList[index2].ndc === this.endPriceList[index1].ndc) {
-                    //compute dollar increase & percent increase
-                    increase = this.endPriceList[index1].nadac_per_unit - this.startPriceList[index2].nadac_per_unit;
-                    pctIncrease = (increase / this.startPriceList[index2].nadac_per_unit) * 100.0;
-                    record = {
-                        ndc: this.endPriceList[index1].ndc,
-                        description: this.endPriceList[index1].ndc_description,
-                        pricing_unit: this.endPriceList[index1].pricing_unit,
-                        end_price: this.endPriceList[index1].nadac_per_unit,
-                        begin_price: this.startPriceList[index2].nadac_per_unit,
-                        increase: increase,
-                        pct_increase: pctIncrease,
-                        pharmacy_type_indicator: this.endPriceList[index1].pharmacy_type_indicator,
-                        otc: this.endPriceList[index1].otc,
-                        explanation_code: this.endPriceList[index1].explanation_code,
-                        classification_for_rate_setting: this.endPriceList[index1].classification_for_rate_setting
-                    };
-                    list.push(record);
-                    break;
-                }
+            endRecord = this.endPriceList[index1];
+            ndc = endRecord.ndc;
+            startRecordIndex = startIndex.indexOf(ndc);
+            //if (startRecordIndex === -1) { record not found }
+            if (startRecordIndex !== -1) {
+                startRecord = this.startPriceList[startRecordIndex];
+                //compute dollar increase & percent increase
+                increase = endRecord.nadac_per_unit - startRecord.nadac_per_unit;
+                pctIncrease = (increase / startRecord.nadac_per_unit) * 100.0;
+                record = {
+                    ndc: endRecord.ndc,
+                    description: endRecord.ndc_description,
+                    pricing_unit: endRecord.pricing_unit,
+                    end_price: endRecord.nadac_per_unit,
+                    begin_price: startRecord.nadac_per_unit,
+                    increase: increase,
+                    pct_increase: pctIncrease,
+                    pharmacy_type_indicator: endRecord.pharmacy_type_indicator,
+                    otc: endRecord.otc,
+                    explanation_code: endRecord.explanation_code,
+                    classification_for_rate_setting: endRecord.classification_for_rate_setting
+                };
+                list.push(record);
             }
         }
+        var elapsedTime = Date.now() - startTime;
+        console.log("matchListsOnNdc elapsed time: " + elapsedTime);
         return list;
     },
     display: function (resultList) {
+        var startTime = Date.now();
         const percent = resultList.length / this.endPriceList.length * 100.0;
         alertify.message(resultList.length.toLocaleString() + " records matched (" + percent.toFixed(2) + " percent)");
         console.log(resultList.length.toLocaleString() + " records matched (" + percent.toFixed(2) + " percent)");
@@ -161,6 +187,8 @@ var drugPriceIncrease = {
             $("#drug_price_increase_table").show();
         }
         $("#loading-animation").hide();
+        var elapsedTime = Date.now() - startTime;
+        console.log("display elapsed time: " + elapsedTime);
     }
 };
 
