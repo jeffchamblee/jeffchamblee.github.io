@@ -12,7 +12,8 @@ var dateFormatter = {
 };
 
 
-//NADAC data is usually published on Wednesday each week
+//NADAC data is usually published on Wednesday each week,
+//but was published on Thursday two weeks in 2013.
 var dateAdjuster = {
     // change date to Wednesday of the specified week
     getWednesday: function (date) {
@@ -41,21 +42,28 @@ var dateAdjuster = {
 
 var dateRangeSelector = {
     from: $("#datepicker_start").datepicker({
-        defaultDate: "-1M",
+        //defaultDate: "-1M",
         minDate: "11/24/2013",
         maxDate: "-1d",
         changeMonth: true,
         changeYear: true
     }),
     to: $("#datepicker_end").datepicker({
+        //defaultDate: new Date(),
         minDate: "12/05/2013",
         maxDate: "+2D",
         changeMonth: true,
         changeYear: true
     }),
     init: function () {
-        $("#datepicker_start").val("12/30/2015");
-        $("#datepicker_end").val("11/16/2016");
+        //$("#datepicker_start").val("12/30/2015");
+        //$("#datepicker_end").val("11/16/2016");
+		var startDate = new Date();
+		startDate.setMonth(startDate.getMonth() - 3);
+		$('#datepicker_start').datepicker('setDate', dateAdjuster.getDatePublished(startDate));
+		var endDate = new Date();
+		endDate.setDate(endDate.getDate() - 7);
+		$('#datepicker_end').datepicker('setDate', dateAdjuster.getDatePublished(endDate));
         var parent = this;
         parent.from.on("change", function () {
             // change date to Wednesday of the specified week, or Thursday if appropriate
