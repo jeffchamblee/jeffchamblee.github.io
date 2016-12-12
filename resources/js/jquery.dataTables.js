@@ -14608,7 +14608,8 @@
 	 *
 	 * @namespace
 	 */
-	DataTable.render = {
+/*
+	 DataTable.render = {
 		number: function ( thousands, decimal, precision, prefix ) {
 			return {
 				display: function ( d ) {
@@ -14633,7 +14634,21 @@
 			};
 		}
 	};
-	
+*/
+	DataTable.render = {
+		number: function (thousands, decimal, precision, prefix, suffix) {
+			return {
+				display: function (d) {
+					var negative = d < 0 ? '-' : '';
+					d = Math.abs(parseFloat(d));
+					var intPart = parseInt(d, 10);
+					var floatPart = precision ? decimal + (d - intPart).toFixed(precision).substring(2) : '';
+					return negative + (prefix || '') +
+						intPart.toString().replace(/\B(?=(\d{3})+(?!\d))/g, thousands) + floatPart + (suffix ? suffix : "");
+				}
+			};
+		}
+	};
 	
 	/*
 	 * This is really a good bit rubbish this method of exposing the internal methods

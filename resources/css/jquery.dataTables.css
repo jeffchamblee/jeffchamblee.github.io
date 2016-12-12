@@ -80,7 +80,25 @@ table.display th {
 table.blue-headers th {
 	background-color: #2196f3;
 }
+/* highlight the sorted column's header */
+table#drug_price_increase_table.order-column thead .sorting_asc,
+table#drug_price_increase_table.display thead .sorting_asc {
+  background-color: #666666;
+}
+table#drug_price_increase_table.order-column thead .sorting_desc,
+table#drug_price_increase_table.display thead .sorting_desc {
+  background-color: #999999;
+}
 
+/* highlight the sorted column's rows */
+table#drug_price_increase_table.order-column tbody tr > .sorting_1,
+table#drug_price_increase_table.order-column tbody tr > .sorting_2,
+table#drug_price_increase_table.order-column tbody tr > .sorting_3, 
+table#drug_price_increase_table.display tbody tr > .sorting_1,
+table#drug_price_increase_table.display tbody tr > .sorting_2,
+table#drug_price_increase_table.display tbody tr > .sorting_3 {
+  background-color: #e6e6e6;
+}
 
 /*customized code end*/
 
