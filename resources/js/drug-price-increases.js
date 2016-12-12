@@ -176,7 +176,7 @@ var drugPriceIncrease = {
                     {data: 'begin_price', render: $.fn.dataTable.render.number(',', '.', 2, '$')},
                     {data: 'end_price', render: $.fn.dataTable.render.number(',', '.', 2, '$')},
                     {data: 'increase', render: $.fn.dataTable.render.number(',', '.', 2, '$')},
-                    {data: 'pct_increase', render: $.fn.dataTable.render.number(',', '.', 2, '')},
+                    {data: 'pct_increase', render: $.fn.dataTable.render.number(',', '.', 2, '', '%')},
                     {data: 'pharmacy_type_indicator'},
                     {data: 'otc'},
                     {data: 'explanation_code'},
@@ -192,4 +192,4 @@ var drugPriceIncrease = {
     }
 };
 
-drugPriceIncrease.init();
+ drugPriceIncrease.init();
