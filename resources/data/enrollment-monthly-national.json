@@ -1,0 +1,169 @@
+[
+
+    {
+        "month": "2014-01-01T00:00:00",
+        "location": "United States",
+        "enrollment": "61671967"
+    },
+    {
+        "month": "2014-02-01T00:00:00",
+        "location": "United States",
+        "enrollment": "62274659"
+    },
+    {
+        "month": "2014-03-01T00:00:00",
+        "location": "United States",
+        "enrollment": "64270142"
+    },
+    {
+        "month": "2014-04-01T00:00:00",
+        "location": "United States",
+        "enrollment": "64430235"
+    },
+    {
+        "month": "2014-05-01T00:00:00",
+        "location": "United States",
+        "enrollment": "66423553"
+    },
+    {
+        "month": "2014-06-01T00:00:00",
+        "location": "United States",
+        "enrollment": "67034080"
+    },
+    {
+        "month": "2014-07-01T00:00:00",
+        "location": "United States",
+        "enrollment": "67147446"
+    },
+    {
+        "month": "2014-08-01T00:00:00",
+        "location": "United States",
+        "enrollment": "67927806"
+    },
+    {
+        "month": "2014-09-01T00:00:00",
+        "location": "United States",
+        "enrollment": "68408525"
+    },
+    {
+        "month": "2014-10-01T00:00:00",
+        "location": "United States",
+        "enrollment": "68944587"
+    },
+    {
+        "month": "2014-11-01T00:00:00",
+        "location": "United States",
+        "enrollment": "69212472"
+    },
+    {
+        "month": "2014-12-01T00:00:00",
+        "location": "United States",
+        "enrollment": "69919366"
+    },
+    {
+        "month": "2015-01-01T00:00:00",
+        "location": "United States",
+        "enrollment": "70379483"
+    },
+    {
+        "month": "2015-02-01T00:00:00",
+        "location": "United States",
+        "enrollment": "70946607"
+    },
+    {
+        "month": "2015-03-01T00:00:00",
+        "location": "United States",
+        "enrollment": "71409679"
+    },
+    {
+        "month": "2015-04-01T00:00:00",
+        "location": "United States",
+        "enrollment": "71594742"
+    },
+    {
+        "month": "2015-05-01T00:00:00",
+        "location": "United States",
+        "enrollment": "71990204"
+    },
+    {
+        "month": "2015-06-01T00:00:00",
+        "location": "United States",
+        "enrollment": "72454815"
+    },
+    {
+        "month": "2015-07-01T00:00:00",
+        "location": "United States",
+        "enrollment": "72672694"
+    },
+    {
+        "month": "2015-08-01T00:00:00",
+        "location": "United States",
+        "enrollment": "72824063"
+    },
+    {
+        "month": "2015-09-01T00:00:00",
+        "location": "United States",
+        "enrollment": "70897287"
+    },
+    {
+        "month": "2015-10-01T00:00:00",
+        "location": "United States",
+        "enrollment": "71835349"
+    },
+    {
+        "month": "2015-11-01T00:00:00",
+        "location": "United States",
+        "enrollment": "72481885"
+    },
+    {
+        "month": "2015-12-01T00:00:00",
+        "location": "United States",
+        "enrollment": "72701268"
+    },
+    {
+        "month": "2016-01-01T00:00:00",
+        "location": "United States",
+        "enrollment": "72894837"
+    },
+    {
+        "month": "2016-02-01T00:00:00",
+        "location": "United States",
+        "enrollment": "73051223"
+    },
+    {
+        "month": "2016-03-01T00:00:00",
+        "location": "United States",
+        "enrollment": "72863897"
+    },
+    {
+        "month": "2016-04-01T00:00:00",
+        "location": "United States",
+        "enrollment": "73180440"
+    },
+    {
+        "month": "2016-05-01T00:00:00",
+        "location": "United States",
+        "enrollment": "73380499"
+    },
+    {
+        "month": "2016-06-01T00:00:00",
+        "location": "United States",
+        "enrollment": "73431793"
+    },
+    {
+        "month": "2016-07-01T00:00:00",
+        "location": "United States",
+        "enrollment": "73628614"
+    },
+    {
+        "month": "2016-08-01T00:00:00",
+        "location": "United States",
+        "enrollment": "73532931"
+    },
+    {
+        "month": "2016-09-01T00:00:00",
+        "location": "United States",
+        "enrollment": "73141300"
+    }
+
+]
