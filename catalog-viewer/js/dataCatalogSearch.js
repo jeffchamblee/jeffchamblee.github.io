@@ -85,6 +85,7 @@ var dataCatalogSearch = {
             destroy: true,
             "ajax": {
                 "processing": true,
+                "cache": true,
                 "url": urlString,
                 "dataSrc": "results"
             },
