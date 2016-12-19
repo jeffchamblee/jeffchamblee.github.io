@@ -36,6 +36,8 @@ var enrollmentGrowth = {
             },
             chartArea: {left: 80, top: 40, right: 120, bottom: 100},
             colors: ['#026666', '#d17d28', '#066792', '#555555'],
+            pointSize: 4,
+            pointShape: 'circle',
             width: 700,
             height: 400
         };
