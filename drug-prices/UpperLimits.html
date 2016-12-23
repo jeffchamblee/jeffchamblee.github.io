@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACA Federal Upper Limits - Price Increases</title>
+
+<meta name="DCTERMS.title" content="Drug Price Increases"/>
+<meta name="description" content="Find drugs with highest price increases over any time period. Drug prices are based on Medicaid NADAC survey of the purchase prices of all covered outpatient drugs by retail community pharmacies."/>
+<meta name="DCTERMS.description" content="Find drugs with highest price increases over any time period. Drug prices are based on Medicaid NADAC survey of the purchase prices of all covered outpatient drugs by retail community pharmacies."/>
+<meta name="keywords" content="drug price increases, NADAC, National Average Drug Acquisition Cost, medicaid"/>
+<meta name="DCTERMS.subject" content="drug price increases, NADAC, National Average Drug Acquisition Cost, medicaid"/>
+<meta name="DCTERMS.language" content="en-us" />
+
+<!-- JavaScript -->
+<script src="//cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/alertify.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/default.min.css"/>
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/semantic.min.css"/>
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<ul class="w3-navbar w3-white w3-large">
+	  <li><a href="../index.html" class="w3-blue"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+	  <li><a href="#notes"><i class="fa fa-comment w3-margin-right"></i>Notes</a></li>
+	  <li><a href="#sources"><i class="fa fa-book w3-margin-right"></i>Sources</a></li>
+	</ul>
+
+	<div class="main_content">
+		<div class="page-title">
+			<header class="w3-display-container w3-content" style="max-width:800px;">
+	  <img class="w3-image" src="/resources/images/photos/pills.jpg" alt="" style="min-width:600px" width="1500" height="400" id="pills-image">
+	  <div class="w3-display-left w3-padding w3-col l7 m8">
+		<div class="w3-container w3-blue">
+		  <h2>Federal Upper Limits</h2>
+		</div>
+		<div class="w3-container w3-white w3-padding-16">
+			<div class="w3-row-padding" style="margin:0 -16px;">
+			  <div class="w3-half w3-margin-bottom">
+				<label for="month_picker_start"><i class="fa fa-calendar-o"></i> From</label>
+				<input class="w3-input w3-border month_picker" placeholder="MM YYYY" required="" type="text" id="month_picker_start" name="month_picker_start">
+			  </div>
+			  <div class="w3-half">
+				<label for="month_picker_end"><i class="fa fa-calendar-o"></i> To</label>
+				<input class="w3-input w3-border month_picker" placeholder="MM YYYY" required="" type="text" id="month_picker_end" name="month_picker_end">
+			  </div>
+			</div>
+			<button onclick="drugPriceIncrease.main()" class="w3-btn w3-blue w3-padding-medium">Find Drugs with Highest Price Increases</button>
+		</div>
+	  </div>
+	</header>
+    <div id="status-container">
+		<p id="status1"></p>
+	</div>
+
+	<div>
+	<div id="loading-animation">
+	</div>
+
+	</div>
+	<div>
+	</div>
+	<table id="drug_price_increase_table" class="display blue-headers" data-page-length='100'>
+		<thead>
+	<tr>
+		<th>NDC</th>
+		<th>Ingredient</th>
+		<th>Dosage</th>
+		<th>Strength</th>
+		<th>Package Size</th>
+		<th>Start Price</th>
+		<th>End Price</th>
+		<th>Dollar Increase</th>
+		<th>Percent Increase</th>
+		<th>Weighted Average Amps</th>
+		<th>A Rated</th>
+		<th>MDR Unit Type</th>
+		<th>Route</th>
+		<th>ACA FUL Calculation Basis</th>
+		<th>Product Group</th>
+	</tr>
+		</thead>
+		<tbody>
+		<!-- CONTENT IS DELIVERED BY JSON -->
+		</tbody>
+		<tfoot>
+	<tr>
+		<th>NDC</th>
+		<th>Ingredient</th>
+		<th>Dosage</th>
+		<th>Strength</th>
+		<th>Package Size</th>
+		<th>Start Price</th>
+		<th>End Price</th>
+		<th>Dollar Increase</th>
+		<th>Percent Increase</th>
+		<th>Weighted Average Amps</th>
+		<th>A Rated</th>
+		<th>MDR Unit Type</th>
+		<th>Route</th>
+		<th>ACA FUL Calculation Basis</th>
+		<th>Product Group</th>
+	</tr>
+		</tfoot>
+	</table>
+	<div id="notes">
+	<h3>Notes</h3>
+	<p>ACA Federal Upper Limits data is published monthly. </p>
+	</div>
+
+	<div id="sources">
+	<h3>Sources</h3>
+	<ol>
+	  <li><a href="https://www.medicaid.gov/medicaid/prescription-drugs/federal-upper-limits/index.html">Affordable Care Act – Federal Upper Limits - Medicaid.gov</a></li>
+	  <li><a href="https://data.medicaid.gov/Drug-Prices/ACA-Federal-Upper-Limits/yns6-zx8k">ACA Federal Upper Limits - Data.Medicaid.gov</a></li>
+	<ol>
+	</div>
+	</div>
+
+
+	<!-- JQuery DatePicker -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="/resources/js/date-range-selector.js"></script>
+	<link rel="stylesheet" type="text/css" href="/resources/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/w3c.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/css/drug-prices.css"/>
+	<script type="text/javascript" charset="utf-8" src="/resources/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/resources/js/drug-prices-upper-limits.js"></script>
+</body>
+</html>

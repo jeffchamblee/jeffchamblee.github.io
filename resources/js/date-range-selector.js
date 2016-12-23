@@ -95,3 +95,56 @@ var dateRangeSelector = {
 };
 
 dateRangeSelector.init();
+
+var monthRangeSelector = {
+    init: function () {
+        var parent = this;
+        parent.from.on("change", function () {
+            //$("#month_picker_start").val(dateFormatter.formatMM(parent.getDate(this)));
+            parent.to.datepicker("option", "minDate", parent.getDate(this));
+        });
+        parent.to.on("change", function () {
+            //$("#month_picker_end").val(dateFormatter.formatMM(parent.getDate(this)));
+            parent.from.datepicker("option", "maxDate", parent.getDate(this));
+        });
+    },
+	startDate: new Date(),
+    from: $("#month_picker_start").datepicker({
+        defaultDate: new Date(2016, 3 - 1, 1),
+        minDate: new Date(2016, 3 - 1, 1),
+        maxDate: "1d",
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        dateFormat: 'MM yy',
+        onClose: function(dateText, inst) {
+            var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+            var year = $("#ui-datepicker-div  .ui-datepicker-year :selected").val();
+			monthRangeSelector.startDate = new Date(year, month, 1);
+		    $(this).datepicker('setDate', monthRangeSelector.startDate);
+        }
+    }),
+	endDate: new Date(),
+    to: $("#month_picker_end").datepicker({
+        minDate: new Date(2016, 4 - 1, 1),
+        maxDate: "1D",
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        dateFormat: 'MM yy',
+        onClose: function(dateText, inst) { 
+            var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+            var year = $("#ui-datepicker-div  .ui-datepicker-year :selected").val();
+			monthRangeSelector.endDate = new Date(year, month, 1);
+            $(this).datepicker('setDate', monthRangeSelector.endDate);
+        }
+    }),
+    getStartDate: function () {
+        return this.startDate;
+    },
+    getEndDate: function () {
+        return this.endDate;
+    }
+};
+
+monthRangeSelector.init();
