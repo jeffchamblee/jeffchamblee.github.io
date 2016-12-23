@@ -120,6 +120,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </div>
       <img src="/images/drug-price.png" alt="Data Visualizations" style="width:100%" class="w3-hover-opacity">
     </div>
+    <div class="w3-third w3-container" id="drug-price-ful-div">
+      <div class="w3-container w3-white">
+        <p><b>Federal Upper Limit Increases</b></p>
+        <p>Find out which drugs had the highest increases of ACA Federal Upper Limits over any time period.</p>
+      </div>
+      <img src="/images/drug-price.png" alt="Data Visualizations" style="width:100%" class="w3-hover-opacity">
+    </div>
   </div>
 
   <!-- Pagination -->
@@ -227,6 +234,9 @@ $("#data-viz-div").click(function(){
 }); 
 $("#drug-price-div").click(function(){
     window.location.href = "/drug-prices/DrugPriceIncrease.html";
+}); 
+$("#drug-price-ful-div").click(function(){
+    window.location.href = "/drug-prices/UpperLimits.html";
 }); 
 
 
