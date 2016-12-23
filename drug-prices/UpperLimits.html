@@ -40,20 +40,20 @@
 	  <img class="w3-image" src="/resources/images/photos/pills.jpg" alt="" style="min-width:600px" width="1500" height="400" id="pills-image">
 	  <div class="w3-display-left w3-padding w3-col l7 m8">
 		<div class="w3-container w3-blue">
-		  <h2>Federal Upper Limits</h2>
+		  <h2>ACA Federal Upper Limits</h2>
 		</div>
 		<div class="w3-container w3-white w3-padding-16">
 			<div class="w3-row-padding" style="margin:0 -16px;">
 			  <div class="w3-half w3-margin-bottom">
 				<label for="month_picker_start"><i class="fa fa-calendar-o"></i> From</label>
-				<input class="w3-input w3-border month_picker" placeholder="MM YYYY" required="" type="text" id="month_picker_start" name="month_picker_start">
+				<input class="w3-input w3-border" placeholder="MM YYYY" required="" type="text" id="month_picker_start" name="month_picker_start">
 			  </div>
 			  <div class="w3-half">
 				<label for="month_picker_end"><i class="fa fa-calendar-o"></i> To</label>
-				<input class="w3-input w3-border month_picker" placeholder="MM YYYY" required="" type="text" id="month_picker_end" name="month_picker_end">
+				<input class="w3-input w3-border" placeholder="MM YYYY" required="" type="text" id="month_picker_end" name="month_picker_end">
 			  </div>
 			</div>
-			<button onclick="drugPriceIncrease.main()" class="w3-btn w3-blue w3-padding-medium">Find Drugs with Highest Price Increases</button>
+			<button onclick="drugPriceIncrease.main()" class="w3-btn w3-blue w3-padding-medium">Find Drugs with Highest Upper Limit Increases</button>
 		</div>
 	  </div>
 	</header>
@@ -80,7 +80,7 @@
 		<th>End Price</th>
 		<th>Dollar Increase</th>
 		<th>Percent Increase</th>
-		<th>Weighted Average Amps</th>
+		<th>Weighted Average AMPs</th>
 		<th>A Rated</th>
 		<th>MDR Unit Type</th>
 		<th>Route</th>
@@ -102,7 +102,7 @@
 		<th>End Price</th>
 		<th>Dollar Increase</th>
 		<th>Percent Increase</th>
-		<th>Weighted Average Amps</th>
+		<th>Weighted Average AMPs</th>
 		<th>A Rated</th>
 		<th>MDR Unit Type</th>
 		<th>Route</th>
@@ -113,9 +113,8 @@
 	</table>
 	<div id="notes">
 	<h3>Notes</h3>
-	<p>ACA Federal Upper Limits data is published monthly. </p>
+	<p>ACA Federal Upper Limits data is published monthly on or near the last day of the month. ACA FUL data on data.Medicaid.gov goes back to March 2016 which is why this user interface prevents you from selecting earlier dates. Prior to March 2016 the data was made public as Excel files.</p>
 	</div>
-
 	<div id="sources">
 	<h3>Sources</h3>
 	<ol>

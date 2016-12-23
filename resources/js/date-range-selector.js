@@ -8,6 +8,10 @@ var dateFormatter = {
     // MM/DD/YYYY
     formatMM: function (date) {
         return ("0" + (date.getMonth() + 1)).slice(-2) + "/" + ("0" + date.getDate()).slice(-2) + "/" + date.getFullYear();
+    },
+    // MM-YYYY
+    formatMonthYear: function (date) {
+        return ("0" + (date.getMonth() + 1)).slice(-2) + "-" + date.getFullYear();
     }
 };
 
@@ -58,12 +62,12 @@ var dateRangeSelector = {
     init: function () {
         //$("#datepicker_start").val("12/30/2015");
         //$("#datepicker_end").val("11/16/2016");
-		var startDate = new Date();
-		startDate.setMonth(startDate.getMonth() - 3);
-		$('#datepicker_start').datepicker('setDate', dateAdjuster.getDatePublished(startDate));
-		var endDate = new Date();
-		endDate.setDate(endDate.getDate() - 7);
-		$('#datepicker_end').datepicker('setDate', dateAdjuster.getDatePublished(endDate));
+        var startDate = new Date();
+        startDate.setMonth(startDate.getMonth() - 3);
+        $('#datepicker_start').datepicker('setDate', dateAdjuster.getDatePublished(startDate));
+        var endDate = new Date();
+        endDate.setDate(endDate.getDate() - 7);
+        $('#datepicker_end').datepicker('setDate', dateAdjuster.getDatePublished(endDate));
         var parent = this;
         parent.from.on("change", function () {
             // change date to Wednesday of the specified week, or Thursday if appropriate
@@ -107,8 +111,15 @@ var monthRangeSelector = {
             //$("#month_picker_end").val(dateFormatter.formatMM(parent.getDate(this)));
             parent.from.datepicker("option", "maxDate", parent.getDate(this));
         });
+        //since we are just selecting month, hide calendar grid
+        parent.from.focus(function () {
+            $(".ui-datepicker-calendar").hide();
+        });
+        parent.to.focus(function () {
+            $(".ui-datepicker-calendar").hide();
+        });
     },
-	startDate: new Date(),
+    startDate: new Date(),
     from: $("#month_picker_start").datepicker({
         defaultDate: new Date(2016, 3 - 1, 1),
         minDate: new Date(2016, 3 - 1, 1),
@@ -117,25 +128,26 @@ var monthRangeSelector = {
         changeYear: true,
         showButtonPanel: true,
         dateFormat: 'MM yy',
-        onClose: function(dateText, inst) {
+        onClose: function (dateText, inst) {
             var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
             var year = $("#ui-datepicker-div  .ui-datepicker-year :selected").val();
-			monthRangeSelector.startDate = new Date(year, month, 1);
-		    $(this).datepicker('setDate', monthRangeSelector.startDate);
+            monthRangeSelector.startDate = new Date(year, month, 1);
+            $(this).datepicker('setDate', monthRangeSelector.startDate);
         }
     }),
-	endDate: new Date(),
+    endDate: new Date(),
     to: $("#month_picker_end").datepicker({
+        defaultDate: "-28d",
         minDate: new Date(2016, 4 - 1, 1),
         maxDate: "1D",
         changeMonth: true,
         changeYear: true,
         showButtonPanel: true,
         dateFormat: 'MM yy',
-        onClose: function(dateText, inst) { 
+        onClose: function (dateText, inst) {
             var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
             var year = $("#ui-datepicker-div  .ui-datepicker-year :selected").val();
-			monthRangeSelector.endDate = new Date(year, month, 1);
+            monthRangeSelector.endDate = new Date(year, month, 1);
             $(this).datepicker('setDate', monthRangeSelector.endDate);
         }
     }),

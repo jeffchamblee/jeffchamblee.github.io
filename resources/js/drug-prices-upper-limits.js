@@ -31,8 +31,8 @@ var columnSearch = {
 var drugPriceIncrease = {
     datasetUrl: "https://data.medicaid.gov/resource/yns6-zx8k.json",
     getQueryUrl: function (date) {
-		var year = date.getFullYear();
-		var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
         return this.datasetUrl + "?$where=year=%27" + year + "%27%20and%20month%20=%20%27" + month + "%27";
     },
     init: function () {
@@ -41,8 +41,8 @@ var drugPriceIncrease = {
     },
     main: function () {
         $("#loading-animation").show();
-        this.startDate = dateFormatter.formatYYYY(monthRangeSelector.getStartDate());
-        this.endDate = dateFormatter.formatYYYY(monthRangeSelector.getEndDate());
+        this.startDate = dateFormatter.formatMonthYear(monthRangeSelector.getStartDate());
+        this.endDate = dateFormatter.formatMonthYear(monthRangeSelector.getEndDate());
         //$("#status1").html("Please wait...");
         //document.getElementById("status1").textContent = "Reading drug prices for " + this.startDate + " and " + this.endDate + ". Please wait...";
         //$.notify("Alert!", {type:"info"});
@@ -51,7 +51,7 @@ var drugPriceIncrease = {
         console.log("End Date: " + this.endDate);
         //setTimeout allows redraw of DOM so "Please wait" message appears in Chrome
         const parent = this;
-        setTimeout(function () {parent.getDataForTwoPointsInTime();}, 1000);
+        setTimeout(function () { parent.getDataForTwoPointsInTime();}, 1000);
         //this.getDataForTwoPointsInTime();
     },
     getDataForTwoPointsInTime: function () {
@@ -147,7 +147,7 @@ var drugPriceIncrease = {
                     strength: endRecord.strength,
                     package_size: endRecord.package_size,
                     weighted_average_amps: endRecord.weighted_average_amps,
-                    a_rated: endRecord.a_rated,					
+                    a_rated: endRecord.a_rated,
                     end_price: endRecord.aca_ful,
                     begin_price: startRecord.aca_ful,
                     increase: increase,
@@ -202,4 +202,4 @@ var drugPriceIncrease = {
     }
 };
 
- drugPriceIncrease.init();
+drugPriceIncrease.init();
