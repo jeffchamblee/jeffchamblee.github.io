@@ -34,7 +34,8 @@ var socrataDomainFinder = {
         "ajax": {
             "processing" : true,
             "url": "http://api.us.socrata.com/api/catalog/v1/domains",
-            "dataSrc" : "results"
+            "dataSrc" : "results",
+			cache, true
         },
         "columns": [
             { "data" : "domain",
