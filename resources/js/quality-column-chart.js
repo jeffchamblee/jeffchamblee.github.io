@@ -19,6 +19,15 @@ var barChart = {
         // Instantiate and draw the chart.
         var chart = new google.visualization.BarChart(document.getElementById('quality_chart'));
         chart.draw(data, options);
+        barChart.styleLegend();
+        barChart.setSource();
+    },
+    styleLegend: function () {
+        //style the box in the second data element in the legend
+        var legend = document.querySelector('#quality_chart > div > div:nth-child(1) > div > svg > g:nth-child(3) > g:nth-child(3) > rect:nth-child(3)');
+        legend.setAttribute('style', "fill:#EEEEEE;stroke:#333333;stroke-width:1;fill-opacity:1.0;stroke-opacity:0.9");
+    },
+    setSource: function () {
         $("#quality_source").html("Source: <a href='https://www.medicaid.gov/medicaid/quality-of-care/performance-measurement/index.html'>Medicaid Quality of Care Performance Measurement</a>");
     }
 };
