@@ -26,7 +26,8 @@ p {
     width: 800px;
 }
 .chart {
-    margin-left: 100px;
+    margin-left: 50px;
+    display: inline-flex;
 }
 
 </style>
@@ -34,15 +35,15 @@ p {
 
     <body>
         <h1>Quality of Care in California</h1>
-        <p>
+        <p style="width=200px">
         In federal fiscal year (FFY) 2015, California voluntarily reported 14 of 20 frequently reported health care quality measures in the CMS Medicaid/CHIP Child Core Set. California voluntarily reported 11 of 12 frequently reported health care quality measures in the CMS Medicaid Adult Core Set.
         </p>
-        <span id="quality_chart" class="chart"> </span>
+        <span id="quality_chart_child" class="chart"> </span> <span id="quality_chart_adult" class="chart"> </span>
         <p id="quality_source"> </p>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/resources/js/jquery1.11.3.min.js"><\/script>')</script>   
         <script type="text/javascript" src="https://www.medicaid.gov/resources/js/google-jsapi.js"></script>
-        <script type="text/javascript" src="/resources/js/quality-column-chart.js"></script>
+        <script type="text/javascript" src="/resources/js/quality-donut-chart.js"></script>
     </body>
 </html>
