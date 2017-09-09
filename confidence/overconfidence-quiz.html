@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>
+Overconfidence Quiz
+</title>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="w3c.css" type="text/css" />
+<link rel="stylesheet" href="quiz.css" type="text/css" />
+
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+</head>
+
+<body id="public">
+<div id="container">
+<h1>Overconfidence Quiz</h1>
+<div class="info">
+    <!-- <a href="http://messymatters.com">Messy Matters</a>  -->
+	<div>For each of the questions below, provide a numerical range that you are 90% sure contains the correct answer.
+	In particular, if you are very uncertain, then give a very wide range; 
+	and if you happen to be quite certain, then give a narrow range.
+	<p>If you are perfectly calibrated then 90% of your intervals (no more, no less) should contain the right answers.</p>
+	<p><b>Please try your best, but don't look up the answers!</b></div></p>
+</div>
+
+
+    <form id="quiz1" name="quiz1" class="page1" autocomplete="off" action="#">
+        <!-- JavaScript puts questions here -->
+        <ol id="confidence_test"></ol>
+	    <input id="saveForm" class="submit" type="submit" value="Submit" onclick="confidence_test.checkAnswers()" />
+	</form>
+
+<p>Source: <a href="http://www.amazon.com/Decision-Traps-J-Edward-Russo/dp/0385248350">Decision Traps by Russo and Shoemaker</a></p>
+</div>
+	
+</body>
+</html>
