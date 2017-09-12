@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
@@ -12,7 +10,7 @@
       <img id="top" src="top.png" alt="">
       <div id="form_container">
          <h1><a>Are You an Innovator?</a></h1>
-         <form id="form_49057" class="appnitro"  method="post" action="#">
+         <form id="innovator" class="appnitro" method="post">
             <div class="form_description">
                <h2>Are You an Innovator?</h2>
                <p>Predicted probability of supporting radical conceptual innovations</p>
@@ -21,11 +19,11 @@
                <li id="li_1" >
                   <label class="description" for="age">Age </label>
                   <span>
-                  <input id="age_1" name="age" class="element radio" type="radio" value="1" />
+                  <input id="age_1" name="age" class="element radio" type="radio" value="true" />
                   <label class="choice" for="age_1">Under 30</label>
-                  <input id="age_2" name="age" class="element radio" type="radio" value="2" />
+                  <input id="age_2" name="age" class="element radio" type="radio" value="false" />
                   <label class="choice" for="age_2">30 to 59</label>
-                  <input id="age_3" name="age" class="element radio" type="radio" value="3" />
+                  <input id="age_3" name="age" class="element radio" type="radio" value="false" />
                   <label class="choice" for="age_3">60 and over</label>
                   </span> 
                </li>
@@ -90,12 +88,12 @@
                </li>
                <li class="buttons">
                   <input type="hidden" name="form_id" value="49057" />
-                  <input id="calculate" class="button_text" type="submit" name="calculate" value="Calculate" />
+                  <input id="calculate" class="button_text" type="button" name="calculate" value="Calculate" onclick="innovation.calculate()" />
                </li>
                <li id="li_5" >
-                  <label class="description" for="calculated_result">Calculated probability of supporting radical conceptual innovations </label>
+                  <label class="description" for="calculated_result">Probability of supporting radical conceptual innovations </label>
                   <div>
-                     <input id="calculated_result" name="calculated_result" class="element text small" type="text" maxlength="10" value=""/> 
+                     <input id="calculated_result" name="calculated_result" class="element text small" type="text" maxlength="10"/> 
                   </div>
                </li>
             </ul>
