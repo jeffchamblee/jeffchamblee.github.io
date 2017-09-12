@@ -10,11 +10,11 @@ body
 #form_container
 {
 	background:#fff;
-	
 	margin:0 auto;
 	text-align:left;
 	width:640px;
 }
+
 
 #top
 {
@@ -862,4 +862,15 @@ border-bottom: 1px solid #999;
 background: #dedede;
 font-weight: bold;
 }
+
+.text_container
+{
+	background:#fff;
+	margin: 0 auto;
+	text-align:left;
+	width:640px;
+	padding: 20px;
+
+}
+
 
