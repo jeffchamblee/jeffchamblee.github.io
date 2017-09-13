@@ -27,12 +27,9 @@ var innovation = {
             ],
             //age: old
             [
-                [3, 12, 15],
-                //conservative
-                [15, 44, 50],
-                //moderate
-                [36, 72, 76],
-                //liberal
+                [3, 12, 15],  //conservative
+                [15, 44, 50], //moderate
+                [36, 72, 76], //liberal
             ]
         ];
 
@@ -139,13 +136,13 @@ var innovation = {
         //display final score
         document.getElementById('calculated_result').value = Math.round(score);
     }
-}
+};
 
 //set event listener on all elements
 document.addEventListener("DOMContentLoaded", function () {
-	var elementList = document.getElementsByClassName("element");
-	var index=0;
-	for (;index < elementList.length; index++) {
-		elementList[index].addEventListener("change", innovation.calculate);
-	}
+    var elementList = document.getElementsByClassName("element");
+    var index=0;
+    for (;index < elementList.length; index++) {
+        elementList[index].addEventListener("change", innovation.calculate);
+    }
 });
