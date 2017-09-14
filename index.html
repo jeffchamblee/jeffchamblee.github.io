@@ -21,15 +21,19 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="/resources/js/w3-library.js"></script>
+<script src="/resources/js/left-nav.js"></script>
+<script src="/resources/js/top-nav.js"></script>
+
 
 </head> 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
  <div w3-include-html="/resources/html/left-nav.html"></div> 
- <div w3-include-html="/resources/html/top-nav.html"></div> 
  
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
+
+ <div w3-include-html="/resources/html/top-nav.html"></div> 
   
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
@@ -143,34 +147,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 
 <script>
-// Script to open and close sidenav
-function w3_open() {
-    document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-//buttons
-$("#open-data-1").click(function(){
-    window.location.href = "/catalog-viewer/SocrataDomains.html";
-}); 
-$("#open-data-2").click(function(){
-    window.location.href = "/catalog-viewer/DataCatalogSearch.html";
-}); 
-$("#web-app-security").click(function(){
-    window.location.href = "/owasp-quiz/OWASPQuiz1.html";
-}); 
-$("#data-viz").click(function(){
-    window.location.href = "/medicaid/charts/index.html";
-}); 
-$("#drug-price").click(function(){
-    window.location.href = "/drug-prices/DrugPriceIncrease.html";
-}); 
-
 //divs/images
 $("#open-data-div").click(function(){
     window.location.href = "/catalog-viewer/SocrataDomains.html";
