@@ -5,6 +5,7 @@ var topNavButtons = {
                 console.log("createListeners");
                 //buttons
                 $("#open-data-1").click(function(){
+                    console.log("click 1");
                     window.location.href = "/catalog-viewer/SocrataDomains.html";
                 }); 
                 $("#open-data-2").click(function(){
