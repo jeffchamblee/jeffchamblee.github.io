@@ -1,9 +1,8 @@
 "use strict";
 
 var topNavButtons = {
-      console.log("topNavButtons");
         createListeners: function() {
-                  console.log("createListeners");
+                console.log("createListeners");
                 //buttons
                 $("#open-data-1").click(function(){
                     window.location.href = "/catalog-viewer/SocrataDomains.html";
@@ -24,6 +23,7 @@ var topNavButtons = {
 };
 
 $(document).ready(function() {
+    console.log("topNavButtons");
     topNavButtons.createListeners();
 });
 
