@@ -152,6 +152,15 @@ console.log("includeHTML done");
 <script>
 var topNavButtons = {
         createListeners: function() {
+        }
+};
+
+$(document).ready(function() {
+    console.log("topNavButtons");
+    topNavButtons.createListeners();
+});
+
+
                 console.log("createListeners");
                 //buttons
                 $("#open-data-1").click(function() {
@@ -170,14 +179,6 @@ var topNavButtons = {
                 $("#drug-price").click(function() {
                     window.location.href = "/drug-prices/DrugPriceIncrease.html";
                 });
-        }
-};
-
-$(document).ready(function() {
-    console.log("topNavButtons");
-    topNavButtons.createListeners();
-});
-
 
 //divs/images
 $("#open-data-div").click(function(){
