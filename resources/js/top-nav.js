@@ -22,9 +22,3 @@ var topNavButtons = {
         }
 };
 
-/*
-$(document).ready(function() {
-    console.log("topNavButtons");
-    topNavButtons.createListeners();
-});
-*/

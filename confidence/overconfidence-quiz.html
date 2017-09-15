@@ -26,7 +26,12 @@ Overconfidence Quiz
 </head>
 
 <body id="public">
+
+ <div w3-include-html="/resources/html/left-nav.html"></div> 
+
 <div id="container">
+ <div w3-include-html="/resources/html/top-nav.html"></div> 
+
 <h1>Overconfidence Quiz</h1>
 <div class="info">
     <!-- <a href="http://messymatters.com">Messy Matters</a>  -->
@@ -47,6 +52,9 @@ Overconfidence Quiz
 
 <p>Source: <a href="http://www.amazon.com/Decision-Traps-J-Edward-Russo/dp/0385248350">Decision Traps by Russo and Shoemaker</a></p>
 </div>
+<script src="/resources/js/left-nav.js"></script>
+<script src="/resources/js/top-nav.js"></script>
+<script>w3.includeHTML(topNavButtons.createListeners); </script>
 	
 </body>
 </html>
