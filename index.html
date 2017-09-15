@@ -144,39 +144,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 
 
+<script src="/resources/js/left-nav.js"></script>
+<script src="/resources/js/top-nav.js"></script>
+
 <script>
-var topNavButtons = {
-        createListeners: function() {
-                console.log("createListeners");
-                //buttons
-                $("#open-data-1").click(function() {
-                    console.log("click 1");
-                    window.location.href = "/catalog-viewer/SocrataDomains.html";
-                });
-                $("#open-data-2").click(function() {
-                    window.location.href = "/catalog-viewer/DataCatalogSearch.html";
-                });
-                $("#web-app-security").click(function() {
-                    window.location.href = "/owasp-quiz/OWASPQuiz1.html";
-                });
-                $("#data-viz").click(function() {
-                    window.location.href = "/medicaid/charts/index.html";
-                });
-                $("#drug-price").click(function() {
-                    window.location.href = "/drug-prices/DrugPriceIncrease.html";
-                });
-
-        }
-};
-
-$(document).ready(function() {
-    console.log("topNavButtons");
-    topNavButtons.createListeners();
-});
 
 w3.includeHTML(topNavButtons.createListeners); 
 console.log("includeHTML done");
-
 
 //divs/images
 $("#open-data-div").click(function(){
@@ -197,12 +171,7 @@ $("#drug-price-div").click(function(){
 $("#drug-price-ful-div").click(function(){
     window.location.href = "/drug-prices/UpperLimits.html";
 }); 
-
-
 </script>
-
-<script src="/resources/js/left-nav.js"></script>
-<script src="/resources/js/top-nav.js"></script>
 
 </body>
 </html>
