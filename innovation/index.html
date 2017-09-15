@@ -9,11 +9,24 @@
 
       <title>Are You an Innovator?</title>
       <link rel="stylesheet" type="text/css" href="innovator.css" media="all">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+      <style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
       <script type="text/javascript" src="innovator.js"></script>
+      <script type="text/javascript" src="/resources/js/w3-library.js"></script>
+
    </head>
    <body id="main_body" >
+    <div w3-include-html="/resources/html/left-nav.html"></div> 
+
       <img id="top" src="top.png" alt="">
       <div id="form_container">
+       <div w3-include-html="/resources/html/top-nav.html"></div> 
+
          <h1><a>Are You an Innovator?</a></h1>
          <form id="innovator" class="appnitro" method="post">
             <div class="form_description">
@@ -108,6 +121,10 @@
          </div>
       </div>
       <img id="bottom" src="bottom.png" alt="">
+      <script src="/resources/js/left-nav.js"></script>
+      <script src="/resources/js/top-nav.js"></script>
+      <script>w3.includeHTML(topNavButtons.createListeners); </script>
+
    </body>
 </html>
 
