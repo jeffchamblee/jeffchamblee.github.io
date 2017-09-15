@@ -145,22 +145,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 
 <script>
-w3.includeHTML(); 
-console.log("includeHTML done");
-</script>
-
-<script>
 var topNavButtons = {
         createListeners: function() {
-        }
-};
-
-$(document).ready(function() {
-    console.log("topNavButtons");
-    topNavButtons.createListeners();
-});
-
-
                 console.log("createListeners");
                 //buttons
                 $("#open-data-1").click(function() {
@@ -179,6 +165,18 @@ $(document).ready(function() {
                 $("#drug-price").click(function() {
                     window.location.href = "/drug-prices/DrugPriceIncrease.html";
                 });
+
+        }
+};
+
+$(document).ready(function() {
+    console.log("topNavButtons");
+    topNavButtons.createListeners();
+});
+
+w3.includeHTML(topNavButtons.createListeners); 
+console.log("includeHTML done");
+
 
 //divs/images
 $("#open-data-div").click(function(){
