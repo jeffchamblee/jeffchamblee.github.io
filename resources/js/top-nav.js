@@ -8,8 +8,8 @@ var topNavButtons = {
                 $("#open-data-2").click(function() {
                     window.location.href = "/catalog-viewer/DataCatalogSearch.html";
                 });
-                $("#web-app-security").click(function() {
-                    window.location.href = "/owasp-quiz/OWASPQuiz1.html";
+                $("#quiz-yourself").click(function() {
+                    window.location.href = "/quizzes/index.html";
                 });
                 $("#data-viz").click(function() {
                     window.location.href = "/medicaid/charts/index.html";
