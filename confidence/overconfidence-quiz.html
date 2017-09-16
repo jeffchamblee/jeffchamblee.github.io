@@ -14,11 +14,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <!-- CSS -->
-<link rel="stylesheet" href="/resources/css/w3c.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/w3c.css"/>
 <link rel="stylesheet" href="quiz.css" type="text/css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
-<style>
+<style type="text/css" >
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
 </style>
@@ -45,10 +45,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	In particular, if you are very uncertain, then give a very wide range; 
 	and if you happen to be quite certain, then give a narrow range.
 	<p>If you are perfectly calibrated then 90% of your intervals (no more, no less) should contain the right answers.</p>
-	<p><b>Please try your best, but don't look up the answers!</b></div></p>
+	<p><b>Please try your best, but don't look up the answers!</b></p>
 </div>
 
-    <form id="quiz1" name="quiz1" class="page1" autocomplete="off" action="#">
+    <form id="quiz1" name="quiz1" class="page1" action="#">
         <!-- JavaScript puts questions here -->
         <ol id="confidence_test"></ol>
 	    <input id="saveForm" class="submit" type="submit" value="Submit" onclick="confidence_test.checkAnswers()" />
@@ -59,9 +59,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 </div>
 
-<script src="/resources/js/left-nav.js"></script>
-<script src="/resources/js/top-nav.js"></script>
-<script>w3.includeHTML(topNavButtons.createListeners); </script>
+<script type="text/javascript" src="/resources/js/left-nav.js"></script>
+<script type="text/javascript" src="/resources/js/top-nav.js"></script>
+<script type="text/javascript">w3.includeHTML(topNavButtons.createListeners); </script>
 	
 </body>
 </html>
