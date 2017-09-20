@@ -2,22 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Socrata Metadata</title>
+    <title>Socrata Catalog - Get All Datasets For a Domain</title>
 </head>
 <body>
-    <h1>Socrata Metadata</h1>
-    <p>Demonstration of  web service query to get the metadata of a Socrata domain. Our primary need right now is to get the last modified date.</p>
-    <p>This demonstration shows that this method works ...</p>
-    <h2>Get Metadata from Socrata Dataset</h2>
+    <h1>Socrata Catalog - Get All Datasets For a Domain</h1>
+    <p>Demonstration of catalog queries to get all datasets within a Socrata domain. </p>
     <form onsubmit="getSocrataMetadata();return false;">
         <select id="domain-selector">
-            <option value="data.medicaid.gov">
+            <option value="data.Medicaid.gov">
                 data.Medicaid.gov
             </option>
-            <option value="data.cms.gov">
+            <option value="data.CMS.gov">
                 data.CMS.gov
             </option>
-            <option value="data.maryland.gov">
+            <option value="data.Maryland.gov">
                 data.Maryland.gov
             </option>
         </select> <button class="button" type="submit">Get Metadata</button>
@@ -37,18 +35,17 @@
         <tbody>
         </tbody>
     </table>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
     <script>
     if (!window.jQuery) { document.write('<script src="/js/jquery.min.js"><\/script>'); }
-    </script> 
-    <script src="/resources/js/date-converter.js" type="text/javascript">
     </script> 
     <script type="text/javascript">
     function getSocrataMetadata() {
         var element = document.getElementById("domain-selector");
         var domain = element.options[element.selectedIndex].value;
         var webservice = "http://api.us.socrata.com/api/catalog/v1?&only=datasets&limit=10000&order=name&domains=" + domain;
+        //clear rows of previous query from table
+        $("#dataset-table > tbody").html("");
         $.getJSON(webservice, function(results){
             //console.log(results);
             document.getElementById("domain-name").innerHTML = domain;
