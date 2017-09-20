@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Socrata Metadata</title>
+</head>
+<body>
+    <h1>Socrata Metadata</h1>
+    <p>Demonstration of  web service query to get the metadata of a Socrata dataset. Our primary need right now is to get the last modified date.</p>
+    <p>This demonstration shows that this method works on small datasets, but does not scale to large ones. The first three datasets in the dropdown have less than 100 records and work fine. The NADAC dataset, however, has over 10 million records. The web service call retrieves all records and takes too long for NADAC.</p>
+    <h2>Get Metadata from Socrata Dataset</h2>
+    <form onsubmit="getSocrataMetadata();return false;">
+        <select id="dataset-selector">
+            <option value="https://data.medicaid.gov/api/views/dcqj-3xxe/rows.json">
+                SOTA Contacts
+            </option>
+            <option value="https://data.medicaid.gov/api/views/xjuw-wgmy/rows.json">
+                Presumptive Eligibility for Medicaid and CHIP
+            </option>
+            <option value="https://data.medicaid.gov/api/views/8vcd-dnq9/rows.json">
+                Express Lane Eligibility
+            </option>
+            <option value="https://data.medicaid.gov/api/views/a4y5-998d/rows.json">
+                NADAC
+            </option>
+        </select> <button class="button" type="submit">Get Dataset Metadata</button>
+    </form>
+    <h2>Dataset name: <span id="dataset-name"></span></h2>
+    <p>Dataset JSON URL: <span id="dataset-json-url"></span></p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Created</th>
+                <td><span class="resultbox" id="result-created"></span></td>
+            </tr>
+            <tr>
+                <th>Index updated</th>
+                <td><span class="resultbox" id="result-index-updated"></span></td>
+            </tr>
+            <tr>
+                <th>Rows updated</th>
+                <td><span class="resultbox" id="result-rows-updated"></span></td>
+            </tr>
+            <tr>
+                <th>Published</th>
+                <td><span class="resultbox" id="result-published"></span></td>
+            </tr>
+            <tr>
+                <th>View updated</th>
+                <td><span class="resultbox" id="result-view-modified"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script> 
+    <script>
+    if (!window.jQuery) { document.write('<script src="/js/jquery.min.js"><\/script>'); }
+    </script> 
+    <script src="/resources/js/date-converter.js" type="text/javascript">
+    </script> 
+    <script type="text/javascript">
+    function callEpochToHumanRevised() {
+        var inputtext = $('#socrata-input').val();
+        EpochToHumanRevised(inputtext, "socrata-result");
+    }
+    function getDateString(dateNumber) {
+        var date = new Date(dateNumber);
+        return date.toDateString();
+    }
+    function getSocrataMetadata(jsonUrl) {
+        var element = document.getElementById("dataset-selector");
+        var jsonUrl = element.options[element.selectedIndex].value;
+        $.getJSON(jsonUrl, function(result){
+            document.getElementById("dataset-name").innerHTML = result.meta.view.name;
+            document.getElementById("dataset-json-url").innerHTML = jsonUrl;
+            //console.log("rowsUpdatedAt: " + result.meta.view.rowsUpdatedAt);
+            EpochToHumanRevised(result.meta.view.createdAt, "result-created");
+            EpochToHumanRevised(result.meta.view.rowsUpdatedAt, "result-rows-updated");
+            EpochToHumanRevised(result.meta.view.indexUpdatedAt, "result-index-updated");
+            EpochToHumanRevised(result.meta.view.publicationDate, "result-published");
+            EpochToHumanRevised(result.meta.view.viewLastModified, "result-view-modified");
+            //document.getElementById("result-created").innerHTML = getDateString(result.meta.view.createdAt);
+            
+        });
+    }
+
+    </script>
+</body>
+</html>
