@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="DCTERMS.title" content="Jeff Chamblee"/>
+    <meta name="description" content="Search all Socrata open data websites."/>
+    <meta name="DCTERMS.description" content="Search all Socrata open data websites."/>
+    <meta name="keywords" content="open data, government data, Socrata, datasets"/>
+    <meta name="DCTERMS.subject" content="search, open data, government data, Socrata, datasets"/>
+    <meta name="DCTERMS.language" content="en-us" />
+
+    <title>Search Data Catalogs</title>
+    <!--
+    <style type="text/css">
+    div.main_content {width:1200px;
+                      margin:1% auto;
+                      border:solid 1px #969494;}
+
+    </style>
+    -->
+    <!-- NavBar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+      
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+      
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf-8" src="js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://momentjs.com/downloads/moment.js"></script>
+
+</head>
+<body>
+<div id="nav">
+<ul>
+  <li><a class="navbar" href="../index.html">Home</a></li>
+  <li><a class="navbar" href="SocrataDomains.html">List Data Catalogs</a></li>
+  <li><a class="navbar" href="DataCatalogSearch.html">Search Data Catalogs</a></li>
+</ul>
+</div>
+
+<div class="main_content">
+
+    <div> 
+	
+        <span id="prompt" class="form-field">Domain: </span>
+        <select id="domain" name="selectDomain" onchange='dataCatalogSearch.onChangeDomain(this);' class="form-field">
+		  <option value="all">All Domains
+        <!-- CONTENT IS DELIVERED BY JSON -->
+        </select>
+        <input type="button" id="btnSearch" Value="Search" onclick="dataCatalogSearch.onSearch();" />
+    </div>
+
+    <table id="catalog_table" class="display" data-page-length='25'>
+    <thead>
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Categories</th>
+    <th>Page Views</th>
+    <th>Updated Date</th>
+    <th>Created By</th>
+    <th>Link</th>
+</tr>
+    </thead>
+    <tbody>
+    <!-- CONTENT IS DELIVERED BY JSON -->
+    </tbody>
+    <tfoot>
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Categories</th>
+    <th>Page Views</th>
+    <th>Updated Date</th>
+    <th>Created By</th>
+    <th>Link</th>
+</tr>
+    </tfoot>
+</table>
+</div>
+<script type="text/javascript" charset="utf-8" src="/resources/js/socrata-catalog.js"></script>
+</body>
+</html>

@@ -35,7 +35,7 @@ var socrataDomainFinder = {
             "processing" : true,
             "url": "http://api.us.socrata.com/api/catalog/v1/domains",
             "dataSrc" : "results",
-			cache: true
+            cache: true
         },
         "columns": [
             { "data" : "domain",
@@ -43,7 +43,7 @@ var socrataDomainFinder = {
                     $(nTd).html("<a href='//" + oData.domain + "'>" + oData.domain + "</a>");
                 }
             },
-            { "data" : "count" },
+            { "data" : "count" }
         ]
     } );
     columnSearch.makeColumnsSearchable();

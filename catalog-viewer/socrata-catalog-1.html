@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Socrata Catalog - Get All Datasets For a Domain</title>
+    <style type="text/css">
+        div.main_content {
+            width:1200px;
+            margin:1% auto;
+            border:solid 1px #969494;
+        }
+    </style>
+    <!-- NavBar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+      
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf-8" src="js/jquery.dataTables.js"></script>
+    
+</head>
+<body>
+    <h1>Socrata Catalog - Get All Datasets For a Domain</h1>
+    <p>Demonstration of catalog queries to get all datasets within a Socrata domain. </p>
+    <form onsubmit="socrata_catalog.getMetadata();return false;">
+        <select id="domain-selector">
+            <option value="data.Medicaid.gov">
+                data.Medicaid.gov
+            </option>
+            <option value="data.CMS.gov">
+                data.CMS.gov
+            </option>
+            <option value="data.Maryland.gov">
+                data.Maryland.gov
+            </option>
+        </select> <button class="button" type="submit">Get Metadata</button>
+    </form>
+    <h2>Domain name: <span id="domain-name"></span></h2>
+    <p>Web Service URL: <span id="domain-json-url"></span></p>
+    <p>Number of datasets: <span id="dataset-count"></span></p>
+    <table id="dataset-table">
+        <thead>
+            <tr>
+                <th>Dataset Name</th>
+                <th>Downloads</th>
+                <th>Updated Date</th>
+                <th>Owner</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script>
+    if (!window.jQuery) { document.write('<script src="/resources/js/jquery.min.js"><\/script>'); }
+    </script> 
+    <script type="text/javascript" src="/resources/js/socrata-catalog.js"></script>
+</body>
+</html>
