@@ -35,9 +35,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
  <div w3-include-html="/resources/html/top-nav.html"></div> 
  <div style="padding: 20px">
 <h2>Decision Problems from Prospect Theory: Decisions Under Risk. By Daniel Kahneman and Amos Tversky</h2>
-<p>The following decision problems are from Prospect Theory: Decisions Under Risk, by Daniel Kahneman and Amos Tversky</p>
+<p>The following decision problems are from Prospect Theory: Decisions Under Risk by Daniel Kahneman and Amos Tversky</p>
+         <form id="decision_problems" class="appnitro" method="post">
+            <div class="form_description">
+               <h2>Decision Problems from Prospect Theory </h2>
+               <p>The following decision problems are from Prospect Theory: Decisions Under Risk, by Daniel Kahneman and Amos Tversky</p>
+            </div>
 <ol>
-
                <li id="li_1" >
                   <label class="description">Which of the following would you prefer? </label>
                   <span>
@@ -47,22 +51,24 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
                   <label class="choice" for="age_2">$450 for sure</label>
                   </span> 
                </li>
-
-<li>
-Which of the following would you prefer?
-50% chance to win $1000, 50% chance to win nothing
-$450 for sure
-	</li>
-	<li>
-Which of the following would you prefer?
-95% chance to win $850, 5% chance to win nothing
-$750 for sure
-	</li>
-	<li>
-Which of the following would you prefer?
-55% chance to win $750, 45% chance to win nothing
-50% chance to win $850, 50% chance to win nothing
-	</li>
+               <li id="li_1" >
+                  <label class="description">Which of the following would you prefer? </label>
+                  <span>
+                  <input id="age_1" name="age" class="element radio" type="radio" value="true" />
+                  <label class="choice" for="age_1">95% chance to win $850, 5% chance to win nothing</label>
+                  <input id="age_2" name="age" class="element radio" type="radio" value="false" />
+                  <label class="choice" for="age_2">$750 for sure</label>
+                  </span> 
+               </li>
+               <li id="li_1" >
+                  <label class="description">Which of the following would you prefer? </label>
+                  <span>
+                  <input id="age_1" name="age" class="element radio" type="radio" value="true" />
+                  <label class="choice" for="age_1">55% chance to win $750, 45% chance to win nothing</label>
+                  <input id="age_2" name="age" class="element radio" type="radio" value="false" />
+                  <label class="choice" for="age_2">50% chance to win $850, 50% chance to win nothing</label>
+                  </span> 
+               </li>
 	<li>
 Which of the following would you prefer?
 33% chance to win $2500, 66% chance to win $2400, 1% chance to win nothing
@@ -120,6 +126,8 @@ lose $500 for sure
 <ol>
 	<li></li>
 </ol>
+         </form>
+
 </div>
 <p>Source: </p>
 </div>
