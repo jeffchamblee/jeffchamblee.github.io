@@ -45,8 +45,12 @@
 				<p>The following decision problems are from Prospect Theory: Decisions Under Risk, by Daniel Kahneman and Amos Tversky</p>
 			</div>
 			<ol>
-				<li id="decision_1"><label class="description">Which of the following would you prefer?</label> <span><input class="element radio" id="age_1" name="age" type="radio" value="max_utility"> <label class="choice" for="age_1">50% chance to win $1000, 50% chance to win nothing</label> <input class="element radio" id="age_2" name="age" type="radio" value="certainty"> <label class="choice" for="age_2">$450 for sure</label></span></li>
-				<li id="li_1"><label class="description">Which of the following would you prefer?</label> <span><input class="element radio" id="decision_1_A" name="age" type="radio" value="true"> <label class="choice" for="age_1">95% chance to win $850, 5% chance to win nothing</label> <input class="element radio" id="age_2" name="age" type="radio" value="false"> <label class="choice" for="age_2">$750 for sure</label></span></li>
+				<li id="decision_1"><label class="description">Which of the following would you prefer?</label> <span><input class="element radio" id="age_1" name="age" type="radio" value="1"> <label class="choice" for="age_1">50% chance to win $1000, 50% chance to win nothing</label> <input class="element radio" id="age_2" name="age" type="radio" value="2"> <label class="choice" for="age_2">$450 for sure</label></span></li>
+				<p class="answer" id="answer1"></p>
+
+				<li id="li_1"><label class="description">Which of the following would you prefer?</label> <span><input class="element radio" id="decision_1_A" name="age" type="radio" value="1"> <label class="choice" for="age_1">95% chance to win $850, 5% chance to win nothing</label> <input class="element radio" id="age_2" name="age" type="radio" value="2"> <label class="choice" for="age_2">$750 for sure</label></span></li>
+				<p class="answer" id="answer2"></p>
+
 				<li id="decision_1"><label class="description">Which of the following would you prefer?</label> <span><input class="element radio" id="decision_1_B" name="age" type="radio" value="true"> <label class="choice" for="age_1">55% chance to win $750, 45% chance to win nothing</label> <input class="element radio" id="age_2" name="age" type="radio" value="false"> <label class="choice" for="age_2">50% chance to win $850, 50% chance to win nothing</label></span></li>
 				<li id="li_1"><label class="description">Which of the following would you prefer?</label> <span><input class="element radio" id="age_1" name="age" type="radio" value="true"> <label class="choice" for="age_1">33% chance to win $2500, 66% chance to win $2400, 1% chance to win nothing</label> <input class="element radio" id="age_2" name="age" type="radio" value="false"> <label class="choice" for="age_2">$2400 for sure</label></span></li>
 				<li id="li_1"><label class="description">Which of the following would you prefer?</label> <span><input class="element radio" id="age_1" name="age" type="radio" value="true"> <label class="choice" for="age_1">33% chance to win $2500, 67% chance to win nothing</label> <input class="element radio" id="age_2" name="age" type="radio" value="false"> <label class="choice" for="age_2">34% chance to win $2400, 66% chance to win nothing</label></span></li>
@@ -59,10 +63,9 @@
 				<li id="li_1"><label class="description">In addition to whatever you own, you have been given $1000. You are now asked to choose between:</label> <span><input class="element radio" id="age_1" name="age" type="radio" value="true"> <label class="choice" for="age_1">50% chance to win $1000</label> <input class="element radio" id="age_2" name="age" type="radio" value="false"> <label class="choice" for="age_2">$500 for sure</label></span></li>
 				<li id="li_1"><label class="description">In addition to whatever you own, you have been given $2000. You are now asked to choose between:</label> <span><input class="element radio" id="age_1" name="age" type="radio" value="true"> <label class="choice" for="age_1">50% chance to lose $1000</label> <input class="element radio" id="age_2" name="age" type="radio" value="false"> <label class="choice" for="age_2">lose $500 for sure</label></span></li>
 			</ol>
-			<p><a href="javascript:void(0);" onclick="document.getElementById('answer').style.display='block'; return true;">Click Here for Answers</a> (don't cheat!)</p>
+			<p><a href="javascript:void(0);" onclick="prospect_theory.displayAnswers(); return true;">Click Here for Answers</a> (don't cheat!)</p>
 			<div id="answer" style="display:none;">
 				<h4>Answers</h4>
-				<p id="answer"></p>
 				<ol>
 					<li></li>
 				</ol>

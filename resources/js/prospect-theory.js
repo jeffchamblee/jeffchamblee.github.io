@@ -1,18 +1,35 @@
 "use strict";
-
 var prospect_theory = {
-    create: function() {
-        $('#decision_1 input:radio').click(function() {
-    if ($(this).val() === 'max_utility') {
-      $("#answer").text("Chose maximizing utility over certainty");
-    } else if ($(this).val() === 'certainty') {
-      $("#answer").text("Chose certainty over maximizing utility");
-    } 
-  });
-
-    }
+	hideAnswers: function() {
+	    $(".answer").css("display:none;");
+	},
+	displayAnswers: function() {
+		//document.getElementById('answer').style.display='block'; 
+		
+		// show answers
+	    $(".answer").css("display:block;");
+		// question 1 
+		if ($(this).val() === '1') {
+			$("#answer1").text("You chose to maximize utility over certainty");
+		} else if ($(this).val() === '2') {
+			$("#answer1").text("You chose certainty over maximizing utility");
+		}
+		// question 2
+		if ($(this).val() === '1') {
+			$("#answer2").text("You chose maximizing utility over certainty");
+		} else if ($(this).val() === '2') {
+			$("#answer2").text("You chose certainty over maximizing utility");
+		}
+	}
 };
 
 $(document).ready(function() {
-    prospect_theory.create();
+	prospect_theory.hideAnswers();
 });
+
+/*
+    // event handlers
+		$('#decision_1 input:radio').click(function() {
+		});
+
+*/
