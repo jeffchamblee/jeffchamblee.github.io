@@ -17,7 +17,7 @@ var prospect_theory = {
 			$("#answer1").text("You chose certainty over maximizing utility");
 		}
 		// question 2
-		console.log($('#decision_1 input:radio').val());
+		console.log($('#decision_2 input:radio').val());
 		if ($('#decision_2 input:radio').val() === '1') {
 			$("#answer2").text("You chose maximizing utility over certainty");
 		} else if ($('#decision_2 input:radio').val() === '2') {
