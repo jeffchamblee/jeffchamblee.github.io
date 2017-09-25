@@ -11,13 +11,13 @@ var prospect_theory = {
 	    $(".answer").css("color:blue;");
 		// question 1 
 		console.log($('input[name=decision_1]:checked', '#decision_problems').val());
-		if ($('#decision_1 input:checked').val() === '1') {
+		if ($('input[name=decision_1]:checked', '#decision_problems').val() === '1') {
 			$("#answer1").text("You chose maximizing utility over certainty");
-		} else if ($('#decision_1 input:checked').val() === '2') {
+		} else if $('input[name=decision_1]:checked', '#decision_problems').val() === '2') {
 			$("#answer1").text("You chose certainty over maximizing utility");
 		}
 		// question 2
-		console.log($('#decision_2 input:radio').val());
+		console.log($('input[name=decision_2]:checked', '#decision_problems').val());
 		if ($('#decision_2 input:radio').val() === '1') {
 			$("#answer2").text("You chose maximizing utility over certainty");
 		} else if ($('#decision_2 input:radio').val() === '2') {
