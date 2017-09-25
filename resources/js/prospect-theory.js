@@ -88,7 +88,30 @@ var prospect_theory = {
 		} else if (selectedRadio === '2') {
 			$("#answer10").text("You chose certainty over maximizing utility");
 		}
-
+		// question 11
+		var selectedRadio = $('input[name=decision_11]:checked', '#decision_problems').val();
+		console.log(selectedRadio);
+		if (selectedRadio === '1') {
+			$("#answer11").text("You chose maximizing utility over certainty");
+		} else if (selectedRadio === '2') {
+			$("#answer11").text("You chose certainty over maximizing utility");
+		}
+		// question 12
+		var selectedRadio = $('input[name=decision_12]:checked', '#decision_problems').val();
+		console.log(selectedRadio);
+		if (selectedRadio === '1') {
+			$("#answer12").text("You chose maximizing utility over certainty");
+		} else if (selectedRadio === '2') {
+			$("#answer12").text("You chose certainty over maximizing utility");
+		}
+		// question 13
+		var selectedRadio = $('input[name=decision_13]:checked', '#decision_problems').val();
+		console.log(selectedRadio);
+		if (selectedRadio === '1') {
+			$("#answer13").text("You chose maximizing utility over certainty");
+		} else if (selectedRadio === '2') {
+			$("#answer13").text("You chose certainty over maximizing utility");
+		}
 	}
 };
 
