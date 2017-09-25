@@ -11,9 +11,9 @@ var prospect_theory = {
 	    $(".answer").css("color:blue;");
 		// question 1 
 		console.log($('#decision_1 input:radio').val());
-		if ($('#decision_1 input:radio').val() === '1') {
+		if ($('#decision_1_A').prop("checked", true) === '1') {
 			$("#answer1").text("You chose maximizing utility over certainty");
-		} else if ($('#decision_1 input:radio').val() === '2') {
+		} else if ($('#decision_1_B').prop("checked", true)  === '2') {
 			$("#answer1").text("You chose certainty over maximizing utility");
 		}
 		// question 2
