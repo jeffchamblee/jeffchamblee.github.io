@@ -9,15 +9,15 @@ var prospect_theory = {
 		// show answers
 	    $(".answer").css("display:block;");
 		// question 1 
-		if ($(this).val() === '1') {
+		if ($('#decision_1 input:radio').val() === '1') {
 			$("#answer1").text("You chose to maximize utility over certainty");
-		} else if ($(this).val() === '2') {
+		} else if ($('#decision_1 input:radio')..val() === '2') {
 			$("#answer1").text("You chose certainty over maximizing utility");
 		}
 		// question 2
-		if ($(this).val() === '1') {
+		if ($('#decision_2 input:radio')..val() === '1') {
 			$("#answer2").text("You chose maximizing utility over certainty");
-		} else if ($(this).val() === '2') {
+		} else if ($('#decision_2 input:radio')..val() === '2') {
 			$("#answer2").text("You chose certainty over maximizing utility");
 		}
 	}
