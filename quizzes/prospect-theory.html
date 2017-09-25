@@ -22,7 +22,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript">
 	</script>
 	<script src="/resources/js/w3-library.js" type="text/javascript">
-	<script type="text/javascript" src="/resources/js/prospect-theory.js"></script>
 
 	</script>
 </head>
@@ -59,6 +58,8 @@
 				<li id="li_1"><label class="description">In addition to whatever you own, you have been given $1000. You are now asked to choose between:</label> <span><input class="element radio" id="age_1" name="age" type="radio" value="true"> <label class="choice" for="age_1">50% chance to win $1000</label> <input class="element radio" id="age_2" name="age" type="radio" value="false"> <label class="choice" for="age_2">$500 for sure</label></span></li>
 				<li id="li_1"><label class="description">In addition to whatever you own, you have been given $2000. You are now asked to choose between:</label> <span><input class="element radio" id="age_1" name="age" type="radio" value="true"> <label class="choice" for="age_1">50% chance to lose $1000</label> <input class="element radio" id="age_2" name="age" type="radio" value="false"> <label class="choice" for="age_2">lose $500 for sure</label></span></li>
 			</ol>
+			<input id="displayAnswers" class="submit" type="submit" value="Display Answers" onclick="prospect_theory.displayAnswers()">
+			<!--
 			<p><a href="javascript:void(0);" onclick="prospect_theory.displayAnswers(); return true;">Click Here for Answers</a> (don't cheat!)</p>
 			<div id="answer" style="display:none;">
 				<h4>Answers</h4>
@@ -66,6 +67,7 @@
 					<li></li>
 				</ol>
 			</div>
+			-->
 		</form>
 </div>
 <p>Source: <a href="https://www.princeton.edu/~kahneman/docs/Publications/prospect_theory.pdf">Prospect Theory: Decisions Under Risk</a>, by Daniel Kahneman and Amos Tversky</p>
@@ -75,6 +77,7 @@
 <script type="text/javascript" src="/resources/js/left-nav.js"></script>
 <script type="text/javascript" src="/resources/js/top-nav.js"></script>
 <script type="text/javascript">w3.includeHTML(topNavButtons.createListeners); </script>
-	
+<script type="text/javascript" src="/resources/js/prospect-theory.js"></script>
+
 </body>
 </html>
