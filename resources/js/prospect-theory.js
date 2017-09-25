@@ -34,7 +34,6 @@ var prospect_theory = {
 		}
 		// question 4
 		var selectedRadio = $('input[name=decision_4]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer4").text("You chose maximizing utility over certainty");
 		} else if (selectedRadio === '2') {
@@ -42,7 +41,6 @@ var prospect_theory = {
 		}
 		// question 5
 		var selectedRadio = $('input[name=decision_5]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer5").text("You chose maximizing utility over certainty");
 		} else if (selectedRadio === '2') {
@@ -50,7 +48,6 @@ var prospect_theory = {
 		}
 		// question 6
 		var selectedRadio = $('input[name=decision_6]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer6").text("You chose maximizing utility over certainty");
 		} else if (selectedRadio === '2') {
@@ -58,7 +55,6 @@ var prospect_theory = {
 		}
 		// question 7
 		var selectedRadio = $('input[name=decision_7]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer7").text("You chose maximizing utility over certainty");
 		} else if (selectedRadio === '2') {
@@ -66,7 +62,6 @@ var prospect_theory = {
 		}
 		// question 8
 		var selectedRadio = $('input[name=decision_8]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer8").text("You chose maximizing utility over certainty");
 		} else if (selectedRadio === '2') {
@@ -74,7 +69,6 @@ var prospect_theory = {
 		}
 		// question 9
 		var selectedRadio = $('input[name=decision_9]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer9").text("You chose maximizing utility over certainty");
 		} else if (selectedRadio === '2') {
@@ -82,7 +76,6 @@ var prospect_theory = {
 		}
 		// question 10
 		var selectedRadio = $('input[name=decision_10]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer10").text("You chose maximizing utility over certainty");
 		} else if (selectedRadio === '2') {
