@@ -8,7 +8,7 @@ var prospect_theory = {
 		
 		// show answers
 	    $(".answer").css("display:block;");
-	    $(".answer").css("color:blue;");
+	    $(".answer").css("color", "blue");
 		// question 1 
 		var selectedRadio = $('input[name=decision_1]:checked', '#decision_problems').val();
 		console.log(selectedRadio);
@@ -18,7 +18,7 @@ var prospect_theory = {
 			$("#answer1").text("You chose certainty over maximizing utility");
 		}
 		// question 2
-		selectedRadio = $('input[name=decision_2]:checked', '#decision_problems').val();
+		var selectedRadio = $('input[name=decision_2]:checked', '#decision_problems').val();
 		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer2").text("You chose maximizing utility over certainty");
