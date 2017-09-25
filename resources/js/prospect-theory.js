@@ -48,6 +48,46 @@ var prospect_theory = {
 		} else if (selectedRadio === '2') {
 			$("#answer5").text("You chose certainty over maximizing utility");
 		}
+		// question 6
+		var selectedRadio = $('input[name=decision_6]:checked', '#decision_problems').val();
+		console.log(selectedRadio);
+		if (selectedRadio === '1') {
+			$("#answer6").text("You chose maximizing utility over certainty");
+		} else if (selectedRadio === '2') {
+			$("#answer6").text("You chose certainty over maximizing utility");
+		}
+		// question 7
+		var selectedRadio = $('input[name=decision_7]:checked', '#decision_problems').val();
+		console.log(selectedRadio);
+		if (selectedRadio === '1') {
+			$("#answer7").text("You chose maximizing utility over certainty");
+		} else if (selectedRadio === '2') {
+			$("#answer7").text("You chose certainty over maximizing utility");
+		}
+		// question 8
+		var selectedRadio = $('input[name=decision_8]:checked', '#decision_problems').val();
+		console.log(selectedRadio);
+		if (selectedRadio === '1') {
+			$("#answer8").text("You chose maximizing utility over certainty");
+		} else if (selectedRadio === '2') {
+			$("#answer8").text("You chose certainty over maximizing utility");
+		}
+		// question 9
+		var selectedRadio = $('input[name=decision_9]:checked', '#decision_problems').val();
+		console.log(selectedRadio);
+		if (selectedRadio === '1') {
+			$("#answer9").text("You chose maximizing utility over certainty");
+		} else if (selectedRadio === '2') {
+			$("#answer9").text("You chose certainty over maximizing utility");
+		}
+		// question 10
+		var selectedRadio = $('input[name=decision_10]:checked', '#decision_problems').val();
+		console.log(selectedRadio);
+		if (selectedRadio === '1') {
+			$("#answer10").text("You chose maximizing utility over certainty");
+		} else if (selectedRadio === '2') {
+			$("#answer10").text("You chose certainty over maximizing utility");
+		}
 
 	}
 };
