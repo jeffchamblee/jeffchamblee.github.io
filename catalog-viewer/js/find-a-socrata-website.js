@@ -43,7 +43,12 @@ var socrataDomainFinder = {
                     $(nTd).html("<a href='//" + oData.domain + "'>" + oData.domain + "</a>");
                 }
             },
-            { "data" : "count" }
+            { "data" : "count" },
+            { "data" : "domain",
+                "fnCreatedCell": function (nTd, sData, oData) {
+                    $(nTd).html("<input type=\"button\" onclick=\"location.href='/socrata-catalog/socrata-catalog.html?domain=" + oData.domain + "';\" value=\"Dataset Catalog\" />");
+                }
+            }
         ]
     } );
     columnSearch.makeColumnsSearchable();

@@ -1,6 +1,6 @@
 "use strict";
 
-//No longer used
+//used by socrata-catalog-1.html
 var socrata_catalog = {
     getMetadata: function () {
         var element = document.getElementById("domain-selector");
@@ -53,6 +53,7 @@ var columnSearch = {
 };
 
 var dataCatalogSearch = {
+    catalog_query: "http://api.us.socrata.com/api/catalog/v1?only=datasets&limit=10000&order=page_views_last_month",
     loadDomainDropdown: function (dropdown, url, nameattr) {
         //$(dropdown).empty();
         $.getJSON(url, {}, function (data) {
@@ -77,7 +78,7 @@ var dataCatalogSearch = {
         } else {
             domainString = "&domains=" + domain;
         }
-        return "http://api.us.socrata.com/api/catalog/v1?only=datasets&limit=10000&order=name" + domainString;
+        return this.catalog_query + domainString;
     },
     searchKeyPress: function (e) {
         // look for window.event in case event isn't passed in
@@ -88,11 +89,10 @@ var dataCatalogSearch = {
         }
         return true;
     },
-    loadResultsIntoTable: function () {
-        var urlString = this.getUrlString();
-        //console.log(urlString);
+    loadResultsIntoTable: function (urlString) {
         $('#catalog_table').dataTable({
             destroy: true,
+            "order": [[ 3, "desc" ]],
             "ajax": {
                 "processing": true,
                 "cache": true,
@@ -128,23 +128,37 @@ var dataCatalogSearch = {
         lTable.style.display = "none";
     },
     onChangeDomain: function () {
-        this.loadResultsIntoTable();
+        var urlString = this.getUrlString();
+        this.loadResultsIntoTable(urlString);
         this.showTable();
         return true;
     },
     onChangeResourceType: function () {
-        this.loadResultsIntoTable();
+        var urlString = this.getUrlString();
+        this.loadResultsIntoTable(urlString);
         this.showTable();
         return true;
     },
     onSearch: function () {
-        this.loadResultsIntoTable();
+        var urlString = this.getUrlString();
+        this.loadResultsIntoTable(urlString);
         this.showTable();
         return true;
     }
 };
 
-
-//on startup, hide results table and load domain dropdown
-dataCatalogSearch.hideTable();
-dataCatalogSearch.loadDomainDropdown($('select#domain').get(0), 'http://api.us.socrata.com/api/catalog/v1/domains', 'domain');
+jQuery(document).ready(function () {
+    //get URL parameter "domain"
+    var domain = location.search.split('domain=')[1];
+    if (domain) {
+        var urlString =  dataCatalogSearch.catalog_query + "&domains=" + domain;
+        dataCatalogSearch.loadResultsIntoTable(urlString);
+        dataCatalogSearch.showTable();
+        dataCatalogSearch.loadDomainDropdown($('select#domain').get(0), 'http://api.us.socrata.com/api/catalog/v1/domains', 'domain');
+        $('select#domain').val(domain);
+    } else {
+        //on startup, hide results table and load domain dropdown
+        dataCatalogSearch.hideTable();
+        dataCatalogSearch.loadDomainDropdown($('select#domain').get(0), 'http://api.us.socrata.com/api/catalog/v1/domains', 'domain');
+    }
+});

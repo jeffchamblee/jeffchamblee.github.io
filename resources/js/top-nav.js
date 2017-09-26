@@ -3,7 +3,7 @@ var topNavButtons = {
         createListeners: function() {
                 //buttons
                 $("#open-data-1").click(function() {
-                    window.location.href = "/catalog-viewer/SocrataDomains.html";
+                    window.location.href = "/catalog-viewer/index.html";
                 });
                 $("#open-data-2").click(function() {
                     window.location.href = "/catalog-viewer/DataCatalogSearch.html";
