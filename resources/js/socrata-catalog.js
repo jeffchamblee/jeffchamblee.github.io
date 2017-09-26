@@ -54,7 +54,7 @@ var columnSearch = {
 
 var dataCatalogSearch = {
     catalog_query: "http://api.us.socrata.com/api/catalog/v1?only=datasets&limit=10000&order=page_views_last_month",
-    loadDomainDropdown: function (dropdown, url, nameattr) {
+    loadDomainDropdown: function (dropdown, url, nameattr, domain) {
         //$(dropdown).empty();
         $.getJSON(url, {}, function (data) {
            //sort by domain name
@@ -68,6 +68,10 @@ var dataCatalogSearch = {
                         .html(obj[nameattr])
                 );
             });
+            // select domain 
+            if (domain) {
+                $(dropdown).val(domain);
+            }
         });
     },
     getUrlString: function () {
@@ -154,8 +158,7 @@ jQuery(document).ready(function () {
         var urlString =  dataCatalogSearch.catalog_query + "&domains=" + domain;
         dataCatalogSearch.loadResultsIntoTable(urlString);
         dataCatalogSearch.showTable();
-        dataCatalogSearch.loadDomainDropdown($('select#domain').get(0), 'http://api.us.socrata.com/api/catalog/v1/domains', 'domain');
-        $('select#domain').val(domain);
+        dataCatalogSearch.loadDomainDropdown($('select#domain').get(0), 'http://api.us.socrata.com/api/catalog/v1/domains', 'domain', domain);
     } else {
         //on startup, hide results table and load domain dropdown
         dataCatalogSearch.hideTable();
