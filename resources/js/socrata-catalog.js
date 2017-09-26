@@ -1,29 +1,5 @@
 "use strict";
 
-//used by socrata-catalog-1.html
-var socrata_catalog = {
-    getMetadata: function () {
-        var element = document.getElementById("domain-selector");
-        var domain = element.options[element.selectedIndex].value;
-        var webservice = "http://api.us.socrata.com/api/catalog/v1?&only=datasets&limit=10000&order=name&domains=" + domain;
-        //clear rows of previous query from table
-        $("#dataset-table > tbody").html("");
-        $.getJSON(webservice, function (data) {
-            //console.log(data);
-            document.getElementById("domain-name").innerHTML = domain;
-            document.getElementById("domain-json-url").innerHTML = webservice;
-            document.getElementById("dataset-count").innerHTML = data.results.length;
-             $.each(data.results, function (index) {
-                $("#dataset-table > tbody").append("<tr><td>" + data.results[index].resource.name +
-                    "</td><td>" + data.results[index].resource.download_count +
-                    "</td><td>" + data.results[index].resource.updatedAt +
-                    "</td><td>" + data.results[index].owner.display_name +
-                    "</td></tr>");
-            });
-        });
-    }
-};
-
 var columnSearch = {
     makeColumnsSearchable: function () {
         // Setup - add a text input to each footer cell
@@ -68,7 +44,7 @@ var dataCatalogSearch = {
                         .html(obj[nameattr])
                 );
             });
-            // select domain 
+            // select domain
             if (domain) {
                 $(dropdown).val(domain);
             }
@@ -96,7 +72,7 @@ var dataCatalogSearch = {
     loadResultsIntoTable: function (urlString) {
         $('#catalog_table').dataTable({
             destroy: true,
-            "order": [[ 3, "desc" ]],
+            "order": [[3, "desc"]],
             "ajax": {
                 "processing": true,
                 "cache": true,
@@ -111,7 +87,7 @@ var dataCatalogSearch = {
                 {"data": "resource.updatedAt", "title": "Modified Date",
                     "render": function (data) {
                         return moment(data).format('YYYY-MM-DD');
-                    } 
+                    }
                 },
                 {"data": "owner.display_name"},
                 {"data": "link",
@@ -155,7 +131,7 @@ jQuery(document).ready(function () {
     //get URL parameter "domain"
     var domain = location.search.split('domain=')[1];
     if (domain) {
-        var urlString =  dataCatalogSearch.catalog_query + "&domains=" + domain;
+        var urlString = dataCatalogSearch.catalog_query + "&domains=" + domain;
         dataCatalogSearch.loadResultsIntoTable(urlString);
         dataCatalogSearch.showTable();
         dataCatalogSearch.loadDomainDropdown($('select#domain').get(0), 'http://api.us.socrata.com/api/catalog/v1/domains', 'domain', domain);
