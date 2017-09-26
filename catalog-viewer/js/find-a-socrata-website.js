@@ -46,7 +46,7 @@ var socrataDomainFinder = {
             { "data" : "count" },
             { "data" : "domain",
                 "fnCreatedCell": function (nTd, sData, oData) {
-                    $(nTd).html("<input type=\"button\" onclick=\"location.href='/socrata-catalog/socrata-catalog.html?domain=" + oData.domain + "';\" value=\"Dataset Catalog\" />");
+                    $(nTd).html("<input type=\"button\" onclick=\"location.href='/catalog-viewer/socrata-catalog.html?domain=" + oData.domain + "';\" value=\"Dataset Catalog\" />");
                 }
             }
         ]
