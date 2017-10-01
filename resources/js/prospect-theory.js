@@ -14,65 +14,71 @@ var prospect_theory = {
 		// question 1 
 		var selectedRadio = $('input[name=decision_1]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer1").text("You chose maximizing utility over certainty");
+			$("#answer1").text("You chose to maximize gains over certainty. Most people chose the opposite.");
 		} else if (selectedRadio === '2') {
-			$("#answer1").text("You chose certainty over maximizing utility");
+			$("#answer1").text("You chose certainty over maximiziing your gains as most people do. ");
 		}
 		// question 2
 		var selectedRadio = $('input[name=decision_2]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer2").text("You chose maximizing utility over certainty");
+			$("#answer2").text("You chose maximizing gains over certainty. Most people choose the opposite. ");
 		} else if (selectedRadio === '2') {
-			$("#answer2").text("You chose certainty over maximizing utility");
+			$("#answer2").text("You chose certainty over maximizing gains as most people do.");
 		}
 		// question 3
 		var selectedRadio = $('input[name=decision_3]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer3").text("");
+			$("#answer3").text("You chose the higher probability gain with lower dollar value.");
 		} else if (selectedRadio === '2') {
-			$("#answer3").text("");
+			$("#answer3").text("You chose to maximize gains over the higher probability gain.");
 		}
 		// question 4
+		$("#answer4").text("Most people chose the certain gain (82%) even though the gamble has a higher mathematical value. ");
 		var selectedRadio = $('input[name=decision_4]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer4").text("You chose maximizing utility over certainty");
+			$("#answer4").append("You chose the higher but less certain gain.");
 		} else if (selectedRadio === '2') {
-			$("#answer4").text("");
+			$("#answer4").append("You chose the certain but smaller gain.");
 		}
 		// question 5
+		$("#answer5").text("Most people chose the higher gain (83%) even though the second option has a higher probability. Note that this question is the same as the previous one except that a 66% chance to win $2400 has been removed from both options. Many people reverse their choice despite this equivalence.");
 		var selectedRadio = $('input[name=decision_5]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer5").text("");
+			$("#answer5").append("You chose the higher gain.");
 		} else if (selectedRadio === '2') {
-			$("#answer5").text("");
+			$("#answer5").append("You chose the higher probability.");
 		}
 		// question 6
+		$("#answer6").text("Most people chose the certain gain (80%) even though the gamble has a higher mathematical value. ");
 		var selectedRadio = $('input[name=decision_6]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer6").text("You chose maximizing utility over certainty");
+			$("#answer6").append("You chose to maximize total value over certainty. ");
 		} else if (selectedRadio === '2') {
-			$("#answer6").text("");
+			$("#answer6").append("You chose certainty over total value. ");
 		}
 		// question 7
+		$("#answer7").text("Most people chose the higher gain (65%) even though the second option has a higher probability. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence.");
 		var selectedRadio = $('input[name=decision_7]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer7").text("");
+			$("#answer7").append("You chose to the lower probability with higher gain. ");
 		} else if (selectedRadio === '2') {
-			$("#answer7").text("");
+			$("#answer7").append("You chose the higher probability with lower gain.");
 		}
 		// question 8
+		$("#answer8").text("This question and the following one are used to determine if the certainty effect holds with non-monetary gains. Most people (78%) choose the certain option.");
 		var selectedRadio = $('input[name=decision_8]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer8").text("");
+			$("#answer8").append("You chose to gamble for a higher win. ");
 		} else if (selectedRadio === '2') {
-			$("#answer8").text("");
+			$("#answer8").append("You chose the certain option. ");
 		}
 		// question 9
+		$("#answer9").text("This question and the previous one are used to determine if the certainty effect holds with non-monetary gains. Most people (67%) choose the first option. In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. ");
 		var selectedRadio = $('input[name=decision_9]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer9").text("");
+			$("#answer9").append("You chose a lower probability for a larger gain.");
 		} else if (selectedRadio === '2') {
-			$("#answer9").text("");
+			$("#answer9").append("You chose a higher probability for a smaller gain.");
 		}
 		// question 10
 		var selectedRadio = $('input[name=decision_10]:checked', '#decision_problems').val();
@@ -92,20 +98,22 @@ var prospect_theory = {
 			$("#answer11").append("You selected the minority choice.");
 		}
 		// question 12
+	    $("#answer13").text("Most people (84%) chose the certain gain. ");
 		var selectedRadio = $('input[name=decision_12]:checked', '#decision_problems').val();
 		console.log(selectedRadio);
 		if (selectedRadio === '1') {
-			$("#answer12").text("");
+			$("#answer12").append("You chose the uncertain but larger gain. ");
 		} else if (selectedRadio === '2') {
-			$("#answer12").text("");
+			$("#answer12").append("You chose the certain but smaller gain.");
 		}
 		// question 13
+	    $("#answer13").text("Most people (69%) chose the option that avoids a certain loss. Note that this question is the same as the previous one except that the choice is presented as a loss instead of a gain. Many people reverse their choice despite this equivalence.");
 		var selectedRadio = $('input[name=decision_13]:checked', '#decision_problems').val();
 		console.log(selectedRadio);
 		if (selectedRadio === '1') {
-			$("#answer13").text("");
+			$("#answer13").append("You chose to risk a larger loss to avoid a certain loss. ");
 		} else if (selectedRadio === '2') {
-			$("#answer13").text("");
+			$("#answer13").append("You chose to accept what most people percieve as a certain loss.");
 		}
 	}
 };
