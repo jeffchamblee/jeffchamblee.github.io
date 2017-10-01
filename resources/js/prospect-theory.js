@@ -12,25 +12,28 @@ var prospect_theory = {
 	    $("#answers_above").text("See above for answers");
 
 		// question 1 
+		$("#answer1").text("People underweight outcomes that are merely probable in comparison with outcomes that are obtained with certainty. Most people choose the certain (although smaller) gain.");
 		var selectedRadio = $('input[name=decision_1]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer1").text("You chose to maximize gains over certainty. Most people chose the opposite.");
+			$("#answer1").append("You chose to maximize gains over certainty. Most people chose the opposite.");
 		} else if (selectedRadio === '2') {
-			$("#answer1").text("You chose certainty over maximiziing your gains as most people do. ");
+			$("#answer1").append("You chose certainty over maximiziing your gains. ");
 		}
 		// question 2
+		$("#answer2").text("Decision makers tend to overweight small probabilities and underweight moderate and high probabilities. ");
 		var selectedRadio = $('input[name=decision_2]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer2").text("You chose maximizing gains over certainty. Most people choose the opposite. ");
+			$("#answer2").append("You chose maximizing gains over certainty. Most people choose the opposite. ");
 		} else if (selectedRadio === '2') {
-			$("#answer2").text("You chose certainty over maximizing gains as most people do.");
+			$("#answer2").append("You chose certainty over maximizing gains as most people do.");
 		}
 		// question 3
+		$("#answer3").text("Decision makers tend to overweight small probabilities and underweight moderate and high probabilities. ");
 		var selectedRadio = $('input[name=decision_3]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer3").text("You chose the higher probability gain with lower dollar value.");
+			$("#answer3").append("You chose the higher probability gain with lower dollar value.");
 		} else if (selectedRadio === '2') {
-			$("#answer3").text("You chose to maximize gains over the higher probability gain.");
+			$("#answer3").append("You chose to maximize gains over the higher probability gain.");
 		}
 		// question 4
 		$("#answer4").text("Most people chose the certain gain (82%) even though the gamble has a higher mathematical value. ");
