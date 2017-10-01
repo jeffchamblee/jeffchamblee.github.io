@@ -12,7 +12,7 @@ var prospect_theory = {
 	    $("#answers_above").text("See above for answers");
 
 		// question 1 
-		$("#answer1").text("People underweight outcomes that are merely probable in comparison with outcomes that are obtained with certainty. Most people choose the certain (although smaller) gain.");
+		$("#answer1").text("People underweight outcomes that are merely probable in comparison with outcomes that are obtained with certainty. Most people choose the certain (although smaller) gain. ");
 		var selectedRadio = $('input[name=decision_1]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
 			$("#answer1").append("You chose to maximize gains over certainty. Most people chose the opposite.");
@@ -44,7 +44,7 @@ var prospect_theory = {
 			$("#answer4").append("You chose the certain but smaller gain.");
 		}
 		// question 5
-		$("#answer5").text("Most people chose the higher gain (83%) even though the second option has a higher probability. Note that this question is the same as the previous one except that a 66% chance to win $2400 has been removed from both options. Many people reverse their choice despite this equivalence.");
+		$("#answer5").text("Most people chose the higher gain (83%) even though the second option has a higher probability. Note that this question is the same as the previous one except that a 66% chance to win $2400 has been removed from both options. Many people reverse their choice despite this equivalence. ");
 		var selectedRadio = $('input[name=decision_5]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
 			$("#answer5").append("You chose the higher gain.");
@@ -60,7 +60,7 @@ var prospect_theory = {
 			$("#answer6").append("You chose certainty over total value. ");
 		}
 		// question 7
-		$("#answer7").text("Most people chose the higher gain (65%) even though the second option has a higher probability. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence.");
+		$("#answer7").text("Most people chose the higher gain (65%) even though the second option has a higher probability. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence. ");
 		var selectedRadio = $('input[name=decision_7]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
 			$("#answer7").append("You chose to the lower probability with higher gain. ");
@@ -110,7 +110,7 @@ var prospect_theory = {
 			$("#answer12").append("You chose the certain but smaller gain.");
 		}
 		// question 13
-	    $("#answer13").text("Most people (69%) chose the option that avoids a certain loss. Note that this question is the same as the previous one except that the choice is presented as a loss instead of a gain. Many people reverse their choice despite this equivalence.");
+	    $("#answer13").text("Most people (69%) chose the option that avoids a certain loss. Note that this question is the same as the previous one except that the choice is presented as a loss instead of a gain. Many people reverse their choice despite this equivalence. ");
 		var selectedRadio = $('input[name=decision_13]:checked', '#decision_problems').val();
 		console.log(selectedRadio);
 		if (selectedRadio === '1') {
