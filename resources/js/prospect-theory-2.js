@@ -8,14 +8,18 @@ var prospect_theory = {
 		$("#answer1").text("");
 		$("#answer2").text("");
 		$("#answer3").text("");
+		/*
 		$("#answer4").text("");
 		$("#answer5").text("");
 		$("#answer6").text("");
 		$("#answer7").text("");
+		*/
 		$("#answer8").text(""); 	    
 		$("#answer9").text(""); 	    
+		/*
 		$("#answer10").text(""); 	    
 		$("#answer11").text("");
+		*/
 		$("#answer12").text("");
 		$("#answer13").text("");
 	},
