@@ -114,7 +114,6 @@ var prospect_theory = {
 		}
 		// question 11
 		var selectedRadio = $('input[name=decision_11]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		$("#answer11").text("In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. 72% chose the first option. ");
 		if (selectedRadio === '1') {
 			$("#answer11").append("You agreed with the majority of respondents. ");
@@ -124,7 +123,6 @@ var prospect_theory = {
 		// question 12
 	    $("#answer12").text("Most people (84%) chose the certain gain. ");
 		var selectedRadio = $('input[name=decision_12]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer12").append("You chose the uncertain but larger gain. ");
 		} else if (selectedRadio === '2') {
@@ -133,7 +131,6 @@ var prospect_theory = {
 		// question 13
 	    $("#answer13").text("Most people (69%) chose the option that avoids a certain loss. Note that this question is the same as the previous one except that the choice is presented as a loss instead of a gain. Many people reverse their choice despite this equivalence. ");
 		var selectedRadio = $('input[name=decision_13]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
 		if (selectedRadio === '1') {
 			$("#answer13").append("You chose to risk a larger loss to avoid a certain loss. ");
 		} else if (selectedRadio === '2') {
@@ -141,38 +138,37 @@ var prospect_theory = {
 		}
 		
 	    // question 14
-		$("#answer14").text("Most people (80%) chose the certain gain even though the gamble has a higher mathematical value. ");
+		$("#answer14").text("Most people (92%) chose the gamble to avoid a certain loss even though the second option is a lower net loss. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains.");
 		var selectedRadio = $('input[name=decision_14]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer14").append("You chose to maximize total value over certainty. ");
+			$("#answer14").append("You chose to embrace risk to avoid a loss. ");
 		} else if (selectedRadio === '2') {
-			$("#answer14").append("You chose certainty over total value. ");
+			$("#answer14").append("You chose a certain loss-- a very uncommon choice. ");
 		}
 		// question 15
-		$("#answer15").text("Most people (65%) chose the higher gain even though the second option has a higher probability. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence. ");
+		$("#answer15").text("Most people (58%) chose the higher loss even though the second option has a 5% higher probability. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence. ");
 		var selectedRadio = $('input[name=decision_15]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
-			$("#answer15").append("You chose to the lower probability with higher gain. ");
+			$("#answer15").append("You chose to the lower probability with higher loss. ");
 		} else if (selectedRadio === '2') {
-			$("#answer15").append("You chose the higher probability with lower gain.");
+			$("#answer15").append("You chose the higher probability with lower loss.");
 		}
 
 		// question 16
 		var selectedRadio = $('input[name=decision_16]:checked', '#decision_problems').val();
-		$("#answer16").text("In a situation where probabilities are relatively high, most people choose the prospect where winning is more probable over of the prospect that has a higher gain. 86% chose the second option. ");
+		$("#answer16").text("In a situation where probabilities are relatively high, most people choose the prospect where losing is less probable over of the prospect that has a smaller loss. 92% chose the first option. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains.");
 		if (selectedRadio === '1') {
-			$("#answer16").append("You chose higher winnings.");
+			$("#answer16").append("You embraced the risk of a larger loss to avoid any loss. ");
 		} else if (selectedRadio === '2') {
-			$("#answer16").append("You chose higher probability.");
+			$("#answer16").append("You chose a higher probability loss to avoid a high dollar loss.");
 		}
 		// question 17
 		var selectedRadio = $('input[name=decision_17]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
-		$("#answer17").text("In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. 72% chose the first option. ");
+		$("#answer17").text("In a situation where losing is possible but not probable, most people choose the prospect that avoids the larger loss. 70% chose the second option. ");
 		if (selectedRadio === '1') {
-			$("#answer17").append("You agreed with the majority of respondents. ");
-		} else if (selectedRadio === '2') {
 			$("#answer17").append("You selected the minority choice.");
+		} else if (selectedRadio === '2') {
+			$("#answer17").append("You agreed with the majority of respondents. ");
 		}
 
 	}
