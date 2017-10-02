@@ -118,7 +118,7 @@ var prospect_theory = {
 			$("#answer11").append("You selected the minority choice.");
 		}
 		// question 12
-	    $("#answer13").text("Most people (84%) chose the certain gain. ");
+	    $("#answer12").text("Most people (84%) chose the certain gain. ");
 		var selectedRadio = $('input[name=decision_12]:checked', '#decision_problems').val();
 		console.log(selectedRadio);
 		if (selectedRadio === '1') {
