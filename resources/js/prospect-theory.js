@@ -33,7 +33,7 @@ var prospect_theory = {
 	    this.clearAnswers();
 
 		// question 1 
-		$("#answer1").text("People underweight outcomes that are merely probable in comparison with outcomes that are obtained with certainty. Most people choose the certain (although smaller) gain. ");
+		$("#answer1").text("People underweight outcomes that are merely probable in comparison with outcomes that are obtained with certainty. Most people choose the certain (although smaller) gain. People are risk-averse concerning gains. ");
 		var selectedRadio = $('input[name=decision_1]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
 			$("#answer1").append("You chose to maximize gains over certainty. Most people chose the opposite.");
@@ -57,7 +57,7 @@ var prospect_theory = {
 			$("#answer3").append("You chose to maximize gains over the higher probability gain.");
 		}
 		// question 4
-		$("#answer4").text("Most people (82%) chose the certain gain even though the gamble has a higher mathematical value. ");
+		$("#answer4").text("Most people (82%) chose the certain gain even though the gamble has a higher mathematical value. People are risk-averse concerning gains. ");
 		var selectedRadio = $('input[name=decision_4]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
 			$("#answer4").append("You chose the higher but less certain gain.");
@@ -73,7 +73,7 @@ var prospect_theory = {
 			$("#answer5").append("You chose the higher probability.");
 		}
 		// question 6
-		$("#answer6").text("Most people (80%) chose the certain gain even though the gamble has a higher mathematical value. ");
+		$("#answer6").text("Most people (80%) chose the certain gain even though the gamble has a higher mathematical value. People are risk-averse concerning gains. ");
 		var selectedRadio = $('input[name=decision_6]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
 			$("#answer6").append("You chose to maximize total value over certainty. ");
@@ -138,7 +138,7 @@ var prospect_theory = {
 		}
 		
 	    // question 14
-		$("#answer14").text("Most people (92%) chose the gamble to avoid a certain loss even though the second option is a lower net loss. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains.");
+		$("#answer14").text("Most people (92%) chose the gamble to avoid a certain loss even though the second option is a lower net loss. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains. ");
 		var selectedRadio = $('input[name=decision_14]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
 			$("#answer14").append("You chose to embrace risk to avoid a loss. ");
@@ -156,11 +156,11 @@ var prospect_theory = {
 
 		// question 16
 		var selectedRadio = $('input[name=decision_16]:checked', '#decision_problems').val();
-		$("#answer16").text("In a situation where probabilities are relatively high, most people choose the prospect where losing is less probable over of the prospect that has a smaller loss. 92% chose the first option. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains.");
+		$("#answer16").text("In a situation where probabilities are relatively high, most people choose the prospect where losing is less probable over of the prospect that has a smaller loss. 92% chose the first option. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains. ");
 		if (selectedRadio === '1') {
 			$("#answer16").append("You embraced the risk of a larger loss to avoid any loss. ");
 		} else if (selectedRadio === '2') {
-			$("#answer16").append("You chose a higher probability loss to avoid a high dollar loss.");
+			$("#answer16").append("You chose a higher probability loss to avoid a high-dollar loss.");
 		}
 		// question 17
 		var selectedRadio = $('input[name=decision_17]:checked', '#decision_problems').val();
