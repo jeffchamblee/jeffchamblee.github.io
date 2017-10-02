@@ -18,10 +18,6 @@ var prospect_theory = {
 		$("#answer11").text("");
 		$("#answer12").text("");
 		$("#answer13").text("");
-		$("#answer14").text("");
-		$("#answer15").text("");
-		$("#answer16").text("");
-		$("#answer17").text("");
 	},
 	displayAnswers: function() {
 		//document.getElementById('answer').style.display='block'; 
@@ -139,42 +135,6 @@ var prospect_theory = {
 		} else if (selectedRadio === '2') {
 			$("#answer13").append("You chose to accept what most people percieve as a certain loss.");
 		}
-		
-	    // question 14
-		$("#answer14").text("Most people (80%) chose the certain gain even though the gamble has a higher mathematical value. ");
-		var selectedRadio = $('input[name=decision_14]:checked', '#decision_problems').val();
-		if (selectedRadio === '1') {
-			$("#answer14").append("You chose to maximize total value over certainty. ");
-		} else if (selectedRadio === '2') {
-			$("#answer14").append("You chose certainty over total value. ");
-		}
-		// question 15
-		$("#answer15").text("Most people (65%) chose the higher gain even though the second option has a higher probability. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence. ");
-		var selectedRadio = $('input[name=decision_15]:checked', '#decision_problems').val();
-		if (selectedRadio === '1') {
-			$("#answer15").append("You chose to the lower probability with higher gain. ");
-		} else if (selectedRadio === '2') {
-			$("#answer15").append("You chose the higher probability with lower gain.");
-		}
-
-		// question 16
-		var selectedRadio = $('input[name=decision_16]:checked', '#decision_problems').val();
-		$("#answer16").text("In a situation where probabilities are relatively high, most people choose the prospect where winning is more probable over of the prospect that has a higher gain. 86% chose the second option. ");
-		if (selectedRadio === '1') {
-			$("#answer16").append("You chose higher winnings.");
-		} else if (selectedRadio === '2') {
-			$("#answer16").append("You chose higher probability.");
-		}
-		// question 17
-		var selectedRadio = $('input[name=decision_17]:checked', '#decision_problems').val();
-		console.log(selectedRadio);
-		$("#answer17").text("In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. 72% chose the first option. ");
-		if (selectedRadio === '1') {
-			$("#answer17").append("You agreed with the majority of respondents. ");
-		} else if (selectedRadio === '2') {
-			$("#answer17").append("You selected the minority choice.");
-		}
-
 	}
 };
 
