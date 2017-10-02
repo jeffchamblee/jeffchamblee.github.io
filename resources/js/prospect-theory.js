@@ -93,7 +93,7 @@ var prospect_theory = {
 			$("#answer8").append("You chose the certain option. ");
 		}
 		// question 9
-		$("#answer9").text("This question and the previous one are used to determine if the certainty effect holds with non-monetary gains. Most people (67%) choose the first option. In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. ");
+		$("#answer9").text("This question and the previous one are used to determine if the certainty effect holds with non-monetary gains. Most people (67%) choose the first option. In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. Note that this question is the same as the previous one except that the probabilities of both options have been divided by ten. Many people reverse their choice despite this equivalence.");
 		var selectedRadio = $('input[name=decision_9]:checked', '#decision_problems').val();
 		if (selectedRadio === '1') {
 			$("#answer9").append("You chose a lower probability for a larger gain.");
