@@ -1,0 +1,142 @@
+[
+  {
+  "question": "Which of the following would you prefer?",
+  "choices": [
+    {
+        "text": "33% chance to win $2500, 66% chance to win $2400, 1% chance to win nothing", 
+        "response": "You chose the higher but less certain gain."
+    },
+    {
+        "text": "$2400 for sure", 
+        "response": "You chose the certain but smaller gain."
+    }
+  ],
+  "answer": "Most people (82%) chose the certain gain even though the gamble has a higher mathematical value. People are risk-averse concerning gains. "
+  },
+  {
+    "question": "Which of the following would you prefer?",
+    "choices": [
+       {
+           "text": "33% chance to win $2500, 67% chance to win nothing", 
+           "response": "You chose the higher but less certain gain."
+       },
+       {   
+           "text": "34% chance to win $2400, 66% chance to win nothing", 
+           "response": "You chose the more certain but smaller gain."
+       }
+    ],
+    "answer": "Most people (83%) chose the higher gain even though the second option has a higher probability. Note that this question is the same as the previous one except that a 66% chance to win $2400 has been removed from both options. Many people reverse their choice despite this equivalence. "
+  },
+  {
+    "question": "Which of the following would you prefer?",
+    "choices": [
+       {
+           "text": "80% chance to win $4000", 
+           "response": "You chose to maximize total value over certainty. "
+       },
+       {   
+           "text": "$3000 for sure", 
+           "response": "You chose certainty over total value. "
+       }
+    ],
+    "answer": "Most people (80%) chose the certain gain even though the gamble has a higher mathematical value. People are risk-averse concerning gains. "
+  },
+  {
+    "question": "Which of the following would you prefer?",
+    "choices": [
+       {
+           "text": "20% chance to win $4000", 
+           "response": "You chose to the lower probability with higher gain. "
+       },
+       {   
+           "text": "25% chance to win $3000", 
+           "response": "You chose the higher probability with lower gain."
+       }
+    ],
+    "answer": "Most people (65%) chose the higher gain even though the second option has a higher probability. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence. "
+  },
+  {
+    "question": "Which of the following would you prefer?",
+    "choices": [
+       {
+           "text": "45% chance to win $6000", 
+           "response": "You chose higher winnings."
+       },
+       {   
+           "text": "90% chance to win $3000", 
+           "response": "You chose higher probability."
+       }
+    ],
+    "answer": "In a situation where probabilities are relatively high, most people choose the prospect where winning is more probable over of the prospect that has a higher gain. 86% chose the second option. "
+  },
+  {
+    "question": "Which of the following would you prefer?",
+    "choices": [
+       {
+           "text": "0.1% chance to win $6000", 
+           "response": "You agreed with the majority of respondents. "
+       },
+       {   
+           "text": "0.2% chance to win $3000", 
+           "response": "You selected the minority choice."
+       }
+    ],
+    "answer": "In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. 72% chose the first option. "
+  },
+  {
+    "question": "Which of the following would you prefer?",
+    "choices": [
+       {
+           "text": "80% chance to lose $4000", 
+           "response": "You chose to embrace risk to avoid a loss. "
+       },
+       {   
+           "text": "Lose $3000 for sure", 
+           "response": "You chose a certain loss-- a very uncommon choice. "
+       }
+    ],
+    "answer": "Most people (92%) chose the gamble to avoid a certain loss even though the second option is a lower net loss. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains. "
+  },
+  {
+    "question": "Which of the following would you prefer?",
+    "choices": [
+       {
+           "text": "20% chance to lose $4000", 
+           "response": "You chose to the lower probability with higher loss."
+       },
+       {   
+           "text": "25% chance to lose $3000", 
+           "response": "You chose the higher probability with lower loss."
+       }
+    ],
+    "answer": "Most people (58%) chose the higher loss even though the second option has a 5% higher probability. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence."
+  },
+  {
+    "question": "Which of the following would you prefer?",
+    "choices": [
+       {
+           "text": "45% chance to lose $6000", 
+           "response": "You embraced the risk of a larger loss to avoid any loss."
+       },
+       {   
+           "text": "90% chance to lose $3000", 
+           "response": "You chose a higher probability loss to avoid a high-dollar loss."
+       }
+    ],
+    "answer": "In a situation where probabilities are relatively high, most people choose the prospect where losing is less probable over of the prospect that has a smaller loss. 92% chose the first option. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains. "
+  },
+  {
+    "question": "Which of the following would you prefer?",
+    "choices": [
+       {
+           "text": "0.1% chance to lose $6000", 
+           "response": "You selected the minority choice."
+       },
+       {   
+           "text": "0.2% chance to lose $3000", 
+           "response": "You agreed with the majority of respondents."
+       }
+    ],
+    "answer": "In a situation where losing is possible but not probable, most people choose the prospect that avoids the larger loss. 70% chose the second option."
+  }
+]
