@@ -74,11 +74,11 @@
     "choices": [
        {
            "text": "0.1% chance to win $6000", 
-           "response": "You agreed with the majority of respondents. "
+           "response": "You chose a higher payout despite a smaller probability. "
        },
        {   
            "text": "0.2% chance to win $3000", 
-           "response": "You selected the minority choice."
+           "response": "You selected larger probability despite a lower payout."
        }
     ],
     "answer": "In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. 72% chose the first option. "
@@ -116,11 +116,11 @@
     "choices": [
        {
            "text": "45% chance to lose $6000", 
-           "response": "You embraced the risk of a larger loss to avoid any loss."
+           "response": "You chose the lower probability despite the chance of a higher dollar loss."
        },
        {   
            "text": "90% chance to lose $3000", 
-           "response": "You chose a higher probability loss to avoid a high-dollar loss."
+           "response": "You chose the lower dollar loss despite a higher probability."
        }
     ],
     "answer": "In a situation where probabilities are relatively high, most people choose the prospect where losing is less probable over of the prospect that has a smaller loss. 92% chose the first option. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains. "
@@ -130,11 +130,11 @@
     "choices": [
        {
            "text": "0.1% chance to lose $6000", 
-           "response": "You selected the minority choice."
+           "response": "You selected a smaller probability despite a higher loss."
        },
        {   
            "text": "0.2% chance to lose $3000", 
-           "response": "You agreed with the majority of respondents."
+           "response": "You selected a lower loss despite a higher probability."
        }
     ],
     "answer": "In a situation where losing is possible but not probable, most people choose the prospect that avoids the larger loss. 70% chose the second option."

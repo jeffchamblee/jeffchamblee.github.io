@@ -4,24 +4,24 @@
     "choices": [
        {
            "text": "50% chance to win $1000, 50% chance to win nothing", 
-           "response": "You chose to maximize gains over certainty. Most people chose the opposite."
+           "response": "You chose to maximize gains over certainty. "
        },
        {   
            "text": "$450 for sure", 
            "response": "You chose certainty over maximiziing your gains. "
        }
     ],
-    "answer": "People underweight outcomes that are merely probable in comparison with outcomes that are obtained with certainty. Most people choose the certain (although smaller) gain. "
+    "answer": "Most people choose the certain (although smaller) gain. People underweight outcomes that are merely probable in comparison with outcomes that are obtained with certainty. "
   },
   {
     "question": "Which of the following would you prefer?",
     "choices": [
        {
            "text": "95% chance to win $850, 5% chance to win nothing", 
-           "response": "You chose maximizing gains over certainty. Most people choose the opposite."
+           "response": "You chose maximizing gains over certainty. "
        },
        {   
-           "text": "50% chance to win $850, 50% chance to win nothing", 
+           "text": "$750 for sure", 
            "response": "You chose certainty over maximizing gains as most people do."
        }
     ],
@@ -53,7 +53,7 @@
            "response": "You chose the certain option."
        }
     ],
-    "answer": "This question and the following one are used to determine if the certainty effect holds with non-monetary gains. Most people (78%) choose the certain option."
+    "answer": "Most people (78%) choose the certain option. This question and the following one are used to determine if the certainty effect holds with non-monetary gains."
   },
   {
     "question": "Which of the following would you prefer?",
@@ -67,7 +67,7 @@
            "response": "You chose a higher probability for a smaller gain."
        }
     ],
-    "answer": "This question and the previous one are used to determine if the certainty effect holds with non-monetary gains. Most people (67%) choose the first option. In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. Note that this question is the same as the previous one except that the probabilities of both options have been divided by ten. Many people reverse their choice despite this equivalence."
+    "answer": "Most people (67%) choose the first option. This question and the previous one are used to determine if the certainty effect holds with non-monetary gains. In a situation where winning is possible but not probable, most people choose the prospect that offers the larger gain. Note that this question is the same as the previous one except that the probabilities of both options have been divided by ten. Many people reverse their choice despite this equivalence."
   },
   {
     "question": "In addition to whatever you own, you have been given $1000. You are now asked to choose between:",
