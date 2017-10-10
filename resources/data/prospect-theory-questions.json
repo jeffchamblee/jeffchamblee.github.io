@@ -11,7 +11,7 @@
         "response": "You chose the certain but smaller gain."
     }
   ],
-  "answer": "Most people (82%) chose the certain gain even though the gamble has a higher mathematical value. People are risk-averse concerning gains. "
+  "answer": "Most people (82%) chose the certain gain even though the gamble has a higher expected value. People are risk-averse concerning gains. "
   },
   {
     "question": "Which of the following would you prefer?",
@@ -32,14 +32,14 @@
     "choices": [
        {
            "text": "80% chance to win $4000", 
-           "response": "You chose to maximize total value over certainty. "
+           "response": "You chose to maximize expected value over certainty. "
        },
        {   
            "text": "$3000 for sure", 
-           "response": "You chose certainty over total value. "
+           "response": "You chose certainty over expected value. "
        }
     ],
-    "answer": "Most people (80%) chose the certain gain even though the gamble has a higher mathematical value. People are risk-averse concerning gains. "
+    "answer": "Most people (80%) chose the certain gain even though the gamble has a higher expected value. People are risk-averse concerning gains. "
   },
   {
     "question": "Which of the following would you prefer?",
