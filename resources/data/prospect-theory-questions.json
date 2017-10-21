@@ -4,10 +4,12 @@
   "choices": [
     {
         "text": "33% chance to win $2500, 66% chance to win $2400, 1% chance to win nothing", 
+        "expectedValue": "$2409",
         "response": "You chose the higher but less certain gain."
     },
     {
         "text": "$2400 for sure", 
+        "expectedValue": "$2400",
         "response": "You chose the certain but smaller gain."
     }
   ],
@@ -18,10 +20,12 @@
     "choices": [
        {
            "text": "33% chance to win $2500, 67% chance to win nothing", 
+           "expectedValue": "$825",
            "response": "You chose the higher but less certain gain."
        },
        {   
            "text": "34% chance to win $2400, 66% chance to win nothing", 
+           "expectedValue": "$816",
            "response": "You chose the more certain but smaller gain."
        }
     ],
@@ -32,10 +36,12 @@
     "choices": [
        {
            "text": "80% chance to win $4000", 
+           "expectedValue": "$3200",
            "response": "You chose to maximize expected value over certainty. "
        },
        {   
            "text": "$3000 for sure", 
+           "expectedValue": "$3000",
            "response": "You chose certainty over expected value. "
        }
     ],
@@ -46,10 +52,12 @@
     "choices": [
        {
            "text": "20% chance to win $4000", 
+           "expectedValue": "$800",
            "response": "You chose to the lower probability with higher gain. "
        },
        {   
            "text": "25% chance to win $3000", 
+           "expectedValue": "$750",
            "response": "You chose the higher probability with lower gain."
        }
     ],
@@ -60,10 +68,12 @@
     "choices": [
        {
            "text": "45% chance to win $6000", 
+           "expectedValue":"$2700",
            "response": "You chose higher winnings."
        },
        {   
            "text": "90% chance to win $3000", 
+           "expectedValue":"$2700",
            "response": "You chose higher probability."
        }
     ],
@@ -74,10 +84,12 @@
     "choices": [
        {
            "text": "0.1% chance to win $6000", 
+           "expectedValue":"$6",
            "response": "You chose a higher payout despite a smaller probability. "
        },
        {   
            "text": "0.2% chance to win $3000", 
+           "expectedValue":"$6",
            "response": "You selected larger probability despite a lower payout."
        }
     ],
@@ -88,10 +100,12 @@
     "choices": [
        {
            "text": "80% chance to lose $4000", 
+           "expectedValue": "- $3200",
            "response": "You chose to embrace risk to avoid a loss. "
        },
        {   
            "text": "Lose $3000 for sure", 
+           "expectedValue":"- $3000",
            "response": "You chose a certain loss-- a very uncommon choice. "
        }
     ],
@@ -102,10 +116,12 @@
     "choices": [
        {
            "text": "20% chance to lose $4000", 
+            "expectedValue":"-$800",
            "response": "You chose to the lower probability with higher loss."
        },
        {   
            "text": "25% chance to lose $3000", 
+           "expectedValue":"-$750",
            "response": "You chose the higher probability with lower loss."
        }
     ],
@@ -116,10 +132,12 @@
     "choices": [
        {
            "text": "45% chance to lose $6000", 
+           "expectedValue": "-$2700",
            "response": "You chose the lower probability despite the chance of a higher dollar loss."
        },
        {   
            "text": "90% chance to lose $3000", 
+           "expectedValue": "-$2700",
            "response": "You chose the lower dollar loss despite a higher probability."
        }
     ],
@@ -130,10 +148,12 @@
     "choices": [
        {
            "text": "0.1% chance to lose $6000", 
+           "expectedValue": "-$6",
            "response": "You selected a smaller probability despite a higher loss."
        },
        {   
            "text": "0.2% chance to lose $3000", 
+           "expectedValue": "-$6",
            "response": "You selected a lower loss despite a higher probability."
        }
     ],
