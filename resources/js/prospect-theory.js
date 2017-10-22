@@ -10,7 +10,7 @@ var prospect_theory = {
             $.each(result, function(index, record) {
                 $("#question-list").append(
                 '<li id="decision_' + index + '"><label class="description">' + record.question + '</label> <span>' +
-                getChoices(record.choices, index) + '</span></li>' +
+                prospect_theory.getChoices(record.choices, index) + '</span></li>' +
                 '<p class="answer" id="expected-value' + index + '">' + '</p>' +
                 '<p class="answer" id="answer' + index + '">' + record.answer + '</p>' +
                 '<p class="answer" id="response' + index + '"></p>'
