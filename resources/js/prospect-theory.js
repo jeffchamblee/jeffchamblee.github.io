@@ -10,8 +10,7 @@ var prospect_theory = {
             $.each(result, function(index, record) {
                 $("#question-list").append(
                 '<li id="decision_' + index + '"><label class="description">' + record.question + '</label> <span>' +
-                '<input class="element radio" id="decision_' + index + '_A" name="decision_' + index + '" type="radio" value="1"> <label class="choice" for="decision_' + index + '_A">' + record.choices[0].text + '</label> ' +
-                '<input class="element radio" id="decision_' + index + '_B" name="decision_' + index + '" type="radio" value="2"> <label class="choice" for="decision_' + index + '_B">' + record.choices[1].text + '</label></span></li>' +
+                getChoices(record.choices, index) + '</span></li>' +
                 '<p class="answer" id="expected-value' + index + '">' + '</p>' +
                 '<p class="answer" id="answer' + index + '">' + record.answer + '</p>' +
                 '<p class="answer" id="response' + index + '"></p>'
@@ -45,5 +44,14 @@ var prospect_theory = {
                 $("#response" + index).text(prospect_theory.question_list[index].choices[1].response);
             }
         }
+    },
+    getChoices: function(choiceList, index) {
+        var choiceIndex = 0;
+        var result = "";
+        //var expectedValue;
+        for (; choiceIndex < choiceList.length; choiceIndex++) {
+            result += '<input class="element radio" id="decision_' + index + '_A" name="decision_' + index + '" type="radio" value=" ' + index+ ' "> <label class="choice" for="decision_' + index + '_A">' + choiceList[choiceIndex].text + '</label> ';
+        }
+        return result;
     }
 };
