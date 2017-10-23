@@ -40,12 +40,12 @@ var prospect_theory = {
         var result = "";
         var expectedValue;
         for (; choiceIndex < choiceList.length; choiceIndex++) {
-            result += '<label class="choice_prospect"> <input class="element radio_prospect" name="decision_' + index + '" type="radio" value="' + choiceIndex + '"/>' + choiceList[choiceIndex].text + '</label> ';
+            result += '<label class="choice_prospect"> <input class="element radio_prospect" name="decision_' + index + '" type="radio" value="' + choiceIndex + '"/>' + choiceList[choiceIndex].text;
             expectedValue = choiceList[choiceIndex].expectedValue;
             if (typeof expectedValue !== 'undefined') {
                 result += '<span class="answer"> Expected value: ' + expectedValue + '</span>';
             }
         }
-        return result;
+        return result + '</label>';
     }
 };
