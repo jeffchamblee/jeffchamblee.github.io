@@ -100,16 +100,16 @@
     "choices": [
        {
            "text": "80% chance to lose $4000", 
-           "expectedValue": "- $3200",
+           "expectedValue": "-$3200",
            "response": "You chose to embrace risk to avoid a loss. "
        },
        {   
            "text": "Lose $3000 for sure", 
-           "expectedValue":"- $3000",
+           "expectedValue":"-$3000",
            "response": "You chose a certain loss-- a very uncommon choice. "
        }
     ],
-    "answer": "Most people (92%) chose the gamble to avoid a certain loss even though the second option is a lower net loss. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains. "
+    "answer": "Most people (92%) chose the first option even thought its expected value is worse. People who face bad options make desperate gambles, accepting a high probability of making things worse in exchange for a small hope of avoiding a loss. Most people are risk-seeking concerning losses even though they are risk-averse concerning gains."
   },
   {
     "question": "Which of the following would you prefer?",
@@ -125,7 +125,7 @@
            "response": "You chose the higher probability with lower loss."
        }
     ],
-    "answer": "Most people (58%) chose the higher loss even though the second option has a 5% higher probability. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence."
+    "answer": "Most people (58%) chose the riskier option even though the second option has a better expected value. Note that this question is the same as the previous one except that the probabilities of both options have been divided by four. Many people reverse their choice despite this equivalence."
   },
   {
     "question": "Which of the following would you prefer?",
