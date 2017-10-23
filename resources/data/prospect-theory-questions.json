@@ -104,7 +104,7 @@
            "response": "You chose to embrace risk to avoid a loss. "
        },
        {   
-           "text": "Lose $3000 for sure", 
+           "text": "Lose $3000 for sure",
            "expectedValue":"-$3000",
            "response": "You chose a certain loss-- a very uncommon choice. "
        }

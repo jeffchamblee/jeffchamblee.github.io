@@ -4,24 +4,28 @@
     "choices": [
        {
            "text": "50% chance to win $1000, 50% chance to win nothing", 
+           "expectedValue":"$500",
            "response": "You chose to maximize gains over certainty. "
        },
        {   
            "text": "$450 for sure", 
+           "expectedValue":"$450",
            "response": "You chose certainty over maximiziing your gains. "
        }
     ],
-    "answer": "Most people choose the certain (although smaller) gain. People underweight outcomes that are merely probable in comparison with outcomes that are obtained with certainty. "
+    "answer": "Most people choose the certain gain even though its expected value is less. People underweight outcomes that are merely probable in comparison with outcomes that are obtained with certainty. "
   },
   {
     "question": "Which of the following would you prefer?",
     "choices": [
        {
            "text": "95% chance to win $850, 5% chance to win nothing", 
-           "response": "You chose maximizing gains over certainty. "
+           "expectedValue":"$807.50",
+           "response": "You chose maximizing expected value over certainty. "
        },
        {   
            "text": "$750 for sure", 
+           "expectedValue":"$750",
            "response": "You chose certainty over maximizing gains as most people do."
        }
     ],
@@ -32,10 +36,12 @@
     "choices": [
        {
            "text": "55% chance to win $750, 45% chance to win nothing", 
+           "expectedValue":"$412.50",
            "response": "You chose the higher probability gain with lower dollar value."
        },
        {   
-           "text": "50% chance to win $850, 50% chance to win nothing", 
+           "text": "50% chance to win $850, 50% chance to win nothing",
+           "expectedValue":"$425",
            "response": "You chose to maximize gains over the higher probability gain."
        }
     ],
@@ -73,11 +79,13 @@
     "question": "In addition to whatever you own, you have been given $1000. You are now asked to choose between:",
     "choices": [
        {
-           "text": "50% chance to win $1000", 
+           "text": "50% chance to win $1000",
+           "expectedValue":"$500", 
            "response": "You chose the uncertain but larger gain. "
        },
        {   
            "text": "$500 for sure", 
+           "expectedValue":"$500",
            "response": "You chose the certain but smaller gain."
        }
     ],
@@ -87,11 +95,13 @@
     "question": "In addition to whatever you own, you have been given $2000. You are now asked to choose between:",
     "choices": [
        {
-           "text": "50% chance to lose $1000", 
+           "text": "50% chance to lose $1000",
+           "expectedValue":"-$500",
            "response": "You chose to risk a larger loss to avoid a certain loss. "
        },
        {   
-           "text": "lose $500 for sure", 
+           "text": "lose $500 for sure",
+           "expectedValue":"-$500",
            "response": "You chose to accept what most people percieve as a certain loss."
        }
     ],
