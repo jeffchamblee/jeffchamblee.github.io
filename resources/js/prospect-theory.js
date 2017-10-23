@@ -4,6 +4,7 @@ var prospect_theory = {
     question_list: [],
     hideAnswers: function() {
         $(".answer").css("display", "none");
+        $(".answer_inline").css("display", "none");
     },
     displayQuestions: function(jsonFile) {
         $.getJSON(jsonFile, function(result){
@@ -22,6 +23,8 @@ var prospect_theory = {
     displayAnswers: function() {
         $(".answer").css("display", "block");
         $(".answer").css("color", "blue");
+        $(".answer_inline").css("display", "inline");
+        $(".answer_inline").css("color", "blue");
         $("#answers_above").text("See above for answers.");
         var index = 0;
         var selectedRadio;
@@ -43,7 +46,7 @@ var prospect_theory = {
             result += '<label class="choice_prospect"> <input class="element radio_prospect" name="decision_' + index + '" type="radio" value="' + choiceIndex + '"/>' + choiceList[choiceIndex].text;
             expectedValue = choiceList[choiceIndex].expectedValue;
             if (typeof expectedValue !== 'undefined') {
-                result += '<span class="answer"> Expected value: ' + expectedValue + '</span>';
+                result += '<span class="answer_inline"> Expected value: ' + expectedValue + '</span>';
             }
         }
         return result + '</label>';
