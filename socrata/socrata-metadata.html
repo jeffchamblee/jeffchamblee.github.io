@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Socrata Dataset Metadata</title>
+	
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="How to get Metadata from a Socrata Dataset" name="DCTERMS.title">
+	<meta content="How to get Metadata from a Socrata Dataset" name="description">
+	<meta content="How to get Metadata from a Socrata Dataset" name="DCTERMS.description">
+	<meta content="Metadata, Socrata, Dataset" name="keywords">
+	<meta content="How to get Metadata from a Socrata Dataset" name="DCTERMS.subject">
+	<meta content="en-us" name="DCTERMS.language">
+	<link href="/images/favicon.ico" rel="icon" type="image/ico">
+</head>
+<body>
+	<h1>How to get Metadata from a Socrata Dataset</h1>
+     <form action="javascript:void(0);">
+        Dataset ID: <input type="text" id="datasetid-input" value="a4y5-998d"></input>
+        <button onclick="onButtonClick()">Get Metadata</button> 
+        </br>
+        </br>
+        <table>
+        <tr>
+        <td>Dataset ID</td><td id ="datasetid"> </td>
+        </tr>
+        <tr>
+        <td>Dataset name</td><td id ="name"> </td>
+        </tr>
+        <tr>
+        <td>Dataset description</td><td id ="description"> </td>
+        </tr>
+        <tr>
+        <td>Attribution</td><td id ="attribution"> </td>
+        </tr>
+        <tr>
+        <td>Attribution Link</td><td id ="attribution-link"> </td>
+        </tr>
+        <tr>
+        <td>Data URI</td><td id ="datauri"> </td>
+        </tr>
+        <tr>
+        <td>Web URI</td><td id ="weburi"> </td>
+        </tr>
+        <tr>
+        <td>Domain</td><td id ="domain"> </td>
+        </tr>
+        <tr>
+        <td>Category</td><td id ="category"> </td>
+        </tr>
+        <tr>
+        <td>Tags</td><td id ="tags"> </td>
+        </tr>
+        <tr>
+        <td>Created at</td><td id ="created-at"></td>
+        </tr>
+        <tr>
+        <td>Updated at</td><td id ="updated-at"></td>
+        </tr>
+        <tr>
+        <td>Data updated at</td><td id ="data-updated-at"></td>
+        </tr>
+        <tr>
+        <td>Metadata updated at</td><td id ="metadata-updated-at"></td>
+        </tr>
+        <tr>
+        <td>License</td><td id ="license"> </td>
+        </tr>
+        <tr>
+        <td>External ID</td><td id ="external-id"> </td>
+        </tr>
+        <tr>
+        <td>Hide from catalog</td><td id ="hide-from-catalog"> </td>
+        </tr>
+        <tr>
+        <td>Hide from data.json URI</td><td id ="hide-from-data-json"> </td>
+        </tr>
+        <!--
+        <tr>
+        <td>Custom fields</td><td id ="custom-fields"> </td>
+        </tr>
+        -->
+        </table>
+        
+    </form> 
+   	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://momentjs.com/downloads/moment.js"></script>    
+    <script type="text/javascript" src="/resources/js/socrata-metadata.js"></script> 
+    <script type="text/javascript">
+    function display() {
+        document.getElementById("datasetid").innerHTML = socrataDataset.getId();
+        document.getElementById("name").innerHTML = socrataDataset.getDatasetName();
+        document.getElementById("created-at").innerHTML = moment(socrataDataset.getCreatedAt()).format(socrataDataset.DEFAULT_FORMAT);
+        document.getElementById("updated-at").innerHTML = moment(socrataDataset.getUpdatedAt()).format(socrataDataset.DEFAULT_FORMAT);
+        document.getElementById("data-updated-at").innerHTML = moment(socrataDataset.getDataUpdatedAt()).format(socrataDataset.DEFAULT_FORMAT);
+        document.getElementById("metadata-updated-at").innerHTML = moment(socrataDataset.getMetadataUpdatedAt()).format(socrataDataset.DEFAULT_FORMAT);
+        document.getElementById("description").innerHTML = socrataDataset.getDescription();
+        document.getElementById("domain").innerHTML = socrataDataset.getDomain();
+        document.getElementById("license").innerHTML = socrataDataset.getLicense();
+        document.getElementById("datauri").innerHTML = socrataDataset.getDataUri();
+        document.getElementById("weburi").innerHTML = socrataDataset.getWebUri();
+        document.getElementById("category").innerHTML = socrataDataset.getCategory();
+        document.getElementById("tags").innerHTML = socrataDataset.getTags();
+        document.getElementById("attribution").innerHTML = socrataDataset.getAttribution();
+        document.getElementById("attribution-link").innerHTML = socrataDataset.getAttributionLink();
+        document.getElementById("external-id").innerHTML = socrataDataset.getExternalId();
+        //document.getElementById("custom-fields").innerHTML = socrataDataset.getCustomFields();
+        document.getElementById("hide-from-catalog").innerHTML = socrataDataset.getHideFromCatalog();
+        document.getElementById("hide-from-data-json").innerHTML = socrataDataset.getHideFromDataJson();
+        return false;
+    }
+    
+    function onButtonClick() {
+        var datasetid = document.getElementById('datasetid-input').value; 
+        socrataDataset.getMetadata(datasetid); 
+        display();
+    }
+    /*
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        socrataDataset.getMetadata('v48d-4e3e');
+        display();
+    });
+    */
+    
+    </script> 
+</body>
+</html>
