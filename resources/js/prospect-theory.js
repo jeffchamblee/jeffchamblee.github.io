@@ -57,7 +57,8 @@ var prospect_theory = {
 
 var google_forms = {
 	postResponsesToGoogle: function() {
-		var email = $('#Email').val();
+		//var email = $('#Email').val();
+		var email = "default@email.com";
 		var response1 = $("input[name='decision_0']:checked").val();
 		var response2 = $("input[name='decision_1']:checked").val();
 		var response3 = $("input[name='decision_2']:checked").val();
