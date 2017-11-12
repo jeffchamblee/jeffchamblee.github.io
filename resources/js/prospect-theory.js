@@ -37,6 +37,7 @@ var prospect_theory = {
                 $("#response" + index).text(prospect_theory.question_list[index].choices[1].response);
             }
         }
+        google_forms.postResponsesToGoogle();
     },
     getChoices: function(choiceList, index) {
         var choiceIndex = 0;
@@ -52,3 +53,51 @@ var prospect_theory = {
         return result + '</label>';
     }
 };
+
+
+var google_forms = {
+	postResponsesToGoogle: function() {
+		var email = $('#Email').val();
+		var response1 = $("input[name='decision_0']:checked").val();
+		var response2 = $("input[name='decision_1']:checked").val();
+		var response3 = $("input[name='decision_2']:checked").val();
+		var response4 = $("input[name='decision_3']:checked").val();
+		var response5 = $("input[name='decision_4']:checked").val();
+		var response6 = $("input[name='decision_5']:checked").val();
+		var response7 = $("input[name='decision_6']:checked").val();
+		var response8 = $("input[name='decision_7']:checked").val();
+		var response9 = $("input[name='decision_8']:checked").val();
+		var response10 = $("input[name='decision_9']:checked").val();
+            
+		$.ajax({
+			url: "https://docs.google.com/forms/d/e/1FAIpQLSdyuFZN5AZYQfbElV_yXXixRUl2tzUfOFtIrxEx55HZ-Jiv2g/formResponse",
+			data: {
+				"entry.755042765": response1,
+				"entry.1471559929": response2,
+				"entry.1163044351": response3,
+				"entry.1384086246": response4,
+				"entry.879818529": response5,
+				"entry.2112830407": response6,
+				"entry.1699263877": response7,
+				"entry.1101063328": response8,
+				"entry.914134514": response9,
+				"entry.2131069147": response10,
+				"emailAddress": email
+			},
+			type: "POST",
+			dataType: "xml",
+			statusCode: {
+				0: function() {
+					//window.location.replace("/quizzes/thank-you.html");
+				},
+				200: function() {
+					//window.location.replace("/quizzes/thank-you.html");
+				}
+			}
+		});
+	}
+};
+/*
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSdyuFZN5AZYQfbElV_yXXixRUl2tzUfOFtIrxEx55HZ-Jiv2g/formResponse" target="_self" method="POST" id="mG61Hd">
+*/
+
