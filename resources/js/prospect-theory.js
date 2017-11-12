@@ -59,7 +59,9 @@ var google_forms = {
 	postResponsesToGoogle: function() {
 		//var email = $('#Email').val();
 		var email = "default@email.com";
-		var response1 = $("input[name='decision_0']:checked").val();
+		//var response1 = $("input[name='decision_0']:checked").val();
+		var response1 = "$2400 for sure";
+
 		var response2 = $("input[name='decision_1']:checked").val();
 		var response3 = $("input[name='decision_2']:checked").val();
 		var response4 = $("input[name='decision_3']:checked").val();
