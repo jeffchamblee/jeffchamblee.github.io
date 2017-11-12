@@ -7,7 +7,7 @@ var prospect_theory = {
         $(".answer_inline").css("display", "none");
     },
     displayQuestions: function(jsonFile) {
-        $.getJSON(jsonFile, function(result){
+        $.getJSON(jsonFile, function(result) {
             $.each(result, function(index, record) {
                 $("#question-list").append(
                 '<li id="decision_' + index + '"><label class="description">' + record.question + '</label> <span>' +
@@ -60,7 +60,8 @@ var google_forms = {
 		//var email = $('#Email').val();
 		var email = "default@email.com";
 		//var response1 = $("input[name='decision_0']:checked").val();
-		var response1 = "$2400 for sure";
+		//var response1 = "$2400 for sure";
+		var response1 = ', ' + $('input[name="decision_0"]:checked').parent().text();
 
 		var response2 = $("input[name='decision_1']:checked").val();
 		var response3 = $("input[name='decision_2']:checked").val();
