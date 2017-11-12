@@ -59,9 +59,12 @@ var google_forms = {
 	postResponsesToGoogle: function() {
 		//var email = $('#Email').val();
 		var email = "default@email.com";
-		//var response1 = $("input[name='decision_0']:checked").val();
+		var response1 = $("input[name='decision_0']:checked").val();
+		response1 = prospect_theory.question_list[0].choices[response1].response;
 		//var response1 = "$2400 for sure";
-		var response1 = $('input[name="decision_0"]:checked').parent().text();
+		//var response1 = $('input[name="decision_0"]:checked').parent().text();
+		//var response1 = $("input[name='decision_0']:checked").val();
+        console.log("response1=" + response1);
 
 		var response2 = $("input[name='decision_1']:checked").val();
 		var response3 = $("input[name='decision_2']:checked").val();
@@ -72,7 +75,6 @@ var google_forms = {
 		var response8 = $("input[name='decision_7']:checked").val();
 		var response9 = $("input[name='decision_8']:checked").val();
 		var response10 = $("input[name='decision_9']:checked").val();
-        console.log("response1=" + response1);
     
 		$.ajax({
 			url: "https://docs.google.com/forms/d/e/1FAIpQLSdyuFZN5AZYQfbElV_yXXixRUl2tzUfOFtIrxEx55HZ-Jiv2g/formResponse",
