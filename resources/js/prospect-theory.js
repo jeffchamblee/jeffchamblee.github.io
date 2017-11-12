@@ -68,7 +68,8 @@ var google_forms = {
 		var response8 = $("input[name='decision_7']:checked").val();
 		var response9 = $("input[name='decision_8']:checked").val();
 		var response10 = $("input[name='decision_9']:checked").val();
-            
+        console.log("response1=" + response1);
+    
 		$.ajax({
 			url: "https://docs.google.com/forms/d/e/1FAIpQLSdyuFZN5AZYQfbElV_yXXixRUl2tzUfOFtIrxEx55HZ-Jiv2g/formResponse",
 			data: {
@@ -88,9 +89,11 @@ var google_forms = {
 			dataType: "xml",
 			statusCode: {
 				0: function() {
+				    console.log("status 0");
 					//window.location.replace("/quizzes/thank-you.html");
 				},
 				200: function() {
+				    console.log("status 200");
 					//window.location.replace("/quizzes/thank-you.html");
 				}
 			}
