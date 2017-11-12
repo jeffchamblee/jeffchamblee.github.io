@@ -60,7 +60,7 @@ var google_forms = {
 		//var email = $('#Email').val();
 		var email = "default@email.com";
 		var response1 = $("input[name='decision_0']:checked").val();
-		response1 = prospect_theory.question_list[0].choices[response1].response;
+		response1 = prospect_theory.question_list[0].choices[response1].text;
 		//var response1 = "$2400 for sure";
 		//var response1 = $('input[name="decision_0"]:checked').parent().text();
 		//var response1 = $("input[name='decision_0']:checked").val();
