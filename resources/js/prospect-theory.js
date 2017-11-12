@@ -21,6 +21,7 @@ var prospect_theory = {
         });
     },
     displayAnswers: function() {
+        google_forms.postResponsesToGoogle();
         $(".answer").css("display", "block");
         $(".answer").css("color", "blue");
         $(".answer_inline").css("display", "inline");
@@ -37,7 +38,6 @@ var prospect_theory = {
                 $("#response" + index).text(prospect_theory.question_list[index].choices[1].response);
             }
         }
-        google_forms.postResponsesToGoogle();
     },
     getChoices: function(choiceList, index) {
         var choiceIndex = 0;
@@ -61,7 +61,7 @@ var google_forms = {
 		var email = "default@email.com";
 		//var response1 = $("input[name='decision_0']:checked").val();
 		//var response1 = "$2400 for sure";
-		var response1 = ', ' + $('input[name="decision_0"]:checked').parent().text();
+		var response1 = $('input[name="decision_0"]:checked').parent().text();
 
 		var response2 = $("input[name='decision_1']:checked").val();
 		var response3 = $("input[name='decision_2']:checked").val();
