@@ -61,7 +61,7 @@ var google_forms = {
 		var email = "default@email.com";
 		var response1 = $("input[name='decision_0']:checked").val();
 		var responseText1 = prospect_theory.question_list[0].choices[response1].text;
-        console.log("response1=" + response1);
+        console.log("response1=" + responseText1);
 
 		var response2 = $("input[name='decision_1']:checked").val();
 		var responseText2 = prospect_theory.question_list[1].choices[response2].text;
