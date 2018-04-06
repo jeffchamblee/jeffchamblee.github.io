@@ -17,8 +17,21 @@
     <link type="image/ico" href="/images/favicon.ico" rel="icon">    
     <link rel="stylesheet" type="text/css" href="/resources/css/sat-calculator.css">
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/w3c.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/js/w3-library.js"></script>
 </head>
 <body>
+    <div w3-include-html="/resources/html/left-nav.html"></div> 
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" id="container" style="margin-left:300px">
+    <div w3-include-html="/resources/html/top-nav.html"></div> 
+
   <h2>SAT Percentile Calculator</h2>
 			<h3>Need to find your scaled SAT score? Calculate it by inputing your raw scores below.</h3>
 	<table class="percentile-table sectiontext">
@@ -407,6 +420,7 @@
 				</table>
 		</div>
 	</section>
+    </div>
     <script src="/resources/js/sat-calculator.js"></script>
 
 </body>
