@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-tools/1.2.7/jquery.tools.min.js">
+	</script>
+	<title>SAT Percentile Calculator</title>
+	<meta content="SAT Percentile Calculator" name="DCTERMS.title">
+    <link rel="stylesheet" type="text/css" href="/resources/css/sat-calculator.css">
+
+</head>
+<body>
+  <h2>SAT Percentile Calculator</h2>
+			<h3>Need to find your scaled SAT score? Calculate it by inputing your raw scores below.</h3>
+	<table class="percentile-table sectiontext">
+		<thead>
+			<tr>
+				<th>&nbsp;</th>
+				<th>Raw Scores</th>
+				<th>Scaled Score</th>
+				<th>Percentile</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<h2>Math:</h2>
+				</td>
+				<td><input class="range" id="mathraw" max="54" min="-6" name="mathraw" type="range" value="40"></td>
+				<td><input id="mathscaled" name="mathscaled"></td>
+				<td><input id="mathpercentile" name="mathpercentile"></td>
+			</tr>
+			<tr>
+				<td>
+					<h2>Reading:</h2>
+				</td>
+				<td><input class="range" id="readingraw" max="67" min="0" name="readingraw" type="range" value="40"></td>
+				<td><input id="readingscaled" name="readingscaled"></td>
+				<td><input id="readingpercentile" name="readingpercentile"></td>
+			</tr>
+			<tr>
+				<td>
+					<h2>Writing:</h2>
+				</td>
+				<td><input class="range" id="writingraw" max="49" min="-6" name="writingraw" type="range" value="40"></td>
+				<td><input id="writingscaled" name="writingscaled"></td>
+				<td><input id="writingpercentile" name="writingpercentile"></td>
+			</tr>
+			<tr>
+				<td>
+					<h2 id="hTotal">Total:</h2>
+				</td>
+				<td><input id="rawtotal" name="rawtotal"></td>
+				<td><input id="scaledtotal" name="scaledtotal"></td>
+				<td><input id="totalpercentile" name="totalpercentile"></td>
+			</tr>
+		</tbody>
+	</table>
+	<section>
+		<div class="sectiontext">
+			<h3>Average Test Scores of Incoming Freshman</h3>
+			<p>Creating a goal for your future SAT score? Or just trying to judge where your current score stands? The following chart shows a few colleges' average SAT and ACT scores of incoming freshman. These scores, which were collected by the College Board's bigfuture program, only represent an average and do not indicate a cut-off score; remember, your grade point average, course load, and extracurricular activities are all factored into the admissions process and can help balance a lower test score. Also note that SAT writing scores are not included due to its recent addition to the test.</p>
+				<table class="schools" id="School">
+          <colgroup>
+            <col style="width:40%">
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:20%">
+          </colgroup>  
+					<tbody>
+						<tr>
+							<th style="text-align: center; background-color: #004C80; color: #FFF;">
+									College
+							</th>
+							<th style="color: #004c80;">
+								SAT Math
+							</th>
+							<th style="text-align: center; color:#004c80;">
+									SAT Reading
+							</th>
+							<th style="text-align: center; color: #004c80;">
+									ACT
+							</th>
+						</tr>
+						<tr data-math="550" data-reading="530">
+							<td><b>Auburn University</b></td>
+							<td>550-650</td>
+							<td>530-630</td>
+							<td>24-30</td>
+						</tr>
+						<tr data-math="570" data-reading="550">
+							<td><b>Baylor University</b></td>
+							<td>570-670</td>
+							<td>550-660</td>
+							<td>24-29</td>
+						</tr>
+						<tr data-math="610" data-reading="570">
+							<td><b>Boston University</b></td>
+							<td>610-720</td>
+							<td>570-670</td>
+							<td>26-30</td>
+						</tr>
+						<tr data-math="590" data-reading="580">
+							<td><b>Brigham Young University</b></td>
+							<td>590-690</td>
+							<td>580-690</td>
+							<td>26-31</td>
+						</tr>
+						<tr data-math="660" data-reading="660">
+							<td><b>Brown University</b></td>
+							<td>660-770</td>
+							<td>660-760</td>
+							<td>29-34</td>
+						</tr>
+						<tr data-math="590" data-reading="560">
+							<td><b>Clemson University</b></td>
+							<td>590-680</td>
+							<td>560-660</td>
+							<td>26-31</td>
+						</tr>
+						<tr data-math="560" data-reading="550">
+							<td><b>College of Charleston</b></td>
+							<td>560-650</td>
+							<td>550-650</td>
+							<td>23-27</td>
+						</tr>
+						<tr data-math="520" data-reading="500">
+							<td><b>Colorado State University</b></td>
+							<td>520-640</td>
+							<td>500-620</td>
+							<td>22-27</td>
+						</tr>
+						<tr data-math="680" data-reading="670">
+							<td><b>Dartmouth College</b></td>
+							<td>680-780</td>
+							<td>670-780</td>
+							<td>30-34</td>
+						</tr>
+						<tr data-math="690" data-reading="670">
+							<td><b>Duke University</b></td>
+							<td>690-790</td>
+							<td>670-760</td>
+							<td>30-34</td>
+						</tr>
+						<tr data-math="560" data-reading="560">
+							<td><b>Florida State University</b></td>
+							<td>560-640</td>
+							<td>560-640</td>
+							<td>25-29</td>
+						</tr>
+						<tr data-math="590" data-reading="570">
+							<td><b>Fordham University</b></td>
+							<td>590-680</td>
+							<td>570-670</td>
+							<td>26-30</td>
+						</tr>
+						<tr data-math="660" data-reading="650">
+							<td><b>Georgetown University</b></td>
+							<td>660-750</td>
+							<td>650-750</td>
+							<td>29-33</td>
+						</tr>
+						<tr data-math="660" data-reading="600">
+							<td><b>Georgia Institute of Technology</b></td>
+							<td>660-760</td>
+							<td>600-700</td>
+							<td>28-32</td>
+						</tr>
+						<tr data-math="710" data-reading="700">
+							<td><b>Harvard College</b></td>
+							<td>710-790</td>
+							<td>700-800</td>
+							<td>32-35</td>
+						</tr>
+						<tr data-math="670" data-reading="640">
+							<td><b>Johns Hopkins University</b></td>
+							<td>670-770</td>
+							<td>640-740</td>
+							<td>30-34</td>
+						</tr>
+						<tr data-math="610" data-reading="580">
+							<td><b>Lafayette College</b></td>
+							<td>610-710</td>
+							<td>580-680</td>
+							<td>27-30</td>
+						</tr>
+						<tr data-math="530" data-reading="530">
+							<td><b>Lake Forest College</b></td>
+							<td>530-670</td>
+							<td>530-620</td>
+							<td>23-28</td>
+						</tr>
+						<tr data-math="520" data-reading="500">
+							<td><b>Louisiana State University</b></td>
+							<td>520-630</td>
+							<td>500-620</td>
+							<td>23-28</td>
+						</tr>
+						<tr data-math="740" data-reading="670">
+							<td><b>Massachusetts Institute of Technology</b></td>
+							<td>740-800</td>
+							<td>670-770</td>
+							<td>32-35</td>
+						</tr>
+						<tr data-math="550" data-reading="470">
+							<td><b>New Jersey Institute of Technology</b></td>
+							<td>550-600</td>
+							<td>470-600</td>
+							<td>NA</td>
+						</tr>
+						<tr data-math="630" data-reading="620">
+							<td><b>New York University</b></td>
+							<td>630-740</td>
+							<td>620-710</td>
+							<td>28-32</td>
+						</tr>
+						<tr data-math="580" data-reading="550">
+							<td><b>North Carolina State University</b></td>
+							<td>580-670</td>
+							<td>550-630</td>
+							<td>24-29</td>
+						</tr>
+						<tr data-math="560" data-reading="530">
+							<td><b>Penn State University&nbsp;</b></td>
+							<td>560-670</td>
+							<td>530-630</td>
+							<td>25-29</td>
+						</tr>
+						<tr data-math="710" data-reading="700">
+							<td><b>Princeton University</b></td>
+							<td>710-800</td>
+							<td>700-790</td>
+							<td>31-35</td>
+						</tr>
+						<tr data-math="520" data-reading="530">
+							<td><b>Providence College</b></td>
+							<td>520-630</td>
+							<td>530-640</td>
+							<td>23-28</td>
+						</tr>
+						<tr data-math="550" data-reading="510">
+							<td><b>Purdue University</b></td>
+							<td>550-620</td>
+							<td>510-620&nbsp;</td>
+							<td>24-30&nbsp;</td>
+						</tr>
+						<tr data-math="540" data-reading="500">
+							<td><b>Rutgers University</b></td>
+							<td>540-670</td>
+							<td>500-620</td>
+							<td>25-30</td>
+						</tr>
+						<tr data-math="540" data-reading="530">
+							<td><b>Saint Louis University</b></td>
+							<td>540-670&nbsp;</td>
+							<td>530-660&nbsp;</td>
+							<td>25-30&nbsp;</td>
+						</tr>
+						<tr data-math="620" data-reading="600">
+							<td><b>Southern Methodist University</b></td>
+							<td>620-700&nbsp;</td>
+							<td>600-690&nbsp;</td>
+							<td>27-31&nbsp;</td>
+						</tr>
+						<tr data-math="490" data-reading="480">
+							<td><b>St. John's University</b></td>
+							<td>490-620&nbsp;</td>
+							<td>480-590&nbsp;</td>
+							<td>21-27&nbsp;</td>
+						</tr>
+						<tr data-math="700" data-reading="680">
+							<td><b>Stanford University</b></td>
+							<td>700-790&nbsp;</td>
+							<td>680-780&nbsp;</td>
+							<td>31-34&nbsp;</td>
+						</tr>
+						<tr data-math="450" data-reading="440">
+							<td><b>Suffolk University</b></td>
+							<td>450-570&nbsp;</td>
+							<td>440-560&nbsp;</td>
+							<td>20-25&nbsp;</td>
+						</tr>
+						<tr data-math="540" data-reading="500">
+							<td><b>Syracuse University</b></td>
+							<td>540-650&nbsp;</td>
+							<td>500-620&nbsp;</td>
+							<td>23-28&nbsp;</td>
+						</tr>
+						<tr data-math="510" data-reading="500">
+							<td><b>Temple University</b></td>
+							<td>510-620&nbsp;</td>
+							<td>500-610&nbsp;</td>
+							<td>22-27&nbsp;</td>
+						</tr>
+						<tr data-math="520" data-reading="500">
+							<td><b>Texas A&amp;M University</b></td>
+							<td>520-610&nbsp;</td>
+							<td>500-590&nbsp;</td>
+							<td>22-26&nbsp;</td>
+						</tr>
+						<tr data-math="600" data-reading="580">
+							<td><b>United States Military Academy</b></td>
+							<td>600-690&nbsp;</td>
+							<td>580-700&nbsp;</td>
+							<td>27-32&nbsp;</td>
+						</tr>
+						<tr data-math="610" data-reading="570">
+							<td><b>United States Naval Academy</b></td>
+							<td>610-700&nbsp;</td>
+							<td>570-680&nbsp;</td>
+							<td>NA</td>
+						</tr>
+						<tr data-math="490" data-reading="480">
+							<td><b>University of Arizona</b></td>
+							<td>490-620&nbsp;</td>
+							<td>480-600&nbsp;</td>
+							<td>21-27&nbsp;</td>
+						</tr>
+						<tr data-math="520" data-reading="500">
+							<td><b>University of Arkansas</b></td>
+							<td>520-630&nbsp;</td>
+							<td>500-610&nbsp;</td>
+							<td>23-28&nbsp;</td>
+						</tr>
+						<tr data-math="560" data-reading="530">
+							<td><b>University of Massachusetts</b></td>
+							<td>560-660&nbsp;</td>
+							<td>530-630&nbsp;</td>
+							<td>24-28&nbsp;</td>
+						</tr>
+						<tr data-math="620" data-reading="550">
+							<td><b>University of Minnesota</b></td>
+							<td>620-740&nbsp;</td>
+							<td>550-690&nbsp;</td>
+							<td>26-30&nbsp;</td>
+						</tr>
+						<tr data-math="680" data-reading="660">
+							<td><b>University of Notre Dame</b></td>
+							<td>680-770&nbsp;</td>
+							<td>660-750&nbsp;</td>
+							<td>31-34&nbsp;</td>
+						</tr>
+						<tr data-math="540" data-reading="510">
+							<td><b>University of Oklahoma</b></td>
+							<td>540-660&nbsp;</td>
+							<td>510-640&nbsp;</td>
+							<td>23-29&nbsp;</td>
+						</tr>
+						<tr data-math="560" data-reading="540">
+							<td><b>University of South Carolina</b></td>
+							<td>560-650&nbsp;</td>
+							<td>540-640&nbsp;</td>
+							<td>24-29&nbsp;</td>
+						</tr>
+						<tr data-math="540" data-reading="530">
+							<td><b>University of South Florida</b></td>
+							<td>540-640&nbsp;</td>
+							<td>530-630&nbsp;</td>
+							<td>23-28</td>
+						</tr>
+						<tr data-math="650" data-reading="620">
+							<td><b>University of Southern California</b></td>
+							<td>650-760&nbsp;</td>
+							<td>620-720&nbsp;</td>
+							<td>29-33&nbsp;</td>
+						</tr>
+						<tr data-math="520" data-reading="520">
+							<td><b>University of Tennessee</b></td>
+							<td>520-650</td>
+							<td>520-640</td>
+							<td>24-29</td>
+						</tr>
+						<tr data-math="630" data-reading="530">
+							<td><b>University of Wisconsin</b></td>
+							<td>630-750&nbsp;</td>
+							<td>530-650&nbsp;</td>
+							<td>26-30&nbsp;</td>
+						</tr>
+						<tr data-math="710" data-reading="690">
+							<td><b>Vanderbilt University</b></td>
+							<td>710-790&nbsp;</td>
+							<td>690-770&nbsp;</td>
+							<td>31-34&nbsp;</td>
+						</tr>
+						<tr data-math="570" data-reading="540">
+							<td><b>Virginia Tech</b></td>
+							<td>570-680&nbsp;</td>
+							<td>540-640&nbsp;</td>
+							<td>NA</td>
+						</tr>
+						<tr data-math="710" data-reading="700">
+							<td><b>Yale University</b></td>
+							<td>710-790&nbsp;</td>
+							<td>700-800&nbsp;</td>
+							<td>32-35&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+	</section>
+    <script src="/resources/js/sat-calculator.js"></script>
+
+</body>
+</html>

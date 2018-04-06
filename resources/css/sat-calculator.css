@@ -1,0 +1,117 @@
+.slider {
+	background: #008a75;
+	cursor: pointer;
+	float: left;
+	height: 9px;
+	margin-top: 10px;
+	position: relative;
+	width: 350px
+}
+.handle {
+	background: #004677;
+	border-radius: 15px;
+	cursor: move;
+	display: block;
+	height: 28px;
+	margin-top: 1px;
+	position: absolute;
+	top: -12px;
+	width: 28px
+}
+input, .range {
+	background: none;
+	border: none;
+	float: left;
+	font-size: 20px;
+	margin: 0 0 0 15px;
+	padding: 3px 0;
+	text-align: center;
+	width: 70px
+}
+.percentile-table {
+	width: 85%;
+	border-collapse: collapse;
+	margin: auto auto 50px
+}
+.percentile-table td {
+	padding: 10px
+}
+.percentile-table tbody tr {
+	border-top: 1px solid #d1d1d1
+}
+td input {
+	text-align: center;
+	font-size: 20px;
+	border: none;
+}
+h3 {
+	color: #555;
+	font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+	margin: auto auto 50px;
+	text-align: center;
+	width: 90%
+}
+h2 {
+	text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: 34px;
+	color: #444;
+	margin-bottom: 10px
+}
+.schools tbody tr {
+	font-size: 16px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+.schools tbody tr td:nth-child(1) {
+  background: #DDDDDD;
+}
+.schools tbody th {
+  background: #D1D1D1;
+	font-weight: bold;
+  height: 34px;
+  width: 236px;
+}
+.schools tbody td {
+	padding: 4px;
+}
+
+.search {
+	font-size: 13px
+}
+.sectiontext {
+  font-family: Arial, Helvetica, 'Open Sans';
+}
+h3.sub {
+	color: gray;
+	font-size: 22px;
+	font-weight: 400;
+	margin: auto;
+	text-align: center;
+	width: 75%
+}
+.average td {
+  background: #abf79e;
+}
+tr.plus td {
+	background: #5fed40;
+	font-weight: 700
+}
+.content #title, .content #title h1 {
+	line-height: normal;
+	padding: 0;
+	margin: 0;
+}
+@media all and (max-width:640px) {
+	#maincontent h2 {
+		font-size: 14px;
+		line-height: normal;
+	}
+	.slider {
+		display: none;
+	}
+	h3 {
+		font-size: 14px;
+	}
+}
