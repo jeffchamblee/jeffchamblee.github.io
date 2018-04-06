@@ -20,7 +20,7 @@ var satConvert = {
         });
     },
     setupEventHandlers: function () {
-        console.log("setupEventHandlers");
+        //console.log("setupEventHandlers");
         $(":range").rangeinput();
         $("#mathraw").change(function () {
           satConvert.updateDisplay();
@@ -34,10 +34,10 @@ var satConvert = {
         $(":range").change(function () {
           satConvert.updateTableOfColleges();
         });
-        console.log("setupEventHandlers end");
+        //console.log("setupEventHandlers end");
     },
     updateDisplay: function () {
-        console.log("updateDisplay");
+        //console.log("updateDisplay");
         var mathRaw = parseInt($("#mathraw").val());
         var n = parseInt($("#readingraw").val());
         var wr = parseInt($("#writingraw").val());
