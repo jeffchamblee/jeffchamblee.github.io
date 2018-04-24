@@ -1,5 +1,6 @@
 "use strict";
 
+var selectGroupBy = document.getElementById('select-groupby');
 var datasetTimeline = {
     getData: function () {
         var t = this;
@@ -23,5 +24,4 @@ var datasetTimeline = {
     }
 };
 datasetTimeline.getData();
-var selectGroupBy = document.getElementById('select-groupby');
 selectGroupBy.onchange = datasetTimeline.update;
