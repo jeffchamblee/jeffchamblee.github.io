@@ -1,6 +1,6 @@
 "use strict";
 
-var selectGroupBy = document.getElementById('select-groupby');
+var selectGroupBy = document.getElementById('groupby');
 var datasetTimeline = {
     getData: function () {
         var t = this;
