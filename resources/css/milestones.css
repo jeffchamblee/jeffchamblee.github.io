@@ -1,11 +1,13 @@
 body {
   font-family: sans-serif;
+  margin-left: 20px;
+  margin-right: 100px;
 }
 
 h1 {
   font-size: 1.5em;
 }
 
-label {
+label, select {
   font-size: .8em;
 }
