@@ -46,14 +46,14 @@
 				<%= subtitle %>
 			</h4>
 			<div class="row-fluid">
-				<div class="span3 firstColumn">
+				<div class="span9 firstColumn">
 					<ul>
 			            <% _.each( firstColumn, function( item ){ %>
 			                <li><%= item %></li>
 						<% }); %>
 					</ul>
 				</div>
-				<div class="span9">
+				<div class="span3">
 					<div class="secondColumn"></div>
 					<div class="buttons">
 						<button class="checkResults btn btn-primary">Check Results</button>
@@ -139,7 +139,7 @@
 			<h3>Your final score is:</h3>
 			<h1><span id="score"><%= score %></span> / <span id="possibleScore"><%= possibleScore %></span></h1>
 			<h2>Congratulations!</h2>
-			<p>Share this quiz with a friend? </p>
+			<p><a href="http://jeffchamblee.github.io/quizzes/index.html">See more quizzes</a></p>
 		</script>
 
     </head>

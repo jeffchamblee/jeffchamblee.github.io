@@ -13,7 +13,7 @@ var fullQuizMulti = {
 				'Spitzer',
 				'Kepler',
 				'Copernicus',
-				'FUSE',
+				'Far Ultraviolet Spectroscopic Explorer',
 				'Compton Gamma Ray Observatory',
 				'Chandra X-Ray Space Observatory'
 			],
@@ -27,108 +27,96 @@ var fullQuizMulti = {
 		},
 		{
 			'title': 'Match the mission with the description.',
-			'subtitle': 'Use your mouse to drag descriptions into position',
+			'subtitle': 'Use your mouse to drag missions into position',
 			'type': 'match',
 			'firstColumn': [
-				'Hubble Space Telescope',
-				'Kepler',
-				'Copernicus',
-				'IUE',
-				'EUVE'
-			],
-			'secondColumn': [
 				'The first orbiting telescope specializing in visible light',
 				'The goal of this mission is to discover earth-sized exoplanets',
 				'The goal of this mission is to provide a comprehensive picture of the health of the earth',
 				'Able to rapidly respond to targets of opportunity such as comets, novae and supernova',
 				'Conducts short wave ultraviolet survey of 801 astronomical targets'
+			],
+			'secondColumn': [
+				'Hubble Space Telescope',
+				'Kepler',
+				'Copernicus',
+				'IUE',
+				'EUVE'
 			]
 		},
 		{
 			'title': 'Match the mission with the description.',
-			'subtitle': 'Use your mouse to drag descriptions into position',
+			'subtitle': 'Use your mouse to drag missions into position',
 			'type': 'match',
 			'firstColumn': [
+				'Learns about stellar processing times of deuterium left over from the Big Bang',
+				'Measures the history of star formation in the universe using ultraviolet',
+				'The goal of this mission is to survey the brightest stars near earth for transiting exoplanets',
+				'Uses infrared to precisely measure the expansion of the universe, the effects of dark energy, the constancy of general relativity and the curvature of spacetime',
+				'Constructs the largest and most precise 3D space catalog ever made, totaling approximately 1 billion astronomical objects, mainly stars, but also planets, comets, asteroids and quasars among others'	
+			],
+			'secondColumn': [
 				'FUSE',
 				'GALAX',
 				'TESS',
 				'WFIRST',
 				'Gaia'
-			],
-			'secondColumn': [
-				'Learns about stellar processing times of deuterium left over from the Big Bang',
-				'Measures the history of star formation in the universe using ultraviolet',
-				'The goal of this mission is to survey the brightest stars near earth for transiting exoplanets',
-				'Uses infrared to precisely measure the expansion of the universe, the effects of dark energy, the constancy of general relativity and the curvature of spacetime',
-				'Constructs the largest and most precise 3D space catalog ever made, totaling approximately 1 billion astronomical objects, mainly stars, but also planets, comets, asteroids and quasars among others'			]
-		},
-		{
-			'title': 'Match the mission with the description.',
-			'subtitle': 'Use your mouse to drag descriptions into position',
-			'type': 'match',
-			'firstColumn': [
-				'SWIFT',
-				'XMM-Newton',
-				'Large Synoptic Survey Telescope (LSST)',
-				'Spitzer Space Telescope',
-				'Compton Gamma Ray Observatory'
-			],
-			'secondColumn': [
-				'The goal of this mission is to determine the origin of gamma ray bursts',
-				'The goal of this mission is to investigate intersteller X-ray sources',
-				'Scans the whole southern sky every few days. Tracks changes in supernovae and asteroids that could strike the earth.',
-				'An infrared telescope whose biggest successes have been in studying exoplanets. It ran out of coolant in 2009, but it is still operating in a limited way.',
-				'Due to a gyroscope failure, this observatory was de-orbited in 2000.'
 			]
 		},
 		{
 			'title': 'Match the mission with the description.',
-			'subtitle': 'Use your mouse to drag descriptions into position',
+			'subtitle': 'Use your mouse to drag missions into position',
 			'type': 'match',
 			'firstColumn': [
-				'Plank',
-				'Spectr-R',
-				'Fermi/GLAST',
-				'WMAP'
+				'The goal of this mission is to determine the origin of gamma ray bursts',
+				'The goal of this mission is to investigate intersteller X-ray sources',
+				'Scans the whole southern sky every few days. Tracks changes in supernovae and asteroids that could strike the earth.',
+				'Due to a gyroscope failure, this observatory was de-orbited in 2000.',
+				'An infrared telescope whose biggest successes have been in studying exoplanets. It ran out of coolant in 2009, but it is still operating in a limited way.',
 			],
 			'secondColumn': [
-				'ESA mission from 2009 to 2013. Defined the most precise measurements of the average density of ordinary matter and dark matter in the Universe and the age of the universe. ',
-				'Studies astronomical objects with high angular resolution by using the satellite in conjunction with ground-based observatories and interferometry techniques.',
+				'SWIFT',
+				'XMM-Newton',
+				'Large Synoptic Survey Telescope (LSST)',
+				'Compton Gamma Ray Observatory',
+				'Spitzer Space Telescope'
+			]
+		},
+		{
+			'title': 'Match the mission with the description.',
+			'subtitle': 'Use your mouse to drag missions into position',
+			'type': 'match',
+			'firstColumn': [
 				'Performs gamma-ray astronomy observations from low Earth orbit.  It is the most sensitive gamma-ray observatory in orbit,',
-				'Operated from 2001 to 2010. Measured temperature differences across the sky in the cosmic microwave background. Played a key role in establishing the current Standard Model of Cosmology: the Lambda-CDM model.'			]
+				'Studies astronomical objects with high angular resolution by using the satellite in conjunction with ground-based observatories and interferometry techniques.',
+				'ESA mission from 2009 to 2013. Defined the most precise measurements of the average density of ordinary matter and dark matter in the Universe and the age of the universe. ',
+				'Operated from 2001 to 2010. Measured temperature differences across the sky in the cosmic microwave background. Played a key role in establishing the current Standard Model of Cosmology: the Lambda-CDM model.'	
+				],
+			'secondColumn': [
+				'Fermi/GLAST',
+				'Spectr-R',
+				'Plank',
+				'WMAP'
+			]
 		},
 		{
 			'title': 'Match the observatory type with the description.',
-			'subtitle': 'Use your mouse to drag descriptions into position',
+			'subtitle': 'Use your mouse to drag missions into position',
 			'type': 'match',
 			'firstColumn': [
-				'Gamma ray observatories',
-				'X-ray observatories',
-				'Ultraviolet observatories',
-				'Infrared observatories',
-				'Microwave observatories'
-			],
-			'secondColumn': [
 				'detect quasars, pulsars, and the most energetic bursts from distant galaxies',
 				'detect the solar corona, supernova remnants, and gas that spirals around black holes',
 				'detect the hottest stars',
 				'study cooler gas and dust regions that are condensing to form new stars as well as solar systems, exoplanets and the early universe',
 				'study cosmic background radiation – the radiant heat remaining from the Big Bang'
-			]
-		},
-		{
-			'title': 'In 1964 Robert Wilson and Arno Penzias accidentally discovered what while building a supersensitive, 6-meter horn antenna?',
-			'subtitle': '',
-			'type': 'multi',
-			'question': '',
-			'options': [
-				'Dark energy',
-				'Cosmic microwave background radiation',
-				'A quasar',
-				'A pulsar'
 			],
-			'answer': ['Cosmic microwave background radiation'],
-			'explanation': ''
+			'secondColumn': [
+				'Gamma ray observatories',
+				'X-ray observatories',
+				'Ultraviolet observatories',
+				'Infrared observatories',
+				'Microwave observatories'
+			]
 		}
 	]
 }
