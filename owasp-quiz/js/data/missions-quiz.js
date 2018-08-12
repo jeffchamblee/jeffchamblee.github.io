@@ -77,7 +77,7 @@ var fullQuizMulti = {
 				'The goal of this mission is to determine the origin of gamma ray bursts',
 				'Investigating intersteller X-ray sources',
 				'Scan the whole southern sky every few days. Track changes in supernovae and asteroids that could strike the earth.',
-				'An infrared telescope whose biggest successes have been in studying exoplanets. It ran out of coolant in 2009, but it is still operating in a limited way.'
+				'An infrared telescope whose biggest successes have been in studying exoplanets. It ran out of coolant in 2009, but it is still operating in a limited way.',
 				'Due to a gyroscope failure, this observatory was de-orbited in 2000.'
 			]
 		},
