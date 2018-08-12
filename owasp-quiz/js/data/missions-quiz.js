@@ -4,7 +4,7 @@ var fullQuizMulti = {
 	'introText': 'Do you know your space telescope satellites and missions?',
 	'questions': [
 			{
-			'title': 'Select the four great observatories launched between 1990 and 2003',
+			'title': 'What were known as the "four great observatories" launched between 1990 and 2003',
 			'subtitle': '',
 			'type': 'multi-select',
 			'question': '',
@@ -41,7 +41,7 @@ var fullQuizMulti = {
 				'The goal of this mission is to discover earth-sized exoplanets',
 				'The goal of this mission is to provide a comprehensive picture of the health of the earth',
 				'Able to rapidly respond to targets of opportunity such as comets, novae and supernova',
-				'Short wave ultraviolet survey of 801 astronomical targets'
+				'Conducts short wave ultraviolet survey of 801 astronomical targets'
 			]
 		},
 		{
@@ -56,11 +56,11 @@ var fullQuizMulti = {
 				'Gaia'
 			],
 			'secondColumn': [
-				'Learn about stellar processing times of deuterium left over from the Big Bang',
-				'Measure the history of star formation in the universe using ultraviolet',
+				'Learns about stellar processing times of deuterium left over from the Big Bang',
+				'Measures the history of star formation in the universe using ultraviolet',
 				'The goal of this mission is to survey the brightest stars near earth for transiting exoplanets',
 				'Uses infrared to precisely measure the expansion of the universe, the effects of dark energy, the constancy of general relativity and the curvature of spacetime',
-				'Construct the largest and most precise 3D space catalog ever made, totaling approximately 1 billion astronomical objects, mainly stars, but also planets, comets, asteroids and quasars among others'			]
+				'Constructs the largest and most precise 3D space catalog ever made, totaling approximately 1 billion astronomical objects, mainly stars, but also planets, comets, asteroids and quasars among others'			]
 		},
 		{
 			'title': 'Match the mission with the description.',
@@ -75,8 +75,8 @@ var fullQuizMulti = {
 			],
 			'secondColumn': [
 				'The goal of this mission is to determine the origin of gamma ray bursts',
-				'Investigating intersteller X-ray sources',
-				'Scan the whole southern sky every few days. Track changes in supernovae and asteroids that could strike the earth.',
+				'The goal of this mission is to investigate intersteller X-ray sources',
+				'Scans the whole southern sky every few days. Tracks changes in supernovae and asteroids that could strike the earth.',
 				'An infrared telescope whose biggest successes have been in studying exoplanets. It ran out of coolant in 2009, but it is still operating in a limited way.',
 				'Due to a gyroscope failure, this observatory was de-orbited in 2000.'
 			]
