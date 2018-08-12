@@ -27,7 +27,7 @@ var fullQuizMulti = {
 		},
 		{
 			'title': 'Match the mission with the description.',
-			'subtitle': '',
+			'subtitle': 'Use your mouse to drag descriptions into position',
 			'type': 'match',
 			'firstColumn': [
 				'Hubble Space Telescope',
@@ -46,7 +46,7 @@ var fullQuizMulti = {
 		},
 		{
 			'title': 'Match the mission with the description.',
-			'subtitle': '',
+			'subtitle': 'Use your mouse to drag descriptions into position',
 			'type': 'match',
 			'firstColumn': [
 				'FUSE',
@@ -64,7 +64,7 @@ var fullQuizMulti = {
 		},
 		{
 			'title': 'Match the mission with the description.',
-			'subtitle': '',
+			'subtitle': 'Use your mouse to drag descriptions into position',
 			'type': 'match',
 			'firstColumn': [
 				'SWIFT',
@@ -82,8 +82,24 @@ var fullQuizMulti = {
 			]
 		},
 		{
+			'title': 'Match the mission with the description.',
+			'subtitle': 'Use your mouse to drag descriptions into position',
+			'type': 'match',
+			'firstColumn': [
+				'Plank',
+				'Spectr-R',
+				'Fermi/GLAST',
+				'WMAP'
+			],
+			'secondColumn': [
+				'ESA mission from 2009 to 2013. Defined the most precise measurements of the average density of ordinary matter and dark matter in the Universe and the age of the universe. ',
+				'Studies astronomical objects with high angular resolution by using the satellite in conjunction with ground-based observatories and interferometry techniques.',
+				'Performs gamma-ray astronomy observations from low Earth orbit.  It is the most sensitive gamma-ray observatory in orbit,',
+				'Operated from 2001 to 2010. Measured temperature differences across the sky in the cosmic microwave background. Played a key role in establishing the current Standard Model of Cosmology: the Lambda-CDM model.'			]
+		},
+		{
 			'title': 'Match the observatory type with the description.',
-			'subtitle': '',
+			'subtitle': 'Use your mouse to drag descriptions into position',
 			'type': 'match',
 			'firstColumn': [
 				'Gamma ray observatories',
@@ -96,8 +112,8 @@ var fullQuizMulti = {
 				'detect quasars, pulsars, and the most energetic bursts from distant galaxies',
 				'detect the solar corona, supernova remnants, and gas that spirals around black holes',
 				'detect the hottest stars',
-				'study a wide range of astronomical objects from solar systems, exoplanets and the early universe. These observatories study cooler gas and dust regions that are condensing to form new stars.',
-				'study cosmic background radiation'
+				'study cooler gas and dust regions that are condensing to form new stars as well as solar systems, exoplanets and the early universe',
+				'study cosmic background radiation – the radiant heat remaining from the Big Bang'
 			]
 		},
 		{
