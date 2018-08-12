@@ -4,7 +4,7 @@ var fullQuizMulti = {
 	'introText': 'Do you know your space telescope satellites and missions?',
 	'questions': [
 			{
-			'title': 'What were known as the "four great observatories" launched between 1990 and 2003',
+			'title': 'What were known as the "four great observatories" launched between 1990 and 2003?',
 			'subtitle': '',
 			'type': 'multi-select',
 			'question': '',
