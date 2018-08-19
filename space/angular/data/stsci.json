@@ -1,0 +1,477 @@
+{
+    "id": 8,
+    "name": "Space Telecope Science Institute",
+    "description": "BlankTemplate",
+    "questions": [
+        {
+            "id": 1,
+            "name": "Which organization operates Space Telecope Science Institute (STScI)?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "NASA",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "AURA",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Johns Hopkins University",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Partnership between NASA and ESA",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which mission is not supported by STScI?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Spitzer Space Telescope",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Pan-Starrs",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "TESS",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "IUE",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How many missions does STScI's Data Archiving and Distribution organization support?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "over 8 current and 2 future missions",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "over 10 current and 2 future missions",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "over 12 current and 2 future missions",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "over 14 current and 2 future missions",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Each year the astronomy community submits between 700 and 1,100 proposals for observation time on Hubble Space Telescope (HST). What percent of proposals are approved?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "5-10%",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "15-20%",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "25-30%",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "35-40%",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "The initial proposal team has a proprietary period of how long before it must share data captured by HST?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "six months",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "one year",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "two years",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "three years",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How many active science instruments are on Hubble Space Telescope?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "4",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "5",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "6",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "7",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which best describes the orbit of the Hubble Space Telescope?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Low Earth orbit 540 km (340 miles) from Earth",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "solar Earth-trailing orbit",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "circular Sun-synchronous orbit 900km from Earth",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "approximately 930,000 miles (1,500,000 km) beyond Earth's orbit at Lagrange Point 2",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which best describes the orbit of the James Webb Space Telescope?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Low Earth orbit 540 km (340 miles) from Earth",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "solar Earth-trailing orbit",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "circular Sun-synchronous orbit 900km from Earth",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "approximately 930,000 miles (1,500,000 km) beyond Earth's orbit at Lagrange Point 2",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "What percentage of time does Hubble Space Telescope spend observing astronomical objects?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "20%",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "50%",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "70%",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "90%",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },        
+        {
+            "id": 1,
+            "name": "How often does the Hubble Space Telescope go in and out of Earth's shadow?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "every 95 minutes",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "every 120 minutes",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "every 145 minutes",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "every 160 minutes",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Astronomers use what spectrum in order to study chemical elements, supernovae, accretion disks, active galactic nuclei, and the hottest and most massive stars?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Gamma rays",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "X-rays",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Ultraviolet",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Infrared",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Astronomers use what spectrum in order to better penetrate obscuring dust and gas, observe dimmer, cooler objects and observe high redshift objects that are too old and too distant for other instruments to observe?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Gamma rays",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "X-rays",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Ultraviolet",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Infrared",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "In 1964 Robert Wilson and Arno Penzias accidentally discovered what while building a supersensitive, 6-meter horn antenna?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Gamma rays",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Cosmic microwave background radiation",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Dark energy",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "A quasar",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+        ]
+}
+
+

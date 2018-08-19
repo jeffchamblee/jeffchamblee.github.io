@@ -1,0 +1,766 @@
+{
+    "id": 8,
+    "name": "Angular 4",
+    "description": "Angular 4 Programming Framework",
+    "questions": [
+        {
+            "id": 1,
+            "name": "What does AOT stand for?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Application Object Template",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Application Object Tree",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Always on Top",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Ahead of Time compilation",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How do you setup the CSS class for the active route link?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<small>&lt;a routerLink=\"/home\" [ngClass]=\"{ active: activatedRoute.path === window.location.pathname }\"&gt;Home&lt;/a&gt;</small>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<small>&lt;a routerLink=\"/home\" routerLinkActiveClass=\"active\"&gt;Home&lt;/a&gt;</small>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<small>&lt;a routerLink=\"/home\" [class.active]=\"activatedRoute.path === window.location.pathname\"&gt;Home&lt;/a&gt;</small>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<small>&lt;a routerLink=\"/home\" routerLinkActive=\"active\"&gt;Home&lt;/a&gt;</small>", 
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which of the following helps create projects, components, and services and makes it easy to build and run your app on a Web server?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Webpack",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Angular CLI",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Angular Boilerplate",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Angular Starter",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which one of the following is a valid component decorator?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\r\n<code class=\"language-css\">@Component({\r\n selector: 'app-root',\r\n templateUrl: './app.component.html',\r\n styleUrls: ['./app.component.css']\r\n })</code></pre>", 
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\r\n<code class=\"language-css\">@Component({\r\n selector: 'app-root',\r\n template: './app.component.html',\r\n styleUrls: ['./app.component.css']\r\n })</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\r\n<code class=\"language-css\">@Component({\r\n selector: 'app-root',\r\n templateUrl: './app.component.html',\r\n style: ['./app.component.css']\r\n })</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<pre>\r\n<code class=\"language-css\">@Component({\r\n selector: 'app-root',\r\n templateUrl: './app.component.html',\r\n cssUrl: ['./app.component.css']\r\n })</code></pre>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Select the correct way to bind the <strong>src </strong>property to the <strong>angularLogo </strong>variable:",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\r\n<code class=\"language-html\">&lt;img {src}=\"angularLogo\"&gt;</code></pre>", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\r\n<code class=\"language-html\">&lt;img (src)=\"angularLogo\"&gt;</code></pre>", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\r\n<code class=\"language-html\">&lt;img [src]=\"angularLogo\"&gt;</code></pre>", 
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<pre>\r\n<code class=\"language-html\">&lt;img (attr.src)=\"angularLogo\"&gt;</code></pre>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which statement is true regarding&nbsp;<strong>$event</strong>?\r\n<pre>\r\n<code class=\"language-html\">&lt;button (click)=\"submitEvent($event)\"&gt;Submit&lt;/button&gt;</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "It is a local component variable passed to the event.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "It will pass an object with event properties associated with the click event.", 
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "It will pass &quot;undefined&quot; to the event because there is no such thing as an $event in Angular.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "None of the above", 
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "You need to toggle between two CSS classes based on a boolean property. How can you do this?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "&lt;div [ngClass]=\"if (isValid) { return 'green-container' } else { return 'red-container' }\"&gt;", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "&lt;div [class]=\"isValid ? 'green-container' : 'red-container'\"&gt;", 
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "&lt;div class=\"green-container\" [class.red-container]=\"!isValid\"&gt;", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "&lt;div class=\"green-container red-container\" [class.red-container]=\"!isValid\"&gt;",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which are valid methods to bind styles to an HTML element?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\r\n<code class=\"language-css\">[style.color]=\"'red'\"</code></pre>", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name":"<pre>\r\n<code class=\"language-css\">[ngStyle]=\"{ 'color': 'red' }</code></pre>", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Both a and b are valid ways when binding styles",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "You cannot bind styles in Angular 4, you must always bind classes",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "You created your first Angular service but when running the application you get the following error:<br />\r\n<em>WARNING Service is generated but not provided, it must be provided to be used</em><br />\r\n<br />\r\nWhat do you need to do to fix this error?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Force rebuild of the application to clear build cache", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Add the service to the providers property of the NgModule decorator.", 
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Add the service to the declarations property of the NgModule decorator.", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Nothing, this is just a warning, the application will run with no issues.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How can you use a service inside an Angular 4 component?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Import it as component class property and initialize it",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Import it through dependency injection in component constructor",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Import it inside component decorator",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Import it inside component @Services decorator",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "What is the accepted way of altering the DOM in Angular 4?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "using jQuery",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "using document.appendChild",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "using the Renderer class",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "using the Renderer2 class",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "What is the correct declaration of a route in Angular4?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\r\n<code class=\"language-javascript\">{ url: 'about', view: AboutComponent }</code></pre>", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\r\n<code class=\"language-javascript\">{ path: 'about', view: AboutComponent }</code></pre>", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\r\n<code class=\"language-javascript\">{ path: 'about', component: AboutComponent }</code></pre>", 
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<pre>\r\n<code class=\"language-javascript\">{ url: 'about', template: AboutComponent }</code></pre>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "You are required to animate a pop-up on entry and on close. Which is the recommended way to do this in Angular 4?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "use jQuery",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "use CSS3",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "use the Angular core animations",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "use plain JavaScript",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "When you are working with template driven forms, how would you create a new form element?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\r\n<code class=\"language-html\">&lt;input class=\"form-control\" [formControl]=\"name\"&gt;</code></pre>", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\r\n<code class=\"language-html\">&lt;input class=\"form-control\" [value]=\"name\"&gt;</code></pre>", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\r\n<code class=\"language-html\">&lt;input class=\"form-control\" [(ngModel)]=\"name\"&gt;</code></pre>", 
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<pre>\r\n<code class=\"language-html\">&lt;input class=\"form-control\" [formElement]=\"name\"&gt;</code></pre>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "What statement is true about template directives in Angular 4?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Template directives are deprecated in Angular 4, use ng-template instead.", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name":  "They are used for application theming.", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "They are used to create custom layouts for specific routes.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "They are used for defining a route component.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Is there a way to create aliases in Angular 4 templates?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "No",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Yes, use &lt;div *ngIf=&quot;car | async as carModel&quot;&gt;.", 
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Yes, use&nbsp;&lt;div *ngIf=&quot;race | async; let raceModel&quot;&gt;.", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Yes, use&nbsp;&lt;div *ngIf=&quot;race | async; var raceModel&quot;&gt;.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+
+        {
+            "id": 1,
+            "name": "Adjust the following code snippet so it will run with no errors:\r\n<pre>\r\n<code class=\"language-html\">&lt;div *ngIf=\"cars else loading\"&gt;&lt;/div&gt;</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Add&nbsp;&lt;template #loading&gt;Loading..&lt;/template&gt;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Add&nbsp;&lt;ng-template #loading&gt;Loading&hellip;&lt;/ng-template&gt;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Add&nbsp;&lt;loading&gt;Loading..&lt;/loading&gt;", 
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Add <br/> &lt;ng-template #cars&gt;List of cars&hellip;&lt;/ng-template&gt; <br/> &lt;ng-template #loading&gt;Loading&hellip;&lt;/ng-template&gt; ",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "When you are working with model driven forms, which class do you use to create a form element?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "FormControl",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "FormElement",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "FormInput",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "FormModel",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which one of the following is not a router event?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "NavigationStart",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "NavigationEnd",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "NavigationInit",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "NavigationCancel",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 2,
+            "name": "When displaying a route component, how would you mark where the router should display the view?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1055,
+                    "questionId": 21,
+                    "name": "With the router-outlet directive",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 22,
+                    "name": "With the main tag",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 23,
+                    "name": "With the router-view directive",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 24,
+                    "name": "With the router-content directive",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which Angular directive is used for two-way data binding?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "ng-bind",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "ng-data-binding",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "ng-model",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "ng-two-way-data-binding",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+   ]
+}
+
+

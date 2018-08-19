@@ -1,0 +1,908 @@
+{
+    "id": 8,
+    "name": "JavaScript",
+    "description": "JavaScript Level 1",
+    "questions": [
+    
+        {
+            "id": 1,
+            "name": "What will be displayed after running the following source code?<br />\r\n<br />\r\n<img src=\"/assets/images/javascript-function.png\" />",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Error message &ndash; displayNewValue is not a function",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "5",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "9",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Error message &ndash; return cannot be a function",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+    
+        {
+            "id": 1,
+            "name": "What is the output of the following code?<br />\r\n<br />\r\n<img src=\"/assets/images/javascript-equal.png\" />",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "equal",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "not equal",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "ERROR: the === operator does not exist",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "ERROR: the === operator cannot be used to compare different types of values",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which value will the petName variable have after running the following code fragment?<br />\r\n<br />\r\n<img src=\"/assets/images/javascript-pet1.png\" />",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Mittens",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Rover",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "ERROR: Variable &#39;petName&#39; is not defined in function setPetName",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "ERROR: Variable &#39;petName&#39; cannot be redefined",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which value will the animalSpecies global variable have after running the following code fragment?<br />\r\n<br />\r\n<img src=\"/assets/images/javascript-pet1.png\" />",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "cat",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "dog",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "ERROR: Variable &#39;animalSpecies&#39; is not defined in function setDogName;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "ERROR: Variable &#39;animalSpecies&#39; cannot be redefined;",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+    
+        {
+            "id": 1,
+            "name": "What will be displayed in the console after running the following source code?<br />\r\n<br />\r\n<img src=\"/assets/images/javascript-animal.png\" />",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Method getMessage() cannot be redefined",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Parameter expected for function Animal(type)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "animal",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "wolf",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "What will be the console output of the following code?<br />\r\n<br />\r\n<pre> x = \"1\" + 2 + 3; \r\n console.log(x);</pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "6",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "5",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "123",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },        
+        {
+            "id": 1,
+            "name": "What will be the console output of the following code?<br />\r\n<br />\r\n<pre> x = 1 + 2 + \"3\"; \r\n console.log(x);</pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "6",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "123",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "33",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+    
+        {
+            "id": 1,
+            "name": "What will be displayed after running the following source code?<br />\r\n<br />\r\n<img src=\"/assets/images/Customer JS.png\" />",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Alert windows in this order:&nbsp; <ol><li>Hello! I&#39;m Diego&nbsp;&nbsp;&nbsp;&nbsp; </li><li>I live in Juarez&nbsp; </li><li>Hello! I&#39;m Jose, </li></ol>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Alert windows in this order:&nbsp; <ol><li>Object is created!&nbsp; </li><li>Hello! I&#39;m Diego&nbsp;&nbsp; </li><li>I live in Juarez</li></ol>",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Alert windows in this order:&nbsp; <ol><li>Object is created!&nbsp; </li><li>Hello! I&#39;m Diego&nbsp;&nbsp; </li><li>I live in Juarez&nbsp; </li><li>Hello! I&#39;m Jose&nbsp;</li></ol>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "What is the value of newObjType.myObjCounter&nbsp;after running the following source code?<br />\r\n<br />\r\n<img src=\"/assets/images/javascript-counter.png\" />",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "5",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "6",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "7",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "4",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+    
+        {
+            "id": 1,
+            "name": "What is the output of the following code?<br />\r\n<br />\r\n<img src=\"/assets/images/javascript-array.png\" />",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "string1 string2 string3",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "string1.string2.string3",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "string1.string2.string3.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "string1. string2. string3",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Given the following source code, how can you access the showAlert method to display the alert window?<br />\r\n<br />\r\n o = {showAlert: function(var1){alert('hello '+ var1);  }};",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "o.showAlert;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "o-&gt;showAlert();",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "o.showAlert();",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "o[&#39;showAlert&#39;];",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How do you navigate to another URL address in JavaScript?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "location = &#39;http://www.mysite.com&#39;;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "document.location = &#39;http://www.mysite.com&#39;;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "location.href = &#39;http://www.mysite.com&#39;;",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "document.url = &#39;http://www.mysite.com&#39;;",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How do you locate the first X in a string of text?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "txt.find(&#39;X&#39;);",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "txt.locate(&#39;X&#39;);",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "txt.indexOf(&#39;X&#39;);",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "txt.search(&#39;X&#39;);",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which of the following characters allows you to insert a literal &quot;tab&quot; character into a JavaScript string?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "\\\\n",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "\\\\t",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "\\\\s",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "This is not possible in JavaScript",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Under which of the following conditions should you use the semicolon in a line of code?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "When you have multiple statements on multiple lines",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "When you have multiple statements on a line",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "When you have a single statement on multiple lines",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "When you have a single statement on a line",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How can you access the object property?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "newObj-property;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "newObj-&gt;property;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "newObj[&#39;property&#39;];",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "newObj{&#39;property&#39;};",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which function is used to convert a string value to a number format?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "The parseInt() function",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "The toInt() function",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "The intVal() function",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "The toNumber() method",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "What is the role of the isNaN(MyVar) function?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "To check whether MyVar is defined",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "To check whether MyVar is not a number",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "To check whether MyVar is not a null",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "IsNaN is not a valid function in JavaScript",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which is the correct way to write a JavaScript array?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "var txt = new Array(&quot;tim&quot;,&quot;kim&quot;,&quot;jim&quot;)",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "var txt = new Array(1:&quot;tim&quot;,2:&quot;kim&quot;,3:&quot;jim&quot;)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "var txt = new Array:1=(&quot;tim&quot;)2=(&quot;kim&quot;)3=(&quot;jim&quot;)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "var txt = new Array=&quot;tim&quot;,&quot;kim&quot;,&quot;jim&quot;",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which method evaluates a string of JavaScript code in the context of the specified object?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Eval",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "ParseInt",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "ParseFloat",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Efloat",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which of the following event fires when the form element loses the focus: &lt;button&gt;, &lt;input&gt;, &lt;label&gt;, &lt;select&gt;, &lt;textarea&gt;?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "onfocus",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "onblur",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "onclick",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "ondblclick",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "If para1 is the DOM object for a paragraph, what is the correct syntax to change the text within the paragraph?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "&quot;New Text&quot;?",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "para1.value=&quot;New Text&quot;;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "para1.firstChild.nodeValue= &quot;New Text&quot;;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "para1.nodeValue=&quot;New Text&quot;;",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How can you submit a form using JavaScript?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "formObject.send()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "formObject.reset()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "formObject.submit()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How many different kinds of loops are in JavaScript?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Four. The \"for\", \"while\", \"do...while\", and \"loop...until\" loops",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Three. The \"for\", \"while\", and \"do...while\" loops",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Two. The \"for\" and \"while\" loops",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "One. The \"for\" loop",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "How can you delete a variable using JavaScript?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "By using delete();",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "By using clear();",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "By using remove();",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "The delete operator is designed to be used on object properties. It has no effect on variables or functions",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+        ]
+}
+
+
