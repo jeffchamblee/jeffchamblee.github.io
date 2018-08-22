@@ -3,42 +3,6 @@
     "name": "Astronomy",
     "description": "BlankTemplate",
     "questions": [
-            {
-            "id": 1,
-            "name": "Which number is largest?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "number of seconds that have passed since Earth formed",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "number of grains of sand on any beach",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "number of sounds ever uttered by all the humans who ever lived",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "number of stars in the universe",
-                    "isAnswer": true
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
         {
             "id": 1,
             "name": "What is the closest galaxy to the Milky Way?",
@@ -149,150 +113,6 @@
         },
         {
             "id": 1,
-            "name": "What is the ratio of the sun’s mass to all other mass in the solar system?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "10 to 2",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "1 to 2",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "100 to 2",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "1000 to 2",
-                    "isAnswer": true
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "What is the ratio of dark matter to regular matter in the universe?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "2 to 1",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "1 to 2",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "6 to 1",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "1 to 6",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "What is the ratio of dwarf galaxies to regular galaxies in the universe?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "1 to 1",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "2 to 1",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "3 to 1",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "10 to 1",
-                    "isAnswer": true
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "Dark matter makes up what percent of the matter in the universe?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "20%",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "40%",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "60%",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "80%",
-                    "isAnswer": true
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
             "name": "What curves space time?",
             "questionTypeId": 1,
             "options": [
@@ -329,114 +149,6 @@
         },
         {
             "id": 1,
-            "name": "68% of the mass–energy density of the universe can be attributed to what?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "dark matter",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "dark energy",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "ordinary (baryonic) matter",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "gamma rays",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "26.8% of the mass–energy density of the universe can be attributed to what?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "dark matter",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "dark energy",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "ordinary (baryonic) matter",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "gamma rays",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "4.9% of the mass–energy density of the universe can be attributed to what?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "dark matter",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "dark energy",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "ordinary (baryonic) matter",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "gamma rays",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
             "name": "With what forces does dark matter interact?",
             "questionTypeId": 1,
             "options": [
@@ -462,42 +174,6 @@
                     "id": 1058,
                     "questionId": 15,
                     "name": "electro-magnetic",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "What is the average temperature of the universe based on measurements of cosmic microwave background radiation?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "about 2.7 Celsius",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "about -2.7 Celsius",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "about 2.7 Kelvin",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "about -2.7 Kelvin",
                     "isAnswer": false
                 }
             ],
@@ -606,81 +282,6 @@
                     "id": 1058,
                     "questionId": 15,
                     "name": "Gravitational waves",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-       
-
-        
-        {
-            "id": 1,
-            "name": "In 1964 Robert Wilson and Arno Penzias accidentally discovered what while building a supersensitive, 6-meter horn antenna?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "Gamma rays",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "Cosmic microwave background radiation",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "Dark energy",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "A quasar",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "Which scientist determined the age of the Earth (4.55 billion years) in 1956?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "Jocelyn Bell Burnell",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "Maarten Schmidt",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "CC Paterson",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "Frank Drake",
                     "isAnswer": false
                 }
             ],
@@ -836,43 +437,7 @@
         },
         {
             "id": 1,
-            "name": "Which scientist determined that quasars are receding at an enormous velocity, far beyond the speed of any known star?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "Jocelyn Bell Burnell",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "Maarten Schmidt",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "CC Paterson",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "Frank Drake",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "In the 1960s the United States built Vela satellites to detect violations of the Nuclear Test Ban Treaty by the Soviet Union. What did they accidentally discover coming from space?",
+            "name": "In the 1960s the United States built Vela satellites to detect violations of the Nuclear Test Ban Treaty by the Soviet Union. Scientists studying the Vela data were the first to detect what coming from space?",
             "questionTypeId": 1,
             "options": [
                 {
@@ -908,7 +473,7 @@
         },
         {
             "id": 1,
-            "name": "In 1987 a blue supergiant became unstable and collapsed reducing its volume by a factor of one million (Supernova 1987A). How long does it take for this collapse to occur?",
+            "name": "In 1987 a blue supergiant became unstable and collapsed becoming Supernova 1987A. When it collapsed its volume was reduced by a factor of one million. How long did it take for this collapse to occur?",
             "questionTypeId": 1,
             "options": [
                 {
