@@ -560,7 +560,301 @@
                 "name": "Multiple Choice",
                 "isActive": true
             }
+        },
+        {
+            "id": 1,
+            "name": "What is the source of stellar energy?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Kinetic energy from shrinking",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Kinetic energy from comets and asteroids",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Fusion of hydrogen into helium",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Burning of carbon",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "The rate of expansion of the universe is called what?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Planck constant",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Hubble constant",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Gravitational constant",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Parsec",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Hydrogen and helium have existed since the beginning of the universe. All other chemical elements are created when?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "When neutrinos collide with gamma rays",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "When a star explodes into a supernova",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "When a comet collides with a planet",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "When a star is captured by a black hole",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "In August 2017 two neutron stars collided. Observatories were immediately told to find and point to the source of the event. All told, about 70 observatories captured the event. The collision’s aftermath was recorded at nearly every wavelength. This event was an opportunity to record the source of what?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Gravitational waves ",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Cosmic rays",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "A gamma rays burst",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Synchrotron radiation",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "If a supernova explodes and its core remnant is more than about three solar masses, what will result?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "neutron star",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "red giant",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "black hole",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "white dwarf",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "If a supernova explodes and its core remnant is less than about three solar masses, what will result?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "neutron star",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "white dwarf",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "black hole",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "brown dwarf",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which wavelengths can penetrate the dust along the galactic plane?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "ultraviolet",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "radio",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "infrared",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "both ultraviolet and radio",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1059,
+                    "questionId": 15,
+                    "name": "both radio and infrared",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "The notion that the spatial distribution of matter in the universe is homogeneous and isotropic when viewed on a large scale is called what?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Planck’s principle",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Shirky principle",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Cosmological principle",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Hubble’s Law",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
         }
-        
+
        ]
 }

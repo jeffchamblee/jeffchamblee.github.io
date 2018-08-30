@@ -77,6 +77,222 @@
         },
         {
             "id": 1,
+            "name": "Uranus was discovered in 1782 making it the first planet discovered since antiquity. Who discovered it?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Edmond Halley",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Charles Messier",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Joseph-Louis Lagrange ",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "William Herschel",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Infrared radiation was discovered by passing sunlight through a prism and holding a thermometer just beyond the red end of the visible spectrum. This thermometer was meant to be a control to measure the ambient air temperature in the room. The scientist who did this was shocked when it showed a higher temperature than the visible spectrum. Further experimentation led to the conclusion that there must be an invisible form of light beyond the visible spectrum. Who discovered infrared radiation?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Edmond Halley",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Charles Messier",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Joseph-Louis Lagrange",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "William Herschel",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Who discovered pulsars?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Jocelyn Bell Burnell",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Maarten Schmidt",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Fred Hoyle",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Frank Drake",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Who discovered the relation between the luminosity and the period of Cepheid variable stars? This discovery first allowed astronomers to measure the distance between the Earth and faraway galaxies.",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Edwin Hubble",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Henrietta Swan Leavitt",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Arthur Eddington",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Mary Watson Whitney",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Who discovered that the farther away galaxies are, the faster they are moving away from us?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Annie Jump Cannon",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Maarten Schmidt",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Edwin Hubble",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Arthur Eddington",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Which scientist determined that stars burn because of the fusion of hydrogen?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Annie Jump Cannon",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Maarten Schmidt",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Edwin Hubble",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Arthur Eddington",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
             "name": "Which scientist determined that quasars are receding at an enormous velocity, far beyond the speed of any known star?",
             "questionTypeId": 1,
             "options": [
@@ -103,6 +319,114 @@
                     "questionId": 15,
                     "name": "Frank Drake",
                     "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+         {
+            "id": 1,
+            "name": "Who first proposed that the universe is expanding?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Frank Hoyle",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Maarten Schmidt",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Edwin Hubble",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Arthur Eddington",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Who first proposed that the stars are powered by the fusion of hydrogen into helium?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Annie Jump Cannon",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Maarten Schmidt",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Edwin Hubble",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Arthur Eddington",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Who led an expedition to observe a solar eclipse from the island of Principe to test if light from distant stars is bent by the gravitational field of the sun— that is to say— to test the validity of Einstein’s theory of general relativity?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Joseph-Louis Legrange",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Maarten Schmidt",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Edwin Hubble",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Arthur Eddington",
+                    "isAnswer": true
                 }
             ],
             "questionType": {
