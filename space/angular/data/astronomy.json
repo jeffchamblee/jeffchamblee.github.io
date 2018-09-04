@@ -854,6 +854,42 @@
                 "name": "Multiple Choice",
                 "isActive": true
             }
+        },
+        {
+            "id": 1,
+            "name": "\"Spacetime tells matter how to move; matter tells spacetime how to curve.\" This quotation describes what?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Planck’s principle",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "General relativity",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Cosmological principle",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Hubble’s Law",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
         }
 
        ]
