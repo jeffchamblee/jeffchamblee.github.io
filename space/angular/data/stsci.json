@@ -3,79 +3,7 @@
     "name": "Space Telecope Science Institute",
     "description": "BlankTemplate",
     "questions": [
-        {
-            "id": 1,
-            "name": "Which organization operates Space Telecope Science Institute (STScI)?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "NASA",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "AURA",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "Johns Hopkins University",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "Partnership between NASA and ESA",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "Which mission is not supported by STScI?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "Spitzer Space Telescope",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "Pan-Starrs",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "TESS",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "IUE",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
+            {
             "id": 1,
             "name": "How many missions does STScI's Data Archiving and Distribution organization support?",
             "questionTypeId": 1,
@@ -470,7 +398,44 @@
                 "name": "Multiple Choice",
                 "isActive": true
             }
+        },
+        {
+            "id": 1,
+            "name": "Which STScI astrophysicist won the Nobel prize in physics?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Frank Summers",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Ronald Gilliland",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Greg Sloan",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Adam Riess",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
         }
+
         ]
 }
 
