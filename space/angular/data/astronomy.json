@@ -1,7 +1,14 @@
 {
     "id": 8,
     "name": "Astronomy",
-    "description": "BlankTemplate",
+    "description": "Astronomy and Astrophysics",
+    "config": {
+        "shuffleQuestions": false,
+        "showPager": false,
+        "allowBack": true,
+        "autoMove": true,
+        "showClock": false
+    },
     "questions": [
         {
             "id": 1,
@@ -779,8 +786,8 @@
         },
         {
             "id": 1,
-            "name": "Which wavelengths can penetrate the dust along the galactic plane?",
-            "questionTypeId": 1,
+            "name": "Which wavelengths can penetrate the dust along the galactic plane? Choose two.",
+            "questionTypeId": 2,
             "options": [
                 {
                     "id": 11,
@@ -791,25 +798,19 @@
                 {
                     "id": 1056,
                     "questionId": 13,
-                    "name": "radio",
+                    "name": "X rays",
                     "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "radio",
+                    "isAnswer": true
                 },
                 {
                     "id": 1057,
                     "questionId": 14,
                     "name": "infrared",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "both ultraviolet and radio",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1059,
-                    "questionId": 15,
-                    "name": "both radio and infrared",
                     "isAnswer": true
                 }
             ],

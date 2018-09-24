@@ -1,7 +1,7 @@
 {
     "id": 11,
     "name": "Famous Astronomers",
-    "description": "BlankTemplate",
+    "description": "Famous Astronomers",
     "questions": [
         {
             "id": 1,
@@ -257,7 +257,7 @@
         },
         {
             "id": 1,
-            "name": "Which scientist determined that stars burn because of the fusion of hydrogen?",
+            "name": "Who first proposed that the stars are powered by the fusion of hydrogen into helium?",
             "questionTypeId": 1,
             "options": [
                 {
@@ -355,42 +355,6 @@
                     "questionId": 15,
                     "name": "Arthur Eddington",
                     "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "Who first proposed that the stars are powered by the fusion of hydrogen into helium?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "Annie Jump Cannon",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "Maarten Schmidt",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "Edwin Hubble",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "Arthur Eddington",
-                    "isAnswer": true
                 }
             ],
             "questionType": {

@@ -1,0 +1,81 @@
+{
+    "id": 8,
+    "name": "Multi Select Template",
+    "description": "Multi Select Template",
+    "questions": [
+        {
+            "id": 1,
+            "name": "Multi select question. To test that the quiz engine works, select the correct items below. ",
+            "questionTypeId": 2,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Choose this",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Don't select this",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Don't select this",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Choose this",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "Multi select question 2. To test that the quiz engine works, select the correct items below. ",
+            "questionTypeId": 2,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Select this",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Select this",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Select this",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Select this",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+        ]
+}
+
+
