@@ -120,68 +120,32 @@
         },
         {
             "id": 1,
-            "name": "What curves space time?",
+            "name": "Recent research has shown that all galaxies with a central bulge contain what at the center?",
             "questionTypeId": 1,
             "options": [
                 {
                     "id": 11,
                     "questionId": 12,
-                    "name": "gamma rays",
+                    "name": "A neutron star",
                     "isAnswer": false
                 },
                 {
                     "id": 1056,
                     "questionId": 13,
-                    "name": "strong nuclear force",
+                    "name": "A quasar",
                     "isAnswer": false
                 },
                 {
                     "id": 1057,
                     "questionId": 14,
-                    "name": "weak nuclear force",
+                    "name": "A pulsar",
                     "isAnswer": false
                 },
                 {
                     "id": 1058,
                     "questionId": 15,
-                    "name": "gravity",
+                    "name": "A black hole",
                     "isAnswer": true
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "With what forces does dark matter interact?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "gravity",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "strong nuclear",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "weak nuclear",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "electro-magnetic",
-                    "isAnswer": false
                 }
             ],
             "questionType": {
@@ -217,78 +181,6 @@
                     "id": 1058,
                     "questionId": 15,
                     "name": "nitrogen",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "Astronomers have set up an early warning system so they know where to aim telescopes to see exploding supernova. This is made possible by detection of what?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "neutrinos",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "gamma rays",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "cosmic rays",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "gravitational waves",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "What passes through matter without interaction?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "neutrinos",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "Gamma rays",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "Cosmic rays",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "Gravitational waves",
                     "isAnswer": false
                 }
             ],
@@ -444,96 +336,6 @@
         },
         {
             "id": 1,
-            "name": "In the 1960s the United States built Vela satellites to detect violations of the Nuclear Test Ban Treaty by the Soviet Union. Scientists studying the Vela data were the first to detect what coming from space?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "gamma ray bursts",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "synchrotron radiation",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "cosmic rays",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "neutrinos",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
-            "name": "In 1987 a blue supergiant became unstable and collapsed becoming Supernova 1987A. When it collapsed its volume was reduced by a factor of one million. How long did it take for this collapse to occur?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "1 year",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "1 month",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "1 week",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "1 day",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1055,
-                    "questionId": 14,
-                    "name": "1 hour",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1054,
-                    "questionId": 14,
-                    "name": "1 minute",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1053,
-                    "questionId": 14,
-                    "name": "1 second",
-                    "isAnswer": true
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
             "name": "Aurora borealis and comet tails are caused by what?",
             "questionTypeId": 1,
             "options": [
@@ -678,42 +480,6 @@
         },
         {
             "id": 1,
-            "name": "In August 2017 two neutron stars collided. Observatories were immediately told to find and point to the source of the event. All told, about 70 observatories captured the event. The collision’s aftermath was recorded at nearly every wavelength. This event was an opportunity to record the source of what?",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 11,
-                    "questionId": 12,
-                    "name": "Gravitational waves ",
-                    "isAnswer": true
-                },
-                {
-                    "id": 1056,
-                    "questionId": 13,
-                    "name": "Cosmic rays",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1057,
-                    "questionId": 14,
-                    "name": "A gamma rays burst",
-                    "isAnswer": false
-                },
-                {
-                    "id": 1058,
-                    "questionId": 15,
-                    "name": "Synchrotron radiation",
-                    "isAnswer": false
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
-        {
-            "id": 1,
             "name": "If a supernova explodes and its core remnant is more than about three solar masses, what will result?",
             "questionTypeId": 1,
             "options": [
@@ -796,7 +562,7 @@
                     "isAnswer": false
                 },
                 {
-                    "id": 1056,
+                    "id": 1055,
                     "questionId": 13,
                     "name": "X rays",
                     "isAnswer": false
@@ -856,6 +622,42 @@
                 "isActive": true
             }
         },
+        {
+            "id": 1,
+            "name": "What curves space time?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "gamma rays",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "strong nuclear force",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "weak nuclear force",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "gravity",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },        
         {
             "id": 1,
             "name": "\"Spacetime tells matter how to move; matter tells spacetime how to curve.\" This quotation describes what?",
