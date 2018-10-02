@@ -113,6 +113,60 @@
         },
         {
             "id": 1,
+            "name": "What are the limitations of detecting planets using transit photometry?",
+            "questionTypeId": 2,
+            "options": [
+                {
+                    "id": 13,
+                    "questionId": 12,
+                    "name": "can miss small planets ",
+                    "isAnswer": true
+                },
+                {
+                    "id": 14,
+                    "questionId": 13,
+                    "name": "can miss large planets ",
+                    "isAnswer": false
+                },
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "can miss planets that orbit close to the star",
+                    "isAnswer": false
+                },
+                {
+                    "id": 12,
+                    "questionId": 13,
+                    "name": "can miss planets that orbit far from the star",
+                    "isAnswer": true
+                },
+                {
+                    "id": 15,
+                    "questionId": 12,
+                    "name": "can miss planets that orbit a small star",
+                    "isAnswer": false
+                },
+                {
+                    "id": 16,
+                    "questionId": 13,
+                    "name": "can miss planets that orbit a large star",
+                    "isAnswer": true
+                },
+                {
+                    "id": 17,
+                    "questionId": 12,
+                    "name": "can miss planets if the planet's orbit is not aligned with the observatory",
+                    "isAnswer": true
+                }
+           ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
             "name": "What are rogue planets?",
             "questionTypeId": 1,
             "options": [
