@@ -113,7 +113,7 @@
         },
         {
             "id": 1,
-            "name": "What are the limitations of detecting planets using transit photometry?",
+            "name": "What are the limitations of detecting planets using transit photometry? Choose several. ",
             "questionTypeId": 2,
             "options": [
                 {
