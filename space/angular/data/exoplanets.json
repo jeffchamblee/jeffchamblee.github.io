@@ -41,36 +41,36 @@
         },
         {
             "id": 1,
-            "name": "Radial velocity is a method for identifying exoplanets. Radial velocity is synonymous with what?",
-            "questionTypeId": 1,
+            "name": "Radial velocity is a method for identifying exoplanets. Radial velocity is synonymous with what? Choose two.",
+            "questionTypeId": 2,
             "options": [
                 {
                     "id": 11,
                     "questionId": 12,
-                    "name": "Speed of star",
+                    "name": "speed of star",
                     "isAnswer": false
                 },
                 {
                     "id": 1056,
                     "questionId": 13,
-                    "name": "Speed of planet around the star",
+                    "name": "speed of planet around the star",
                     "isAnswer": false
                 },
                 {
                     "id": 1057,
                     "questionId": 14,
-                    "name": "Wobble of star",
+                    "name": "wobble of star",
                     "isAnswer": true
                 },
                 {
                     "id": 1058,
                     "questionId": 15,
-                    "name": "Wobble of planet",
-                    "isAnswer": false
+                    "name": "doppler spectroscopy",
+                    "isAnswer": true
                 }
             ],
             "questionType": {
-                "id": 1,
+                "id": 2,
                 "name": "Multiple Choice",
                 "isActive": true
             }
@@ -143,13 +143,13 @@
                 {
                     "id": 15,
                     "questionId": 12,
-                    "name": "can miss planets that orbit a small star",
+                    "name": "can miss planets that orbit small stars",
                     "isAnswer": false
                 },
                 {
                     "id": 16,
                     "questionId": 13,
-                    "name": "can miss planets that orbit a large star",
+                    "name": "can miss planets that orbit large stars",
                     "isAnswer": true
                 },
                 {
@@ -159,6 +159,90 @@
                     "isAnswer": true
                 }
            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "What are the limitations of detecting planets using the radial-velocity method? Choose several. ",
+            "questionTypeId": 2,
+            "options": [
+                {
+                    "id": 13,
+                    "questionId": 12,
+                    "name": "can miss small planets ",
+                    "isAnswer": true
+                },
+                {
+                    "id": 14,
+                    "questionId": 13,
+                    "name": "can miss large planets ",
+                    "isAnswer": false
+                },
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "can miss planets that orbit close to the star",
+                    "isAnswer": false
+                },
+                {
+                    "id": 12,
+                    "questionId": 13,
+                    "name": "can miss planets that orbit far from the star",
+                    "isAnswer": true
+                },
+                {
+                    "id": 15,
+                    "questionId": 12,
+                    "name": "can miss planets that orbit small stars",
+                    "isAnswer": false
+                },
+                {
+                    "id": 16,
+                    "questionId": 13,
+                    "name": "can miss planets that orbit large stars",
+                    "isAnswer": true
+                },
+                {
+                    "id": 17,
+                    "questionId": 12,
+                    "name": "can miss planets if the planet's orbit is not aligned with the observatory",
+                    "isAnswer": true
+                },
+                {
+                    "id": 18,
+                    "questionId": 12,
+                    "name": "can miss planets if the star’s light is variable",
+                    "isAnswer": true
+                }
+           ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+         {
+            "id": 1,
+            "name": "Which method is better for scanning the sky for thousands of stars at once?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Radial velocity",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Transit method",
+                    "isAnswer": true
+                }
+            ],
             "questionType": {
                 "id": 1,
                 "name": "Multiple Choice",
