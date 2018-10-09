@@ -18,13 +18,13 @@
                 {
                     "id": 11,
                     "questionId": 12,
-                    "name": "Cygnus",
+                    "name": "Cygnus A",
                     "isAnswer": false
                 },
                 {
                     "id": 1056,
                     "questionId": 13,
-                    "name": "Centaurus",
+                    "name": "Centaurus A",
                     "isAnswer": false
                 },
                 {
@@ -36,7 +36,7 @@
                 {
                     "id": 1058,
                     "questionId": 15,
-                    "name": "Sombrero",
+                    "name": "Alpha Centauri",
                     "isAnswer": false
                 }
             ],
@@ -433,6 +433,78 @@
                     "id": 1058,
                     "questionId": 15,
                     "name": "Parsec",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "When the supply of hydrogen diminishes in the core the Sun it will begin transforming from a normal main-sequence star into what?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "a brown dwarf",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "a red giant",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "a T Tauri star",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "a rogue planet",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1,
+            "name": "After the Sun has exhausted its available fuel (hydrogen and helium) in its core and in a shell around the core, it will collapse in on itself.  What will remain?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "a brown dwarf",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "a red dwarf",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "a white dwarf",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "a black hole",
                     "isAnswer": false
                 }
             ],
