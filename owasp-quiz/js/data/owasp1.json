@@ -1,0 +1,545 @@
+[ {
+  "option_4" : " Insecure direct object references",
+  "option_2" : " Cross-site request forgery",
+  "option_3" : " Denial of service",
+  "question" : "Which of the following consequences is most likely to occur due to an injection attack?",
+  "answer" : " 3",
+  "option_1" : " Spoofing"
+}
+, {
+  "option_4" : " Insufficient transport layer protection",
+  "option_2" : " Insecure direct object references",
+  "option_3" : " Failure to restrict URL access",
+  "question" : "Your application is created using a language that does not support a clear distinction between code and data. Which vulnerability is most likely to occur in your application?",
+  "answer" : " 1",
+  "option_1" : " Injection"
+}
+, {
+  "option_4" : " A Web action performs an operation on behalf of the user without checking a shared secret.",
+  "option_2" : " Unvalidated input can be distinguished from valid instructions.",
+  "option_3" : " A Web application does not validate a client’s access to a resource.",
+  "question" : "Which of the following scenarios is most likely to cause an injection attack?",
+  "answer" : " 1",
+  "option_1" : " Unvalidated input is embedded in an instruction stream."
+}
+, {
+  "option_4" : " Insufficient transport layer protection",
+  "option_2" : " Insecure direct object references",
+  "option_3" : " Failure to restrict URL access",
+  "question" : "A user is able to pass malicious input that invokes control codes in your Web application. Which vulnerability is most likely to occur in your Web application?",
+  "answer" : " 1",
+  "option_1" : " Injection"
+}
+, {
+  "option_4" : " Validate integer values before referencing arrays",
+  "option_2" : " Input validation using an allow list",
+  "option_3" : " Memory size checks",
+  "question" : "Which of the following is the best way to protect against injection attacks?",
+  "answer" : " 2",
+  "option_1" : " SQL queries based on user input"
+}
+, {
+  "option_4" : " Server configuration files",
+  "option_2" : " Registry keys",
+  "option_3" : " Regular expressions",
+  "question" : "Which of the following is most vulnerable to injection attacks?",
+  "answer" : " 3",
+  "option_1" : " Session IDs"
+}
+, {
+  "option_4" : " Greater than sign(>)",
+  "option_2" : " Null",
+  "option_3" : " Less than sign(<)",
+  "question" : "Which character is most likely to be used for an SQL injection attack?",
+  "answer" : " 1",
+  "option_1" : " Single quote (')"
+}
+, {
+  "option_4" : " Escaping",
+  "option_2" : " Memory size checks",
+  "option_3" : " Table indirection",
+  "question" : "Which mitigation technique can help you strictly define valid input?",
+  "answer" : " 1",
+  "option_1" : " Allow list"
+}
+, {
+  "option_4" : " Memory size checks",
+  "option_2" : " Table indirection",
+  "option_3" : " Escaping",
+  "question" : "Which of the following architecture-level techniques are the best approaches to prevent attacks based on malicious input?",
+  "answer" : " 2",
+  "option_1" : " Allow list"
+}
+, {
+  "option_4" : " Block list",
+  "option_2" : " Allow list",
+  "option_3" : " Escaping",
+  "question" : "Which mitigation technique helps you tell the parser that a specific character is a literal and not a control character?",
+  "answer" : " 3",
+  "option_1" : " Table indirection"
+}
+, {
+  "option_2" : " False",
+  "question" : "True or false: You should use a blacklist wherever possible; use whitelists only as a secondary defense.",
+  "answer" : " 2",
+  "option_1" : " True"
+}
+, {
+  "option_4" : " Escaping",
+  "option_2" : " Block list",
+  "option_3" : " Table indirection",
+  "question" : "Which of the following is the best way to define disallowed inputs?",
+  "answer" : " 2",
+  "option_1" : " Allow list"
+}
+, {
+  "option_4" : " Broken authentication and session management",
+  "option_2" : " Cross-site request forgery",
+  "option_3" : " Insecure direct object references",
+  "question" : "Which of the following is an injection attack?",
+  "answer" : " 1",
+  "option_1" : " Cross-site scripting"
+}
+, {
+  "option_4" : " XPath",
+  "option_2" : " SQL",
+  "option_3" : " XSLT",
+  "question" : "Which of the following languages are the primary targets of cross-site scripting?",
+  "answer" : " 1",
+  "option_1" : " HTML"
+}
+, {
+  "option_4" : " Failure to restrict URL access",
+  "option_2" : " Persistent XSS",
+  "option_3" : " Insecure direct object references",
+  "question" : "Which of the following attacks occurs when a malicious user convinces a victim to send a request to a server with malicious input and the server echoes the input back to client?",
+  "answer" : " 1",
+  "option_1" : " Reflected XSS"
+}
+, {
+  "option_4" : " Validate any input that comes from another Web site",
+  "option_2" : " Ensure that session IDs are not exposed in a URL",
+  "option_3" : " Ensure that a different nonce is created for each request",
+  "question" : "Which of the following is the best way to prevent a DOM-based XSS attack?",
+  "answer" : " 4",
+  "option_1" : " Set the HttpOnly flag in cookies"
+}
+, {
+  "option_4" : " From victim to server",
+  "option_2" : " From client to itself",
+  "option_3" : " From attacker to server",
+  "question" : "How does malicious input flow in a DOM-based XSS?",
+  "answer" : " 2",
+  "option_1" : " From server to client"
+}
+, {
+  "option_4" : " Using GET/POST parameters",
+  "option_2" : " Using encryption",
+  "option_3" : " Using table indirection",
+  "question" : "Which of the following is the best way to prevent malicious input exploiting your application?",
+  "answer" : " 1",
+  "option_1" : " Input validation using an allow List"
+}
+, {
+  "option_4" : " The cookie is a persistent cookie.",
+  "option_2" : " The cookie is deleted when the user closes the browser.",
+  "option_3" : " The cookie is sent over an encrypted channel.",
+  "question" : "You should set the HttpOnly flag in a cookie to ensure that:",
+  "answer" : " 1",
+  "option_1" : " The cookie is not available to client scripts."
+}
+, {
+  "option_4" : " The cookie is deleted when the user closes the browser.",
+  "option_2" : " The cookie is not available to client script.",
+  "option_3" : " The cookie is sent over an encrypted channel.",
+  "question" : "You should set a secure flag in a cookie to ensure that:",
+  "answer" : " 3",
+  "option_1" : " The cookie is a persistent cookie."
+}
+, {
+  "option_4" : " Cross-site request forgery",
+  "option_2" : " Reflected XSS",
+  "option_3" : " Persistent XSS",
+  "question" : "An attacker submits data to the server and the data is stored on the server. Which type of vulnerability is most likely to occur in your application?",
+  "answer" : " 3",
+  "option_1" : " DOM-based XSS"
+}
+, {
+  "option_4" : " Server code",
+  "option_2" : " Server configuration files",
+  "option_3" : " Ports",
+  "question" : "Which of the following input sources can be directly controlled by a malicious user?",
+  "answer" : " 1",
+  "option_1" : " GET/POST parameters"
+}
+, {
+  "option_4" : " The HttpOnly flag is set in cookies.",
+  "option_2" : " Session-based indirection is used.",
+  "option_3" : " Unused and unnecessary services code and DLLs are disabled.",
+  "question" : "Which of the following scenarios is most likely to result in broken authentication and session management vulnerabilities?",
+  "answer" : " 1",
+  "option_1" : " Poorly implemented custom code is used."
+}
+, {
+  "option_4" : " Find out if you need to use session-based indirection.",
+  "option_2" : " Find out if you can use a small extension to an existing component to implement the system.",
+  "option_3" : " Find out if form variables are available to store data.",
+  "question" : "Which of the following actions should you take before implementing a custom authentication and session management system?",
+  "answer" : " 2",
+  "option_1" : " Find out if the HttpOnly flag is set in cookies."
+}
+, {
+  "option_2" : " False",
+  "question" : "True or false: When implementing an authentication or session system you should ensure that new session IDs are not created at login.",
+  "answer" : " 2",
+  "option_1" : " True"
+}
+, {
+  "option_4" : " Forwarding system functionality",
+  "option_2" : " Regular expressions",
+  "option_3" : " Escaping functionality",
+  "question" : "Which of the following functionalities should you include in an authentication and session management system?",
+  "answer" : " 1",
+  "option_1" : " Logout functionality"
+}
+, {
+  "option_4" : " To ensure that authentication systems implement inactivity timeout functionality",
+  "option_2" : " To protect credentials by using encryption or cryptographic salt and hash",
+  "option_3" : " To protect authentication systems from automated or brute-force attacks",
+  "question" : "Why should you use CAPTCHA?",
+  "answer" : " 3",
+  "option_1" : " To create cryptographically random session IDs"
+}
+, {
+  "option_4" : " Use persistent cookies to manage session IDs.",
+  "option_2" : " Accept session IDs from URLs.",
+  "option_3" : " Share the credentials with the client.",
+  "question" : "What should you do before passing credentials over the network?",
+  "answer" : " 1",
+  "option_1" : " Replace the credentials with a cryptographic salt and hash."
+}
+, {
+  "option_4" : " Non-persistent cookies",
+  "option_2" : " Form variables",
+  "option_3" : " Persistent cookies",
+  "question" : "Which location should you ideally use to store a session ID?",
+  "answer" : " 4",
+  "option_1" : " URLs"
+}
+, {
+  "option_4" : " Use non-persistent cookies",
+  "option_2" : " Set the HttpOnly flag in the cookie",
+  "option_3" : " Use the CAPTCHA system",
+  "question" : "Which of the following is the best way to ensure that JavaScript cannot be used to access a cookie?",
+  "answer" : " 2",
+  "option_1" : " Set the secure flag in the cookie"
+}
+, {
+  "option_4" : " Session IDs are only accepted from cookies and parameter variables.",
+  "option_2" : " Use a GOTCHA to prevent automated attacks.",
+  "option_3" : " User logout and session inactivity controls.",
+  "question" : "Which of the following is an authentication system mandatory requirement?",
+  "answer" : " 3",
+  "option_1" : " Form variables are used for managing session IDs."
+}
+, {
+  "option_4" : " It should always use a non-persistent cookie.",
+  "option_2" : " It should be public information.",
+  "option_3" : " It should always use a persistent cookie.",
+  "question" : "A session-based system authenticates a user to a Web site to provide access to restricted resources. To increase security in this scenario an authentication token should meet which of the following requirements?",
+  "answer" : " 4",
+  "option_1" : " It should identify returning users to the site."
+}
+, {
+  "option_2" : " False",
+  "question" : "True or false: An identification token is a replacement for a user’s credentials and should allow access to restricted resources of a Web site.",
+  "answer" : " 2",
+  "option_1" : " True"
+}
+, {
+  "option_4" : " Sending successful logins to a well-known location",
+  "option_2" : " Using form variables for managing session IDs",
+  "option_3" : " Using the HTTP protocol",
+  "question" : "Which of the following tasks is performed by a session-based system?",
+  "answer" : " 1",
+  "option_1" : " Identifying returning users"
+}
+, {
+  "option_4" : " Cross-site request forgery",
+  "option_2" : " Cross-site scripting",
+  "option_3" : " Insecure direct object reference",
+  "question" : "Which threat is most likely to occur when a Web application fails to validate a client's access to a resource?",
+  "answer" : " 3",
+  "option_1" : " Injection"
+}
+, {
+  "option_4" : " GET/POST parameters",
+  "option_2" : " Registry keys",
+  "option_3" : " Conditional constructs",
+  "question" : "Which of the following objects is most susceptible to an insecure direct object reference attack?",
+  "answer" : " 2",
+  "option_1" : " Nonpersistent cookies"
+}
+, {
+  "option_4" : " Accessing a resource without authorization.",
+  "option_2" : " Impersonating any user on the system.",
+  "option_3" : " Modifying SQL data pointed to by the query.",
+  "question" : "Which of the following vulnerabilities is most likely to occur due to an insecure direct object reference attack?",
+  "answer" : " 4",
+  "option_1" : " Executing commands on the server."
+}
+, {
+  "option_4" : " Send successful logins to a well-known location instead of automatic redirection.",
+  "option_2" : " Use POST parameters instead of GET parameters.",
+  "option_3" : " Use a regular expression.",
+  "question" : "Which of the following is the best way to mitigate the threat of an insecure direct object reference attack?",
+  "answer" : " 1",
+  "option_1" : " Use session-based indirection."
+}
+, {
+  "option_2" : " False",
+  "question" : "True or false: Time of Check Time of Use (TOCTOUoccurs if the authorization check is performed on one page of a Web site and the resource is used on a different page.",
+  "answer" : " 1",
+  "option_1" : " True"
+}
+, {
+  "option_4" : " Injection",
+  "option_2" : " Insecure direct object reference",
+  "option_3" : " Cross-site scripting",
+  "question" : "Your Web application stores information about many accounts. Which threat is your Web application susceptible to if you can manipulate the URL of an account page to access all accounts?",
+  "answer" : " 2",
+  "option_1" : " Cross-site request forgery"
+}
+, {
+  "option_4" : " Insufficient transport layer protection",
+  "option_2" : " Insecure direct object reference",
+  "option_3" : " Insecure cryptographic storage",
+  "question" : "Which of the following threats is most likely to be caused by poor input validation?",
+  "answer" : " 2",
+  "option_1" : " Enabling of IPSec"
+}
+, {
+  "option_4" : " Injection",
+  "option_2" : " Insecure direct object reference",
+  "option_3" : " Cross-site scripting",
+  "question" : "Which threat is most likely to occur when a POST parameter performs an operation on behalf of a user without checking a shared secret?",
+  "answer" : " 1",
+  "option_1" : " Cross-site request forgery"
+}
+, {
+  "option_4" : " Misconfigured security features",
+  "option_2" : " Disabled security features",
+  "option_3" : " Enabling of IPSec",
+  "question" : "Which of the following is the most common result of a cross-site request forgery?",
+  "answer" : " 1",
+  "option_1" : " Elevation of privilege"
+}
+, {
+  "option_4" : " Cross-site request forgery",
+  "option_2" : " Cross-site scripting",
+  "option_3" : " Insecure direct object reference",
+  "question" : "An attacker lures a victim to malicious content on a Web site. A request is automatically sent to the vulnerable site which includes victim’s credentials. Which attack is most likely to occur in this scenario?",
+  "answer" : " 4",
+  "option_1" : " Injection"
+}
+, {
+  "option_2" : " False",
+  "question" : "True or false: The downside of a nonce is that it needs to be stored on the client.",
+  "answer" : " 2",
+  "option_1" : " True"
+}
+, {
+  "option_4" : " Timestamp",
+  "option_2" : " Nonce",
+  "option_3" : " Session ID",
+  "question" : "What should you add to an hash-based message authentication code (HMAC) to ensure that the secret value is unique for each request?",
+  "answer" : " 4",
+  "option_1" : " Salt"
+}
+, {
+  "option_4" : " Resubmit POST parameters during redirection.",
+  "option_2" : " Use automatic redirection.",
+  "option_3" : " Don’t include secrets in the URL.",
+  "question" : "Which of the following practices should you observe in order to implement defense-in-depth techniques against CSRF attacks?",
+  "answer" : " 3",
+  "option_1" : " Use GET parameters"
+}
+, {
+  "option_2" : " False",
+  "question" : "True or false: HTTP GET parameters limit the types of manipulation a malicious user can perform on the victim to forge a request.",
+  "answer" : " 2",
+  "option_1" : " True"
+}
+, {
+  "option_4" : " Unsafe key storage",
+  "option_2" : " Failure to disable default accounts",
+  "option_3" : " Bad cryptography",
+  "question" : "Which of the following mistakes is most often associated with a security misconfiguration threat?",
+  "answer" : " 2",
+  "option_1" : " Cross-site request forgery"
+}
+, {
+  "option_4" : " Cross-site request forgery",
+  "option_2" : " Security misconfiguration",
+  "option_3" : " Insecure cryptographic storage",
+  "question" : "You have not yet applied some recent service packs and updates to your Web application. Which of the following threats is your Web server susceptible to?",
+  "answer" : " 2",
+  "option_1" : " Injection"
+}
+, {
+  "option_4" : " Use your browser to forge unauthorized requests.",
+  "option_2" : " Use the white-list validation of allowed input technique.",
+  "option_3" : " Use custom cryptographic algorithms.",
+  "question" : "Which of the following is the best way to reevaluate your environment and address new threats?",
+  "answer" : " 1",
+  "option_1" : " Add or remove network segments."
+}
+, {
+  "option_4" : " Update the environment with changes only when needed.",
+  "option_2" : " Resubmit POST parameters during redirection.",
+  "option_3" : " Repeat the process at random intervals.",
+  "question" : "Which of the following procedures are involved in the hardening process?",
+  "answer" : " 1",
+  "option_1" : " Disable unnecessary features."
+}
+, {
+  "option_4" : " Your application may have too many configuration files.",
+  "option_2" : " Testing your application may take a long time.",
+  "option_3" : " Your application may be expensive to administer.",
+  "question" : "Which of the following consequence is most likely to result if your production environment does not match your development, testing and staging environments?",
+  "answer" : " 1",
+  "option_1" : " Your application may not work as expected."
+}
+, {
+  "option_4" : " Rotating keys frequently",
+  "option_2" : " Unused services",
+  "option_3" : " Default accounts",
+  "question" : "Which of the following can result in insecure cryptography?",
+  "answer" : " 1",
+  "option_1" : " Unsalted hash"
+}
+, {
+  "option_4" : " Missing patches",
+  "option_2" : " Unsalted hash",
+  "option_3" : " New products",
+  "question" : "Which of the following is most likely to result in insecure cryptography?",
+  "answer" : " 2",
+  "option_1" : " Unused services"
+}
+, {
+  "option_4" : " Unnecessary/unused services or features",
+  "option_2" : " Insufficient cryptographic protocols",
+  "option_3" : " Missing patches",
+  "question" : "Which of the following may result in cryptographic weakness?",
+  "answer" : " 2",
+  "option_1" : " Failure to restrict URL access"
+}
+, {
+  "option_4" : " Kerberos",
+  "option_2" : " EFS",
+  "option_3" : " IPSec",
+  "question" : "Which of the following protocols is a network layer encryption protocol?",
+  "answer" : " 3",
+  "option_1" : " HTTP"
+}
+, {
+  "option_4" : " Encryption",
+  "option_2" : " Session-based indirection",
+  "option_3" : " Escaping",
+  "question" : "Which of the following factors helps you secure keys?",
+  "answer" : " 1",
+  "option_1" : " Complexity"
+}
+, {
+  "option_4" : " Salt",
+  "option_2" : " Digital signature",
+  "option_3" : " SSL",
+  "question" : "Which of the following combines public-key cryptography with a cryptographic hash?",
+  "answer" : " 2",
+  "option_1" : " Nonce"
+}
+, {
+  "option_4" : " Attackers perform all actions that the victims themselves have permission to perform.",
+  "option_2" : " Attackers impersonate any user on the system.",
+  "option_3" : " Attackers invoke functions and services they have no authorization for.",
+  "question" : "Which of the following depicts the typical impact of failure to restrict URL access?",
+  "answer" : " 3",
+  "option_1" : " Attackers perform man-in-the-middle attacks."
+}
+, {
+  "option_4" : " Use your browser to forge unauthorized requests.",
+  "option_2" : " Use a simple and positive model at every layer.",
+  "option_3" : " Set the secure flag on session ID cookies.",
+  "question" : "Which of the following actions should you take to test the security of your Web application?",
+  "answer" : " 4",
+  "option_1" : " Use policy mechanisms."
+}
+, {
+  "option_4" : " Kerberos",
+  "option_2" : " SSL",
+  "option_3" : " HTTP",
+  "question" : "Which of the following should you use to protect the connections between the physical tiers of your application?",
+  "answer" : " 2",
+  "option_1" : " EFS"
+}
+, {
+  "option_4" : " Perform client-side validation.",
+  "option_2" : " Enable SSL",
+  "option_3" : " Set the HttpOnly flag on session ID cookies",
+  "question" : "Which of the following is the best way to implement transport layer protection?",
+  "answer" : " 2",
+  "option_1" : " Install IDS"
+}
+, {
+  "option_4" : " Bypassed authorization checks",
+  "option_2" : " Network sniffing",
+  "option_3" : " Man-in-the-middle attack",
+  "question" : "Which of the following is most likely to result from unvalidated redirects and forwards?",
+  "answer" : " 4",
+  "option_1" : " Brute force attack"
+}
+, {
+  "option_4" : " Disallow requests to unauthorized file types.",
+  "option_2" : " Use extended validation certificates.",
+  "option_3" : " Use the escaping technique.",
+  "question" : "Which of the following is the best way to protect a Web application from unvalidated redirects and forwards?",
+  "answer" : " 1",
+  "option_1" : " Validate the referrer header."
+}
+, {
+  "option_4" : " Use policy mechanisms",
+  "option_2" : " Use your browser to forge unauthorized requests",
+  "option_3" : " Use weblogs to identify redirects and forwards",
+  "question" : "Which of the following is the best way to detect unvalidated redirects and forwards?",
+  "answer" : " 3",
+  "option_1" : " Use internal transfers without authorizing the user for target URL"
+}
+, {
+  "option_2" : " False",
+  "question" : "True or false: Most security issues are related to input and a user’s ability to interact with and control input.",
+  "answer" : " 1",
+  "option_1" : " True"
+}
+, {
+  "option_2" : " False",
+  "question" : "True or false: If user input can be confused for instructions in the language or the way the language is applied then the language is vulnerable to an injection attack.",
+  "answer" : " 1",
+  "option_1" : " True"
+}
+, {
+  "option_4" : " When you need to tell the interpreter that input is code",
+  "option_2" : " When you need to validate any input as valid input",
+  "option_3" : " When you are trying to protect against regular expression injection",
+  "question" : "In which of the following scenarios should you use the escaping technique?",
+  "answer" : " 1",
+  "option_1" : " When user input is echoed back to the user in HTML"
+}
+, {
+  "option_4" : " Use session-based indirection.",
+  "option_2" : " Use client-side validation.",
+  "option_3" : " Allow only absolute redirects.",
+  "question" : "Which of the following is the best way to prevent unvalidated redirect and forwards vulnerabilities?",
+  "answer" : " 1",
+  "option_1" : " Use an allow list such as table indirection."
+}
+ ]
