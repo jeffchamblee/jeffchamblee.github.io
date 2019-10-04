@@ -1,0 +1,710 @@
+{
+    "id": 8,
+    "name": "Python",
+    "description": "Python 3 for Beginners",
+    "config": {
+        "shuffleQuestions": false,
+        "showPager": false,
+        "allowBack": true,
+        "autoMove": true,
+        "showClock": false
+    },
+    "questions": [
+        {
+            "id": 1,
+            "name": "Which of the following is the Python function used to display some output to the console?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "echo(\"something\")",
+                    "isAnswer": false
+                },
+                {
+                    "id": 12,
+                    "questionId": 13,
+                    "name": "console.log(\"something\")",
+                    "isAnswer": false
+                },
+                {
+                    "id": 13,
+                    "questionId": 14,
+                    "name": "print(\"something\")",
+                    "isAnswer": true
+                },
+                {
+                    "id": 14,
+                    "questionId": 15,
+                    "name": "println(\"something\")",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 2,
+            "name": "What is used to define a block of code?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 21,
+                    "questionId": 12,
+                    "name": "Curly braces",
+                    "isAnswer": false
+                },
+                {
+                    "id": 22,
+                    "questionId": 13,
+                    "name": "Square braces",
+                    "isAnswer": false
+                },
+                {
+                    "id": 23,
+                    "questionId": 14,
+                    "name": "Indentation",
+                    "isAnswer": true
+                },
+                {
+                    "id": 24,
+                    "questionId": 15,
+                    "name": "Any of the above.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3,
+            "name": "Choose the correct way to define a function in Python:",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 31,
+                    "questionId": 12,
+                    "name": "def my_function():",
+                    "isAnswer": true
+                },
+                {
+                    "id": 32,
+                    "questionId": 13,
+                    "name": "func my_function():",
+                    "isAnswer": false
+                },
+                {
+                    "id": 33,
+                    "questionId": 14,
+                    "name": "function my_function():",
+                    "isAnswer": false
+                },
+                {
+                    "id": 34,
+                    "questionId": 15,
+                    "name": "define my_function():",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 4,
+            "name": "How do you compare if variable <strong>a</strong> is greater than variable <strong>b</strong>?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 41,
+                    "questionId": 12,
+                    "name": "if a >= b:",
+                    "isAnswer": false
+                },
+                {
+                    "id": 42,
+                    "questionId": 13,
+                    "name": "if a < b:",
+                    "isAnswer": false
+                },
+                {
+                    "id": 43,
+                    "questionId": 14,
+                    "name": "if a == b:",
+                    "isAnswer": false
+                },
+                {
+                    "id": 44,
+                    "questionId": 15,
+                    "name": "if a > b:",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 5,
+            "name": "Choose the correct sentence:",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 51,
+                    "questionId": 12,
+                    "name": "A string is a sequence of unordered characters.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 52,
+                    "questionId": 13,
+                    "name": "A string is a sequence of ordered characters.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 53,
+                    "questionId": 14,
+                    "name": "A string can only contain numbers.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 54,
+                    "questionId": 15,
+                    "name": "Python does not have strings.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 6,
+            "name": "Choose the correct way to join two strings:",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "print(string1 + string2)",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "print(string1 . string2)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "print(string1 % string2)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "print(string1 * string2)",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 7,
+            "name": "How can you import a module in Python?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "require modulename",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "import \"modulename\"",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "import modulename",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "include modulename",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 8,
+            "name": "What are the two &quot;loops&quot; in Python?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<strong>while</strong> and <strong>else</strong>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<strong>do/while</strong> and <strong>for</strong>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<strong>for</strong> and <strong>while</strong>",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<strong>for</strong> and <strong>switch</strong>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 9,
+            "name": "What is a list?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "An ordered sequence of elements.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "An unordered sequence of elements.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "A unique sequence of elements.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "A key-value store.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 10,
+            "name": "How can you fetch the first element from a list?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "my_list[0]",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "my_list.get(0)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "my_list.index(1)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "my_list[1]",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 11,
+            "name": "How can you determine the length of a list or of any iterable object?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "length(variable)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "len(variable)",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "variable.length()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "__len__(variable)",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 12,
+            "name": "What is a dictionary in Python?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "A set of unique elements.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "A sequence of elements.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "A key-value store.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "A collection of strings.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 13,
+            "name": "Are Python dictionaries ordered?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Yes",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "No",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 14,
+            "name": "Choose the correct way to define a dict:",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "my_dict = dict(\"key1\": \"some value\", \"other_key\": \"other value\")",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "my_dict = (\"key1\": \"some value\", \"other_key\": \"other value\")",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "my_dict = [\"key1\": \"some value\", \"other_key\": \"other value\"]",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "my_dict = {\"key1\": \"some value\", \"other_key\": \"other value\"}",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 15,
+            "name": "What is the output of the following code? for i in range(5):    print(i)",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "1 2 3 4 5",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "0 1 2 3 4 5",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "0 1 2 3 4",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "1 2 3 4",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 16,
+            "name": "Is Python object-oriented?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Yes",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "No",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 17,
+            "name": "Choose the correct way to define a class: ",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "class Person(BaseClass):\\r\\n    name = \"Veronica\"\\r\\n    def who_am_i(self):\\r\\n        print(self.name)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "class Person(object):\\r\\n    name = \"Veronica\"\\r\\n    def who_am_i(self):\\r\\n        print(self.name)",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "class Person(object):\\r\\n    name = \"Veronica\"\\r\\n    function who_am_i():\\r\\n        print(this.name)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "class Person(object):\\r\\n    name = \"Veronica\"\\r\\n    public function who_am_i():\\r\\n        print(this.name)",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 18,
+            "name": "Considering <strong>User</strong> is a class, how do you create an instance of it?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "my_user = new User()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "my_user = def User()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "my_user = new User",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "my_user = User()",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 19,
+            "name": "Considering&nbsp;<strong>my_user </strong>is an instance of the&nbsp;<strong>User</strong>&nbsp;class that has a &quot;name&quot; property. How can you access that property?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "my_user->name",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "my_user['name']",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "my_user.name",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "my_user.get('name')",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+        ,        {
+            "id": 19,
+            "name": "Assuming you need to split your code into multiple files and folders. How can you mark a folder as &quot;python module&quot;, so you can create multiple <strong>.py</strong> files and import them?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "You do not need to do anything special, just place .py files inside the folder.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Create an empty __module__.py file.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Create an empty init.py file.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Create an empty __init__.py file.",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+    ]
+}

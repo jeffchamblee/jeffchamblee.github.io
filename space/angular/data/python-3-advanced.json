@@ -1,0 +1,711 @@
+{
+    "id": 8,
+    "name": "Python",
+    "description": "Python 3 Advanced",
+    "config": {
+        "shuffleQuestions": false,
+        "showPager": false,
+        "allowBack": true,
+        "autoMove": true,
+        "showClock": false
+    },
+    "questions": [
+        {
+            "id": 1,
+            "name": "Given the following Python code, what gets printed?<pre>\\r\\n<code class=\"language-python\">colors1 = {\\r\\n    \"apples\": \"Green\",\\r\\n}\\r\\n\\r\\ncolors2 = colors1\\r\\n\\r\\ncolors2[\"apples\"] = \"Yellow\"\\r\\n\\r\\nprint('colors1:', colors1)\\r\\nprint('colors2:', colors2)</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">colors1: {'apples': 'Green'}\\r\\ncolors2: {'apples': 'Yellow'}</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">colors1: {'apples': 'Yellow'}\\r\\ncolors2: {'apples': 'Yellow'}</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">colors1: {'apples': 'Green'}\\r\\ncolors2: {'apples': 'Green'}</code></pre>",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+
+        {
+            "id": 2,
+            "name": "What is the output of the following code?\\r\\n<pre>\\r\\n<code class=\"language-python\">def city_generator():\\r\\n    yield(\"Zurich\")\\r\\n    yield(\"Stuttgart\")\\r\\n\\r\\n\\r\\ncities = city_generator()\\r\\n\\r\\nprint(next(cities))\\r\\nprint(next(cities))\\r\\nprint(next(cities))</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Zurich<br />\\r\\nStuttgart<br />\\r\\n<br />\\r\\nStopIteration exception (is raised)",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Zurich<br />\\r\\nStuttgart<br />\\r\\nNone",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "NameError: name &#39;next&#39; is not defined",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "AttributeError: &#39;generator&#39; object has no attribute &#39;__next__&#39;",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 3,
+            "name": "What is the output of the following code?\\r\\n<pre>\\r\\n<code class=\"language-python\">def city_generator():\\r\\n    yield(\"Zurich\")\\r\\n    yield(\"Stuttgart\")\\r\\n\\r\\n\\r\\ncities = city_generator()\\r\\n\\r\\nfor city in cities:\\r\\n    print(city)\\r\\n    \\r\\nfor city in cities:\\r\\n    print(city)</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Zurich<br />\\r\\nStuttgart",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Zurich<br />\\r\\nStuttgart<br />\\r\\nZurich<br />\\r\\nStuttgart",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "None",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "It raises a syntax error.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 4,
+            "name": "Given the following list: <pre><code class=\"language-python\">list1 = [1, 4, 5, 6, 9]</code></pre>Choose the correct ways to filter only the even numbers",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">list.filter(lambda item: item % 2 == 0)</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">[item for item in list1 if item % 2 == 0]</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">filter(lambda item: item % 2 == 0, list1)</code></pre>",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">filtered(list1, lambda item: item % 2 == 0)</code></pre>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 5,
+            "name": "What gets printed?\\r\\n<pre>\\r\\n<code class=\"language-python\">names1 = [\"Sebastian\", \"Ford\", \"John\"]\\r\\nnames2 = [name.lower() for name in names1]\\r\\n\\r\\nprint(names2[1][0])</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "h",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "H",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "S",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "s",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 6,
+            "name": "What is the output of the following code?\\r\\n<pre>\\r\\n<code class=\"language-python\">list1 = [1, 4, 6, 10]\\r\\nlist2 = (x**2 for x in list1)\\r\\n\\r\\nprint(next(list2), next(list2))</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "1",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "1&nbsp; &nbsp;4",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "1&nbsp; &nbsp;16&nbsp;",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "1&nbsp; &nbsp;16&nbsp; &nbsp;36&nbsp; &nbsp;100",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 7,
+            "name": "What gets printed?\\r\\n<pre>\\r\\n<code class=\"language-python\">names = {\"Ford\", \"John\", \"Ford\"}\\r\\nprint(names)</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "It raises a syntax error.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">{'Ford', 'John', 'Ford'}</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">{'Ford', 'John'}</code></pre>",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">{'Ford': None, 'John': None}</code></pre>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 8,
+            "name": "What gets printed?\\r\\n<pre>\\r\\n<code class=\"language-python\">names = set([\"Ford\", \"John\", \"Ford\"])\\r\\nprint(names)</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "There is no such function, &quot;set&quot;.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">[\"Ford\", \"John\", \"Ford\"]</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">{'Ford', 'John'}</code></pre>",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">[\"Ford\", \"John\"]</code></pre>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 9,
+            "name": "What does the following code print on the console?\\r\\n<pre>\\r\\n<code class=\"language-python\">my_dict = {\\r\\n    \"a\": 1,\\r\\n    \"b\": 2,\\r\\n    \"c\": 3\\r\\n}\\r\\n\\r\\nother_dict = {key + 'x': value for key, value in my_dict.items()}\\r\\nprint(other_dict)</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">{'a': 1, 'b': 2, 'c': 3}</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">{'ax': 1, 'bx': 2, 'cx': 3}</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">{'xa': 1, 'xb': 2, 'xc': 3}</code></pre>",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "It raises a syntax error.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 10,
+            "name": "Choose the correct statements about Python dictionaries:",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Dictionaries are ordered.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Dictionaries are ordered only at programmatic key/value insertion.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Dictionaries are not ordered.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "For ordering dictionaries, there is a special dict implementation named OrderedDict.",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 11,
+            "name": "Assuming the following code is executed on Python 3.x, what gets printed?\\r\\n<pre>\\r\\n<code class=\"language-python\">print(type(5/2))</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">&lt;class 'int'&gt;</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">&lt;class 'decimal'&gt;</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">&lt;class 'float'&gt;</code></pre>",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 12,
+            "name": "What version of Python supports the following string formatting syntax?\\r\\n<pre>\\r\\n<code class=\"language-python\">name = \"Ford\"\\r\\nformatted_str = f\"Hello. My name is {name}.\"</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "2.x",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "3.x",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "3.5.x",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "3.6.x",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 13,
+            "name": "What are the method(s) that an iterator object must implement?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "__iter__()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "__next__()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "__iter__() and&nbsp;__next__()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "__iter__() and __super()",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 14,
+            "name": "Choose the correct implementation of the&nbsp;<strong>Person</strong> class, knowing that after executing the following code:\\r\\n<pre>\\r\\n<code class=\"language-python\">john = Person(\"John\", \"Snow\")\\r\\nprint(john.get_full_name())</code></pre>\\r\\nthe following output is printed:\\r\\n\\r\\n<pre>\\r\\nJohn Snow</pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">class Person(object):\\r\\n    def __init__(self):\\r\\n        self.first_name = first_name\\r\\n        self.last_name = last_name\\r\\n\\r\\n    def get_full_name(self):\\r\\n        return f\"{self.first_name} {self.last_name}\"</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">class Person(object):\\r\\n    def __init__(self, first_name, last_name):\\r\\n        self.first_name = first_name\\r\\n        self.last_name = last_name\\r\\n\\r\\n    def get_full_name(self):\\r\\n        return f\"{self.first_name} {self.last_name}\"</code></pre>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">class Person(object):\\r\\n    def __init__(self, first_name, last_name):\\r\\n        self.first_name = first_name\\r\\n        self.last_name = last_name\\r\\n\\r\\n    @staticmethod\\r\\n    def get_full_name(self):\\r\\n        return f\"{self.first_name} {self.last_name}\"</code></pre>",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "<pre>\\r\\n<code class=\"language-python\">class Person(object):\\r\\n    def get_full_name(self, first_name, last_name):\\r\\n        return f\"{first_name} {last_name}\"</code></pre>",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 15,
+            "name": "Consider the following class:\\r\\n<pre>\\r\\n<code class=\"language-python\">class MyClass(object):\\r\\n    __val = None\\r\\n\\r\\n    def __init__(self, val):\\r\\n        self.__val = val\\r\\n\\r\\n    @property\\r\\n    def value(self):\\r\\n        return self.__val\\r\\n\\r\\n\\r\\ninstance = MyClass(12)\\r\\n</code></pre> Choose the correct way to retrieve the &quot;__val&quot; property:",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "<pre>\\r\\n<code>instance.value()</code></pre>"
+                },
+                { "id": 90521, "body": "<pre>\\r\\n<code>instance.value</code></pre>", "isAnswer": false },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<pre>\\r\\n<code>instance.__value</code></pre>"
+                },
+                { "id": 90523, "body": "<pre>\\r\\n<code>instance.get('value')</code></pre>", "isAnswer": false }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 16,
+            "name": "Consider the following classes:\\r\\n<pre>\\r\\n<code class=\"language-python\">class FirstClass(object):\\r\\n    def hi(self):\\r\\n        print('Hello!')\\r\\n\\r\\n\\r\\nclass SecondClass(object):\\r\\n    def hi(self):\\r\\n        print('Bonjour!')\\r\\n\\r\\n\\r\\nclass FinalClass(SecondClass, FirstClass):\\r\\n    pass</code></pre>\\r\\n&nbsp;  What happens if you execute the following code?\\r\\n\\r\\n<pre>\\r\\n<code class=\"language-python\">FinalClass().hi()</code></pre>",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "AttributeError: &#39;ClassC&#39; object has no attribute &#39;hi&#39;",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "<em>&quot;Hello!&quot;</em> gets printed.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "<em>&quot;Bonjour!&quot; </em>gets printed.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "The code raises a&nbsp;<em>SyntaxError</em> because <em>ClassC</em> does not contain any code.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 17,
+            "name": "How can you change the way two instances of a specific class behave on comparison?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "Override the __get__ method and return normalized values for comparison.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "Override the __str__ method and return normalized values for comparison.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "Override the __compare__ special method.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Override methods like __gt__ ,&nbsp;__lt__,&nbsp;__eq__, etc.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 18,
+            "name": "Choose the correct statements regarding the Python <strong>logging</strong> module:",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "The logging module can use multiple handlers.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "You can configure a single handler to a specific logger.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "You can configure multiple handlers to one or more loggers.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "When using the&nbsp;<strong>logging.getLogger() </strong>function, if the specified logger is not found, an exception is raised.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 19,
+            "name": "What Python library can run a function in a separate thread?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "threading",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "thread",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "_threading",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "There is no such library in the core.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 20,
+            "name": "Consider the following code:\\r\\n<pre>\\r\\n<code class=\"language-python\">path = media_root + '/' + year + '/' + month + '/' + filename</code></pre>\\r\\n  Choose the correct statement(s):",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 11,
+                    "questionId": 12,
+                    "name": "It will only work on UNIX operating systems. <strong>os.path.join</strong> should be used instead.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1056,
+                    "questionId": 13,
+                    "name": "The code is correct and a best practice.",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1057,
+                    "questionId": 14,
+                    "name": "It will only work on Windows operating systems.",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1058,
+                    "questionId": 15,
+                    "name": "Merging strings with + is not recommended. It will fail if one of the variables is not a string.",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+    ]
+}
